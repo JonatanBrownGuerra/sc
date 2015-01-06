@@ -95,6 +95,13 @@ body{
     color:#555;
     
 }
+a{
+  color:#ccc;  
+}
+a:hover{
+    color:#a2b603;
+    text-decoration: none;
+}
 .textder{
     text-align: right;
 }
@@ -159,7 +166,7 @@ h2 span{
 .thumbnail{
     padding: 0 2px 30px ;
     border: none;
-    background-color: #fafaf7;
+    background-color: transparent;
 }
 .thumbnail .caption{
     padding: 0;
@@ -410,9 +417,9 @@ transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     /*border-color: #f3f3f3;*/
 }
 .user img{
-    width: 40px;
-    margin: 5px 0 0 0;
-    border: 2px solid #a2b603;
+    width: 30px;
+    margin: 11px 0 0 0;
+    /*border: 2px solid #a2b603;*/
     
 }
 .user span{
@@ -711,13 +718,18 @@ a.carousel-control.left img{
 
 /* The controlsy */
 .carousel-control1 {
-	left: -12px;
+	/*left: -12px;
     height: 40px;
 	width: 40px;
     background: none repeat scroll 0 0 #222222;
     border: 4px solid #FFFFFF;
     border-radius: 23px 23px 23px 23px;
-    margin-top: 90px;
+    margin-top: 90px;*/
+    position: absolute;
+    font-size: 40px;
+    top: 30px;
+    
+    
 }
 .carousel-control1.right {
 	right: -12px;
@@ -734,7 +746,21 @@ a.carousel-control.left img{
 	background: #cecece;
 }
 .carousel-indicators .active {
-background: #428bca;
+background: #a2b603;
+}
+.equipa .thumbnail{
+    text-align: center;
+    color:#aaa;
+    font-family: 'ralewaylight';
+    font-size: 14px;
+    
+}
+.equipa .thumbnail span{
+    text-align: center;
+    font-size: 36px;
+    color:#aaa;
+    padding: 40px 0 0 0;
+    
 }
 
 /*******************************************/
