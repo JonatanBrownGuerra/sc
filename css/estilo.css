@@ -93,6 +93,7 @@
 body{
     background-color: #fafaf7;
     color:#555;
+    font-family: 'ralewaymedium';
     
 }
 a{
@@ -762,7 +763,35 @@ background: #a2b603;
     padding: 40px 0 0 0;
     
 }
-
+.user-detalle img{
+    width: 80px;
+}
+ul.user-detalle li{
+    list-style: none;
+    color:#656565;
+    font-family: 'ralewaylight'; 
+}
+ul.user-detalle{
+    width: 60em;
+}
+ul.user-detalle li{
+    float: left;
+    width: 20em;
+}
+.wrapp{
+    margin-bottom: 1em;
+}
+br{
+    clear: left;
+}
+.modal-footer .btn-default{
+    border-left: 1px solid #ccc;
+    border-radius: 2px;
+    font-family: 'ralewaymedium';
+    font-size: 1em;
+    padding: 5px 10px;
+    margin: 10px;
+}
 /*******************************************/
 
 @media (max-width: 1200px) {
