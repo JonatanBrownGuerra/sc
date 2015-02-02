@@ -1,1614 +1,1679 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon.png" />
-    <title>Sobrecoches</title>
-      
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!---------------------------------CSS-------------------------------------->
-      
-    <!------BOOTSTRAP------>
-      
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-      
-    <!----LIGHTSLIDER------>  
-      
-    <link type="text/css" rel="stylesheet" href="css/lightSlider.css"/>
-    <link type="text/css" rel="stylesheet" href="css/lightGallery.css"/> 
-      
-    <!-----SLIDE RANGE----->
-       
-	<link rel="stylesheet" href="css/redmond/jquery-ui-1.7.1.custom.css" type="text/css"/>
-	<link rel="Stylesheet" href="css/ui.slider.extras.css" type="text/css" />
-
-    <!--ESTILOS SOBRECOCHES-->
-      
-     <link href="css/estilo.css" rel="stylesheet"/> 
-     
-  </head>
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="shortcut icon" href="images/favicon.png" />
+   <title>Sobrecoches</title>
+   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+   <!---------------------------------CSS-------------------------------------->
+   <!------BOOTSTRAP------>
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <!----LIGHTSLIDER------>  
+   <link type="text/css" rel="stylesheet" href="css/lightSlider.css"/>
+   <link type="text/css" rel="stylesheet" href="css/lightGallery.css"/>
+   <!-----SLIDE RANGE----->
+   <link rel="stylesheet" href="css/redmond/jquery-ui-1.7.1.custom.css" type="text/css"/>
+   <link rel="Stylesheet" href="css/ui.slider.extras.css" type="text/css" />
+   <!--ESTILOS SOBRECOCHES-->
+   <link href="css/estilo.css" rel="stylesheet"/>
+   <link href="css/animate.css" type="text/css" rel="stylesheet"/>
+   
+</head>
     
-    
-  <body>
+<body>
+      
+<!---------------------------------------------------->      
+<!-------------------- NAVBAR ------------------------>
+<!---------------------------------------------------->
+      
+<div class="container-fluid">
+   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
-          <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-              <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                  <a class="navbar-brand" href="#">
-                    <img alt="Brand" src="images/3.png">
-                  </a>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <form class="navbar-form navbar-left" role="search">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                      </div>
-                      <button type="submit" class="btn btn-default">Submit</button>
-                    </form>
-                  
-						<ul class="nav navbar-nav navbar-right">
-				<li><a href="#"><i class="fa fa-suitcase"></i> Publicar </a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle profile-image" data-toggle="dropdown">
-					<img src="images/user.jpg" class="img-circle special-img"> Alejandro <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="#"><i class="fa fa-cog"></i> Perfil </a></li>
-												<li class="divider"></li>
-						<li><a href="#"><i class="fa fa-sign-out"></i> Salir </a></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-	</div>
-</div>
-              </div>
-             </div>      
-            </nav>
-           <!----------------------NAV---------------------------->
-          <!--<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-				<div class="navbar-header">
-                    
-					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#"><img src="images/3.png" alt="logo"></a>
-				</div>
-				
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<!--<ul class="nav navbar-nav">
-						<li class="active">
-							<a href="#">Link</a>
-						</li>
-						<li>
-							<a href="#">Link</a>
-						</li>
-						<li class="dropdown">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#">Action</a>
-								</li>
-								<li>
-									<a href="#">Another action</a>
-								</li>
-								<li>
-									<a href="#">Something else here</a>
-								</li>
-								<li class="divider">
-								</li>
-								<li>
-									<a href="#">Separated link</a>
-								</li>
-								<li class="divider">
-								</li>
-								<li>
-									<a href="#">One more separated link</a>
-								</li>
-							</ul>
-						</li>
-					</ul>-->
-					<!--<form class="navbar-form navbar-left" role="search">
-						<div class="form-group buscarNav">
-							<input type="text" class="form-control" placeholder="¿Qué estás buscando?"><button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-						</div> 
-					</form>
-					<ul class="nav navbar-nav navbar-right user">
-						<li>
-							<span class="glyphicon glyphicon-chevron-left"></span><a href="#">Público</a>
-						</li>
-                        <li>
-							<img src= "images/user.jpg" alt="user" class="img-circle">
-						</li>
-						<li class="dropdown">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Alejandro<strong class="caret"></strong></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#">Action</a>
-								</li>
-								<li>
-									<a href="#">Another action</a>
-								</li>
-								<li>
-									<a href="#">Something else here</a>
-								</li>
-								<li class="divider">
-								</li>
-								<li>
-									<a href="#">Separated link</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-				
-			</nav>-->
-      
-          <!----------------------FIN NAV---------------------------->
-    
-      <div class="container-fluid blanco">
-      <div class="container">
-      <div class="cien"></div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="col-md-2 hidden-sm"></div>
-                <div class="col-md-10 col-md-offset-1 col-sm-12">
-                        
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12 filtrado">
-                                
-                                <a id="twit_1" class="twit" onclick="toggleTwit(1)" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><div>
-  <h2>Filtra tu <span>búsqueda</span></h2><div class="arrow"></div>
-</div></a>
-                                <div class="collapse" id="collapseExample">
-                                  
-                                    <hr id="sin-margen">
-                                <div class="row slide-rangos">
-                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 treinta lineader">
-                                       <!--<div class="row">
-                                            <div class="col-md-12">-->
-                                                <form role="form">
-                                                  <div class="controls">
-                                                      
-                                                      <label class="label-bold">Ubicación</label>
-                                                    
-                                                    <!--<input class="form-control input-sm" type="text" placeholder=".input-sm">-->
-                                                    <select class="form-control input-sm">
-                                                        <option value="">Región</option>
-                                                        <option value="">Antofagasta</option>
-                                                        <option value="">Metropolitana</option>
-                                                        <option value="">Valparaíso</option>
-                                                        <option value="">O'Higgins</option>
-                                                        <option value="">Maule</option>    
-                                                    </select>
-                                                    
-                                                    <select class="form-control input-sm">
-                                                        <option value="">Ciudad</option>
-                                                        <option value="">Antofagasta</option>
-                                                        <option value="">Valparaiso</option>
-                                                        <option value="">Viña del Mar</option>
-                                                        <option value="">Santiago</option>
-                                                        <option value="">Rancagua</option>
-                                                        <option value="">Curicó</option>
-                                                        <option value="">Talca</option>
-                                                        <option value="">Linares</option>
-                                                        <option value="">Maule</option>
-                                                    </select>
-                                                  </div>
-                                                      
-                                                </form>
-                                           <!-- </div>
-                                        </div>-->
-                                    </div>
-                                    
-                                    <!--LINEA OCULTA-->
-                                    <hr class="hidden-lg hidden-md hidden-sm col-xs-12">
-                                    
-                                    <div class="col-lg-6 col-md-6 col-sm-6  col-xs-12 treinta lineader">
-                                        <form action="#"> 
-                                        <fieldset>
-                                            <label class="label-bold">Precio</label><br>
-                                            <label for="valueA">Desde</label>
-                                            <select name="valueA" id="valueA">
-                                                <option value="6am">- $1.000.000</option>
-                                                <option value="7am">$1.000.000</option>
-                                                <option value="8am" selected="selected">$2.000.000</option>
-                                                <option value="9am">$3.000.000</option>
-                                                <option value="10am">$4.000.000</option>
-                                                <option value="11am">$5.000.000</option>
-                                                <option value="Noon">$6.000.000</option>
-                                                <option value="1pm">$7.000.000</option>
-                                                <option value="2pm">$8.000.000</option>
-                                                <option value="3pm">$9.000.000</option>
-                                                <option value="4pm">$10.000.000</option>
-                                                <option value="5pm">+ $10.000.000</option>
-                                                <!--<option value="6pm">6:00</option>
-                                                <option value="7pm">7:00</option>
-                                                <option value="8pm">8:00</option>
-                                                <option value="9pm">9:00</option>
-                                                <option value="10pm">10:00</option>
-                                                <option value="11pm">11:00</option>
-                                                <option value="12pm">12:00</option>-->
-                                            </select>
-
-                                            <label for="valueB">hasta</label>
-                                            <select name="valueB" id="valueB">
-                                                <option value="6am">-$1.000.000</option>
-                                                <option value="7am">$1.000.000</option>
-                                                <option value="8am">$2.000.000</option>
-                                                <option value="9am">$3.000.000</option>
-                                                <option value="10am">$4.000.000</option>
-                                                <option value="11am">$5.000.000</option>
-                                                <option value="Noon">$6.000.000</option>
-                                                <option value="1pm">$7.000.000</option>
-                                                <option value="2pm" selected="selected">$8.000.000</option>
-                                                <option value="3pm">$9.000.000</option>
-                                                <option value="4pm">$10.000.000</option>
-                                                <option value="5pm">+$10.000.000</option>
-                                                <!--<option value="6pm">6:00</option>
-                                                <option value="7pm">7:00</option>
-                                                <option value="8pm">8:00</option>
-                                                <option value="9pm">9:00</option>
-                                                <option value="10pm">10:00</option>
-                                                <option value="11pm">11:00</option>
-                                                <option value="12pm">12:00</option>-->
-                                            </select>
-                                        </fieldset>
-                                            
-                                            
-                                     </form>
-                                        
-                                        <form action="#"> 
-                                        <fieldset>
-                                            <label class="label-bold">Año</label><br>
-                                            <label for="valueC">Desde</label>
-                                            <select name="valueC" id="valueC">
-                                                <option value="6am">- 1990</option>
-                                                <option value="7am">1990</option>
-                                                <option value="8am" >1991</option>
-                                                <option value="9am">1992</option>
-                                                <option value="10am">1993</option>
-                                                <option value="11am">1994</option>
-                                                <option value="Noon">1995</option>
-                                                <option value="1pm">1996</option>
-                                                <option value="2pm">1997</option>
-                                                <option value="3pm">1998</option>
-                                                <option value="4pm">1999</option>
-                                                <option value="5pm">2000</option>
-                                                <option value="6pm">2001</option>
-                                                <option value="7pm">2002</option>
-                                                <option value="8pm" selected="selected">2003</option>
-                                                <option value="9pm">2004</option>
-                                                <option value="10pm">2005</option>
-                                                <option value="11pm">2006</option>
-                                                <option value="12pm">2007</option>
-                                                <option value="13pm">2008</option>
-                                                <option value="14pm">2009</option>
-                                                <option value="15pm">2010</option>
-                                                <option value="16pm">2011</option>
-                                                <option value="17pm">2012</option>
-                                                <option value="18pm">2013</option>
-                                                <option value="19pm">2014</option>
-                                                <option value="20pm">2015</option>
-                                            </select>
-
-                                            <label for="valueD">hasta</label>
-                                            <select name="valueD" id="valueD">
-                                                <option value="6am">- 1990</option>
-                                                <option value="7am">1990</option>
-                                                <option value="8am">1991</option>
-                                                <option value="9am">1992</option>
-                                                <option value="10am">1993</option>
-                                                <option value="11am">1994</option>
-                                                <option value="Noon">1995</option>
-                                                <option value="1pm">1996</option>
-                                                <option value="2pm">1997</option>
-                                                <option value="3pm">1998</option>
-                                                <option value="4pm">1999</option>
-                                                <option value="5pm">2000</option>
-                                                <option value="6pm">2001</option>
-                                                <option value="7pm">2002</option>
-                                                <option value="8pm">2003</option>
-                                                <option value="9pm">2004</option>
-                                                <option value="10pm">2005</option>
-                                                <option value="11pm">2006</option>
-                                                <option value="12pm">2007</option>
-                                                <option value="13pm">2008</option>
-                                                <option value="14pm">2009</option>
-                                                <option value="15pm">2010</option>
-                                                <option value="16pm">2011</option>
-                                                <option value="17pm">2012</option>
-                                                <option value="18pm" selected="selected">2013</option>
-                                                <option value="19pm">2014</option>
-                                                <option value="20pm">2015</option>
-                                            </select>
-                                        </fieldset>
-                                            
-                                            
-                                     </form>
-                                    <form action="#"> 
-                                        <fieldset>
-                                            <label class="label-bold">Kilómetros</label><br>
-                                            <label for="valueE">Desde</label>
-                                            <select name="valueE" id="valueE">
-                                                <option value="6am">- 1990</option>
-                                                <option value="7am">1990</option>
-                                                <option value="8am" >1991</option>
-                                                <option value="9am">1992</option>
-                                                <option value="10am">1993</option>
-                                                <option value="11am">1994</option>
-                                                <option value="Noon">1995</option>
-                                                <option value="1pm">1996</option>
-                                                <option value="2pm">1997</option>
-                                                <option value="3pm">1998</option>
-                                                <option value="4pm">1999</option>
-                                                <option value="5pm">2000</option>
-                                                <option value="6pm">2001</option>
-                                                <option value="7pm">2002</option>
-                                                <option value="8pm" selected="selected">2003</option>
-                                                <option value="9pm">2004</option>
-                                                <option value="10pm">2005</option>
-                                                <option value="11pm">2006</option>
-                                                <option value="12pm">2007</option>
-                                                <option value="13pm">2008</option>
-                                                <option value="14pm">2009</option>
-                                                <option value="15pm">2010</option>
-                                                <option value="16pm">2011</option>
-                                                <option value="17pm">2012</option>
-                                                <option value="18pm">2013</option>
-                                                <option value="19pm">2014</option>
-                                                <option value="20pm">2015</option>
-                                            </select>
-
-                                            <label for="valueF">hasta</label>
-                                            <select name="valueF" id="valueF">
-                                                <option value="6am">- 1990</option>
-                                                <option value="7am">1990</option>
-                                                <option value="8am">1991</option>
-                                                <option value="9am">1992</option>
-                                                <option value="10am">1993</option>
-                                                <option value="11am">1994</option>
-                                                <option value="Noon">1995</option>
-                                                <option value="1pm">1996</option>
-                                                <option value="2pm">1997</option>
-                                                <option value="3pm">1998</option>
-                                                <option value="4pm">1999</option>
-                                                <option value="5pm">2000</option>
-                                                <option value="6pm">2001</option>
-                                                <option value="7pm">2002</option>
-                                                <option value="8pm">2003</option>
-                                                <option value="9pm">2004</option>
-                                                <option value="10pm">2005</option>
-                                                <option value="11pm">2006</option>
-                                                <option value="12pm">2007</option>
-                                                <option value="13pm">2008</option>
-                                                <option value="14pm">2009</option>
-                                                <option value="15pm">2010</option>
-                                                <option value="16pm">2011</option>
-                                                <option value="17pm">2012</option>
-                                                <option value="18pm" selected="selected">2013</option>
-                                                <option value="19pm">2014</option>
-                                                <option value="20pm">2015</option>
-                                            </select>
-                                        </fieldset>
-                                            
-                                            
-                                     </form>
-                                        
-                                        <div class="row">
-                                            <div class="col-md-6 col-sm-6 col-xs-6">
-                                                <form action="#" class="inactivo"> 
-                                        <fieldset>
-                                            <label class="label-bold">Cilindraje</label><br>
-                                            <label for="valueG">De</label>
-                                            <select name="valueG" id="valueG">
-                                                <option value="6am">- 1.6cc</option>
-                                                <option value="7am"selected="selected">1.6cc</option>
-                                                <option value="8am">1.8cc</option>
-                                                <option value="9am">2.0cc</option>
-                                                <option value="10am">2.2cc</option>
-                                                <option value="11am">2.6cc</option>
-                                                <option value="Noon">2.8cc</option>
-                                                <option value="1pm">3.0cc</option>
-                                                <option value="2pm">3.4cc</option>
-                                                <option value="3pm">4.0cc</option>
-                                                <option value="4pm">5.0cc</option>
-                                                <option value="5pm">6.0cc</option>
-                                                <option value="6pm">7.0cc</option>
-                                                <option value="7pm">8.0cc</option>
-                                                <option value="8pm">+ 8.0cc</option>
-                                                
-                                            </select>
-
-                                            <label for="valueH">a</label>
-                                            <select name="valueH" id="valueH">
-                                                <option value="6am">- 1.6cc</option>
-                                                <option value="7am">1.6cc</option>
-                                                <option value="8am">1.8cc</option>
-                                                <option value="9am">2.0cc</option>
-                                                <option value="10am"selected="selected">2.2cc</option>
-                                                <option value="11am">2.6cc</option>
-                                                <option value="Noon">2.8cc</option>
-                                                <option value="1pm">3.0cc</option>
-                                                <option value="2pm">3.4cc</option>
-                                                <option value="3pm">4.0cc</option>
-                                                <option value="4pm">5.0cc</option>
-                                                <option value="5pm">6.0cc</option>
-                                                <option value="6pm">7.0cc</option>
-                                                <option value="7pm">8.0cc</option>
-                                                <option value="8pm" >+ 8.0cc</option>
-                                            </select>
-                                        </fieldset> 
-                                                    
-                                            
-                                            
-                                     </form>
-                                                
-                                            </div>
-                                            <div class="col-md-6 col-sm-6 col-xs-6 o veinte">
-                                                <div class="o"><p>o</p></div>
-                                                <div class="radio automatico">
-                                                    <label><input type="checkbox" name="optradio">Automático</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        
-                                       
-
-                                    </div>
-                                    
-                                    <!--LINEA OCULTA-->
-                                    <hr class="hidden-lg hidden-md hidden-sm col-xs-12">
-                                    
-                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 treinta">
-                                        <form role="form">
-                                                  <div class="controls">
-                                                    
-                                                    <!--<input class="form-control input-sm" type="text" placeholder=".input-sm">-->
-                                                      <label class="label-bold">Detalles</label><br>
-                                                    <select class="form-control input-sm">
-                                                        <option value="" selected hidden="hidden">Marca</option>
-                                                        <option value="">Todas las marcas</option>
-                                                        <option value="82">Abat</option>
-                                                        <option value="83">Acadian</option>
-                                                        <option value="84">Acura</option>
-                                                        <option value="85">Adventure</option>
-                                                        <option value="86">Africa</option>
-                                                        <option value="87">Agrale</option>
-                                                        <option value="88">Agromaq</option>
-                                                        <option value="89">Agusta</option>
-                                                        <option value="90">AJS</option>
-                                                        <option value="91">Alba Motors</option>
-                                                        <option value="3">Alfa Romeo</option>
-                                                        <option value="92">AMC</option>
-                                                        <option value="93">American Motors</option>
-                                                        <option value="94">Aprilia</option>
-                                                        <option value="95">Aqualine</option>
-                                                        <option value="96">Aro</option>
-                                                        <option value="97">Articat</option>
-                                                        <option value="98">Artigiana</option>
-                                                        <option value="99">Asia</option>
-                                                        <option value="4">Aston Martin</option>
-                                                        <option value="100">Atlas</option>
-                                                        <option value="101">ATV</option>
-                                                        <option value="5">Audi</option>
-                                                        <option value="102">Aupa</option>
-                                                        <option value="103">Ausa</option>
-                                                        <option value="104">Austin</option>
-                                                        <option value="105">Automoto</option>
-                                                        <option value="106">Autorrad</option>
-                                                        <option value="107">Baja</option>
-                                                        <option value="108">Bajaj</option>
-                                                        <option value="109">Baldan</option>
-                                                        <option value="110">Baolat</option>
-                                                        <option value="111">Baotion</option>
-                                                        <option value="112">Bashan</option>
-                                                        <option value="113">Bayliner</option>
-                                                        <option value="114">Belarus</option>
-                                                        <option value="115">Belav - Tomav</option>
-                                                        <option value="116">Benelli</option>
-                                                        <option value="6">Bentley </option>
-                                                        <option value="117">Benyi</option>
-                                                        <option value="118">Benzhou</option>
-                                                        <option value="119">Bertone</option>
-                                                        <option value="120">Bimota</option>
-                                                        <option value="121">Black Diamond</option>
-                                                        <option value="7">BMW</option>
-                                                        <option value="122">Bobcat</option>
-                                                        <option value="123">Bohemia</option>
-                                                        <option value="124">Bomag</option>
-                                                        <option value="125">Bombard</option>
-                                                        <option value="126">Bombardier</option>
-                                                        <option value="127">Bonluck</option>
-                                                        <option value="128">Borgward</option>
-                                                        <option value="129">Bortex</option>
-                                                        <option value="130">Breuer</option>
-                                                        <option value="131">Breviglieri</option>
-                                                        <option value="132">Brias</option>
-                                                        <option value="133">Brilliant</option>
-                                                        <option value="134">Brillon</option>
-                                                        <option value="135">Bros</option>
-                                                        <option value="136">BRP CAN-AM</option>
-                                                        <option value="137">BSA</option>
-                                                        <option value="8">Bugatti</option>
-                                                        <option value="138">Buggy</option>
-                                                        <option value="139">Buick</option>
-                                                        <option value="140">Busscar</option>
-                                                        <option value="141">BYD</option>
-                                                        <option value="142">Caburga</option>
-                                                        <option value="9">Cadillac</option>
-                                                        <option value="143">Cagina</option>
-                                                        <option value="144">Cagiva</option>
-                                                        <option value="145">Caky</option>
-                                                        <option value="146">Can-Am</option>
-                                                        <option value="147">Canoa</option>
-                                                        <option value="148">Case</option>
-                                                        <option value="149">Catalina</option>
-                                                        <option value="150">Caterpillar</option>
-                                                        <option value="370">Cestari</option>
-                                                        <option value="151">CF Moto</option>
-                                                        <option value="152">CGB Trailer</option>
-                                                        <option value="153">Chandler</option>
-                                                        <option value="154">Changan</option>
-                                                        <option value="155">Changjeng</option>
-                                                        <option value="156">Cherokee</option>
-                                                        <option value="10">Chery</option>
-                                                        <option value="11">Chevrolet</option>
-                                                        <option value="157">Chituma</option>
-                                                        <option value="158">Choice</option>
-                                                        <option value="12">Chrysler</option>
-                                                        <option value="159">Cima</option>
-                                                        <option value="2">Citroen</option>
-                                                        <option value="160">Coachmen</option>
-                                                        <option value="161">Cobalt</option>
-                                                        <option value="162">Coleman</option>
-                                                        <option value="163">Coloso</option>
-                                                        <option value="164">Comil</option>
-                                                        <option value="165">Compair</option>
-                                                        <option value="166">Comuta-Car</option>
-                                                        <option value="13">Corvette</option>
-                                                        <option value="167">Cross</option>
-                                                        <option value="168">Custom</option>
-                                                        <option value="14">Dacia</option>
-                                                        <option value="169">Dadyw</option>
-                                                        <option value="170">Daelim</option>
-                                                        <option value="171">Daewoo</option>
-                                                        <option value="172">Daf</option>
-                                                        <option value="15">Daihatsu</option>
-                                                        <option value="173">Datsun</option>
-                                                        <option value="174">Dax</option>
-                                                        <option value="175">Dayun</option>
-                                                        <option value="176">Demag</option>
-                                                        <option value="177">Deutz-Fahr</option>
-                                                        <option value="178">DFM</option>
-                                                        <option value="179">Dimex</option>
-                                                        <option value="204">Disher Sportscars</option>
-                                                        <option value="180">Divermaq</option>
-                                                        <option value="181">DKW</option>
-                                                        <option value="16">Dodge</option>
-                                                        <option value="182">Dongfeng</option>
-                                                        <option value="183">Ducar</option>
-                                                        <option value="184">Ducati</option>
-                                                        <option value="185">Duroboat</option>
-                                                        <option value="186">Eager Beaver</option>
-                                                        <option value="187">Eagle</option>
-                                                        <option value="188">Ecoline</option>
-                                                        <option value="189">Elho</option>
-                                                        <option value="190">Escape</option>
-                                                        <option value="191">Estuder</option>
-                                                        <option value="192">Euromot</option>
-                                                        <option value="193">Europard</option>
-                                                        <option value="194">Exel</option>
-                                                        <option value="195">Fada</option>
-                                                        <option value="196">Falc</option>
-                                                        <option value="197">Farmtrac</option>
-                                                        <option value="198">Fayser</option>
-                                                        <option value="17">Ferrari</option>
-                                                        <option value="18">Fiat</option>
-                                                        <option value="199">Fiatallis</option>
-                                                        <option value="200">Fibermold</option>
-                                                        <option value="201">Fibertex</option>
-                                                        <option value="202">Fina</option>
-                                                        <option value="203">Firemax</option>
-                                                        <option value="205">Fleewood</option>
-                                                        <option value="206">FMA</option>
-                                                        <option value="19">Ford</option>
-                                                        <option value="207">Forson</option>
-                                                        <option value="208">Foton </option>
-                                                        <option value="209">Four</option>
-                                                        <option value="210">Free Way</option>
-                                                        <option value="211">Freightliner</option>
-                                                        <option value="212">Fruehauf</option>
-                                                        <option value="213">Fullcar</option>
-                                                        <option value="214">Futong</option>
-                                                        <option value="215">Galion</option>
-                                                        <option value="216">Gama</option>
-                                                        <option value="217">Gardella</option>
-                                                        <option value="218">Garelli</option>
-                                                        <option value="219">Gas Gas</option>
-                                                        <option value="220">Geely</option>
-                                                        <option value="221">Geo</option>
-                                                        <option value="222">Gilera</option>
-                                                        <option value="223">Glastrom</option>
-                                                        <option value="224">GMC</option>
-                                                        <option value="225">Goldini</option>
-                                                        <option value="226">Goren</option>
-                                                        <option value="227">Great Wall</option>
-                                                        <option value="228">Greenmaster</option>
-                                                        <option value="229">Gribaldi & Salvia</option>
-                                                        <option value="230">Grimme</option>
-                                                        <option value="231">Grove</option>
-                                                        <option value="232">Grua</option>
-                                                        <option value="233">Guzzi</option>
-                                                        <option value="234">Hafei</option>
-                                                        <option value="235">Haima</option>
-                                                        <option value="236">Hardi</option>
-                                                        <option value="237">Harford</option>
-                                                        <option value="238">Harley Davidson</option>
-                                                        <option value="239">Hechizo</option>
-                                                        <option value="240">Heli</option>
-                                                        <option value="241">Hensin</option>
-                                                        <option value="242">Hero Puch</option>
-                                                        <option value="243">Hino</option>
-                                                        <option value="251">Hisqvarna</option>
-                                                        <option value="244">Hitachi</option>
-                                                        <option value="20">Honda</option>
-                                                        <option value="245">Honex</option>
-                                                        <option value="246">Howard</option>
-                                                        <option value="247">Huatai</option>
-                                                        <option value="248">Hudson</option>
-                                                        <option value="21">Hummer</option>
-                                                        <option value="249">Hunter</option>
-                                                        <option value="250">Husaber</option>
-                                                        <option value="252">Hyosung</option>
-                                                        <option value="253">Hyster</option>
-                                                        <option value="22">Hyundai</option>
-                                                        <option value="254">Ibiza</option>
-                                                        <option value="255">Ika</option>
-                                                        <option value="256">Indusa</option>
-                                                        <option value="23">Infiniti</option>
-                                                        <option value="257">Ingersoll Rand</option>
-                                                        <option value="258">Inrecar</option>
-                                                        <option value="259">International</option>
-                                                        <option value="24">Isuzu</option>
-                                                        <option value="261">Iveco</option>
-                                                        <option value="260">Ivermoto</option>
-                                                        <option value="262">Ivesa</option>
-                                                        <option value="263">Jaar</option>
-                                                        <option value="264">JAC Motors</option>
-                                                        <option value="265">Jacto</option>
-                                                        <option value="25">Jaguar</option>
-                                                        <option value="266">Jan</option>
-                                                        <option value="267">Jayco</option>
-                                                        <option value="268">JCB</option>
-                                                        <option value="26">Jeep</option>
-                                                        <option value="269">JF</option>
-                                                        <option value="270">Jialing</option>
-                                                        <option value="271">Jianshe</option>
-                                                        <option value="272">Jiapeng</option>
-                                                        <option value="273">Jin Lun</option>
-                                                        <option value="274">Jinbei</option>
-                                                        <option value="275">Jincheng</option>
-                                                        <option value="276">Jinma</option>
-                                                        <option value="277">JMC</option>
-                                                        <option value="278">John Deere</option>
-                                                        <option value="279">Jonh Henry</option>
-                                                        <option value="280">Jonway</option>
-                                                        <option value="281">Joyride</option>
-                                                        <option value="282">Jumil</option>
-                                                        <option value="283">Jurmar</option>
-                                                        <option value="284">Kamaz</option>
-                                                        <option value="285">Kawasaki</option>
-                                                        <option value="286">Kayak</option>
-                                                        <option value="287">Keeway</option>
-                                                        <option value="288">Kenworth</option>
-                                                        <option value="289">Keystone</option>
-                                                        <option value="27">Kia</option>
-                                                        <option value="290">Kia Motors</option>
-                                                        <option value="291">Kingyard</option>
-                                                        <option value="292">Kinlon</option>
-                                                        <option value="293">Kinroad</option>
-                                                        <option value="294">Knight</option>
-                                                        <option value="295">Kobelco</option>
-                                                        <option value="296">Komatsu</option>
-                                                        <option value="297">KTM</option>
-                                                        <option value="298">Kuhn</option>
-                                                        <option value="299">Kvernerland</option>
-                                                        <option value="300">Kymco</option>
-                                                        <option value="301">KZ</option>
-                                                        <option value="302">Labounty</option>
-                                                        <option value="303">Lada</option>
-                                                        <option value="309">Laike</option>
-                                                        <option value="28">Lamborghini</option>
-                                                        <option value="304">Lambretta</option>
-                                                        <option value="29">Lancia</option>
-                                                        <option value="305">Land Mark</option>
-                                                        <option value="30">Land Rover</option>
-                                                        <option value="306">Landini</option>
-                                                        <option value="307">Larson</option>
-                                                        <option value="308">Laverda</option>
-                                                        <option value="310">Lely</option>
-                                                        <option value="311">Lemken</option>
-                                                        <option value="31">Lexus</option>
-                                                        <option value="312">Leyland</option>
-                                                        <option value="32">Lifan</option>
-                                                        <option value="313">Lihhai</option>
-                                                        <option value="314">Lincoln</option>
-                                                        <option value="315">Lishan Bus</option>
-                                                        <option value="316">Litostrog</option>
-                                                        <option value="317">LML</option>
-                                                        <option value="318">Loncin</option>
-                                                        <option value="319">Longstar</option>
-                                                        <option value="33">Lotus</option>
-                                                        <option value="320">Luojia</option>
-                                                        <option value="321">Machile</option>
-                                                        <option value="322">Mack</option>
-                                                        <option value="323">Madal</option>
-                                                        <option value="324">Magirus Deutz</option>
-                                                        <option value="326">Mahindra</option>
-                                                        <option value="327">Maico</option>
-                                                        <option value="328">MainMotor</option>
-                                                        <option value="329">Majesa</option>
-                                                        <option value="330">Manac</option>
-                                                        <option value="325">Mangrinsa</option>
-                                                        <option value="331">Marchesan</option>
-                                                        <option value="332">Marcopolo</option>
-                                                        <option value="333">Mariner</option>
-                                                        <option value="34">Maserati</option>
-                                                        <option value="334">Massey Ferguson</option>
-                                                        <option value="335">Mathews Company</option>
-                                                        <option value="336">Maxum</option>
-                                                        <option value="35">Maybach</option>
-                                                        <option value="337">Mayov</option>
-                                                        <option value="36">Mazda</option>
-                                                        <option value="37">Mercedes</option>
-                                                        <option value="338">Mercedes Benz</option>
-                                                        <option value="339">Mercruiser</option>
-                                                        <option value="340">Mercury</option>
-                                                        <option value="341">MG</option>
-                                                        <option value="38">MG Rover</option>
-                                                        <option value="342">Michigan</option>
-                                                        <option value="343">Mikilon</option>
-                                                        <option value="39">Mini</option>
-                                                        <option value="344">Mini Cooper</option>
-                                                        <option value="345">Mits</option>
-                                                        <option value="40">Mitsubishi</option>
-                                                        <option value="346">Monosem</option>
-                                                        <option value="347">Monster</option>
-                                                        <option value="348">Montelli</option>
-                                                        <option value="349">Montenegro</option>
-                                                        <option value="350">Monterrey</option>
-                                                        <option value="351">Montesa</option>
-                                                        <option value="352">Morbidelli</option>
-                                                        <option value="41">Morgan </option>
-                                                        <option value="353">Morris</option>
-                                                        <option value="354">Moskito</option>
-                                                        <option value="355">Moto ABC</option>
-                                                        <option value="356">Moto-Vitale</option>
-                                                        <option value="357">Motobi</option>
-                                                        <option value="358">Motoguzzi</option>
-                                                        <option value="359">Motorhome</option>
-                                                        <option value="360">Motorrad</option>
-                                                        <option value="361">Motosport</option>
-                                                        <option value="362">Movil</option>
-                                                        <option value="363">MSK</option>
-                                                        <option value="364">MTD</option>
-                                                        <option value="365">Mussre</option>
-                                                        <option value="366">Mustang</option>
-                                                        <option value="367">MV Agusta</option>
-                                                        <option value="42">Nissan</option>
-                                                        <option value="372">NSU</option>
-                                                        <option value="43">Opel</option>
-                                                        <option value="1">Otra marca</option>
-                                                        <option value="44">Peugeot</option>
-                                                        <option value="45">Pontiac</option>
-                                                        <option value="46">Porsche</option>
-                                                        <option value="47">Renault</option>
-                                                        <option value="48">Rolls-Royce</option>
-                                                        <option value="49">Rover</option>
-                                                        <option value="50">Saab</option>
-                                                        <option value="368">Samsung</option>
-                                                        <option value="51">Santana </option>
-                                                        <option value="52">Seat</option>
-                                                        <option value="53">Skoda</option>
-                                                        <option value="54">Smart</option>
-                                                        <option value="55">Ssangyong</option>
-                                                        <option value="56">Subaru</option>
-                                                        <option value="57">Suzuki</option>
-                                                        <option value="371">Takasaki</option>
-                                                        <option value="58">Tata </option>
-                                                        <option value="59">Toyota</option>
-                                                        <option value="369">Triumph</option>
-                                                        <option value="60">Volkswagen</option>
-                                                        <option value="61">Volvo</option>
-                                                        <option value="72">Yale</option>
-                                                        <option value="73">Yamaha</option>
-                                                        <option value="74">Yanmar</option>
-                                                        <option value="75">Yarara</option>
-                                                        <option value="76">Yepear</option>
-                                                        <option value="77">Yingang</option>
-                                                        <option value="78">Yinxiang</option>
-                                                        <option value="79">Yomel</option>
-                                                        <option value="80">Yuejin</option>
-                                                        <option value="81">Yugo</option>
-                                                        <option value="64">Zetor</option>
-                                                        <option value="65">ZNA</option>
-                                                        <option value="66">Znen Group</option>
-                                                        <option value="67">Zodiac</option>
-                                                        <option value="68">Zongshen</option>
-                                                        <option value="69">Zotye</option>
-                                                        <option value="70">Zueger</option>
-                                                        <option value="63">Zumotho</option>
-                                                        <option value="62">Zundapp</option>
-                                                        <option value="71">ZX</option>    
-                                                    </select>
-                                                    
-                                                    <input class="form-control input-sm" type="text" placeholder="Modelo">
-                                                      
-                                                    <select class="form-control input-sm">
-                                                        <option value="" selected hidden="hidden">Combustible</option>
-                                                        <option value="0">Todos los combustibles</option>
-                                                        <option value="2">Bencina</option>
-                                                        <option value="3">Diesel</option>
-                                                        <option value="4">Biodiesel</option>
-                                                        <option value="5">Gas natural</option>
-                                                        <option value="6">Eléctrico</option>
-                                                        <option value="6">Híbrido</option>
-                                                    </select>
-                                                      
-                                                    <select class="form-control input-sm">
-                                                        <option value="" selected hidden="hidden">Tipo</option>
-                                                        <option value="0">Todos los tipos</option>
-                                                        <option value="1">Automóvil</option>
-                                                        <option value="2">Bus/Minibus</option>
-                                                        <option value="3">Camión</option>
-                                                        <option value="4">Camioneta</option>
-                                                        <option value="5">Furgón</option>
-                                                        <option value="6">Maquinaria</option>
-                                                        <option value="7">Moto</option>
-                                                        <option value="8">Naútico</option>
-                                                        <option value="9">Todo terreno</option>
-                                                        <option value="10">Van</option>
-                                                    </select>
-                                                      
-                                                    <select class="form-control input-sm">
-                                                        <option value="" selected hidden="hidden">Carrocería</option>
-                                                        <option value="0">Todas las carrocerías</option>
-                                                        <option value="2">Cabina Simple</option>
-                                                        <option value="3">City Car</option>
-                                                        <option value="4">Coupe</option>
-                                                        <option value="5">Doble Cabina</option>
-                                                        <option value="6">Hatcback</option>
-                                                        <option value="7">Sedan</option>
-                                                        <option value="8">Station Vagon</option>
-                                                        <option value="9">Suv</option>
-                                                        <option value="1">Otra Carrocería</option>
-                                                    </select>  
-                                                  </div>
-                                            <!--<button type="submit" class="btn btn-default">BUSCAR</button>-->
-                                                </form>
-                                    </div>
-                                </div>
-                                  
-                                </div><!--div oculto-->
-                                
-                            </div>
-                        </div>
-                    </div>
-                <div class="col-md-2 hidden-sm"></div>
-            </div>
-        </div> 
-          
-       </div><!--fin contenedor normal-->
-      </div><!--fin contenedor fluido-->
-           
-          
-        
-          
- 
-          
-          
-          <!------------------MODAL----------------------------->
-          
-          <!-- Large modal -->
-<!--<button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>-->
-
-<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-							 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-							<h4 class="modal-title" id="myModalLabel">
-								Modal title
-							</h4>
-						</div>
-						<div class="modal-body">
-							
-						</div>
-						<div class="modal-footer">
-							 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> <button type="button" class="btn btn-primary">Save changes</button>
-						</div>
-    </div>
-  </div>
-</div>
-           <!-- medium modal -->
-          
-          <div class="modal fade" id="modal-container-786382" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				<div class="modal-dialog modal-lg">
-					<div class="modal-content">
-						<div class="modal-header">
-							 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                            <h3 class="modal-title" id="myModalLabel">toyota<span> yaris</span>
-							</h3>
-                                
-                            <div class="clear"></div>
-                            
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <p>Publicado el 11 de Enero de 2014</p>
-                                </div>
-                                <div class="col-sm-6 verde textder">
-                                    Agregar al comprador
-                                </div>
-							</div>
-                            
-                            
-                            
-                            
-                            
-						</div>
-						<div class="modal-body">
-							<div class="row gris-claro">
-                                <div class="col-md-7 carrusel">
-                                    <div class="carrusel" style="width: 447px;">
-                                        <ul id="imageGallery">
-                                          <li data-thumb="img/thumb/cS-1.jpg" data-src="img/largeImage.jpg">
-                                            <img src="img/cS-1.jpg" />
-                                          </li>
-                                          <li data-thumb="img/thumb/cS-2.jpg" data-src="img/largeImage1.jpg">
-                                            <img src="img/cS-2.jpg" />
-                                          </li>
-                                          <li data-thumb="img/thumb/cS-3.jpg" data-src="img/largeImage2.jpg">
-                                            <img src="img/cS-3.jpg" />
-                                          </li>
-                                          <li data-thumb="img/thumb/cS-4.jpg" data-src="img/largeImage3.jpg">
-                                            <img src="img/cS-4.jpg" />
-                                          </li>
-                                          <!--<li data-thumb="img/thumb/cS-5.jpg" data-src="img/largeImage4.jpg">
-                                            <img src="img/cS-5.jpg" />
-                                          </li>
-                                          <li data-thumb="img/thumb/cS-6.jpg" data-src="img/largeImage5.jpg">
-                                            <img src="img/cS-6.jpg" />
-                                          </li>
-                                          <li data-thumb="img/thumb/cS-7.jpg" data-src="img/largeImage6.jpg">
-                                            <img src="img/cS-7.jpg" />
-                                          </li>
-                                          <li data-thumb="img/thumb/cS-8.jpg" data-src="img/largeImage7.jpg">
-                                            <img src="img/cS-8.jpg" />
-                                          </li>-->
-                                        </ul>
-    </div> 
-                                </div>
-                                <div class="col-md-5 descripcion">
-                                    <ul class="lista-descripcion">
-                                        <li>Año: <span>2014</span></li>
-                                        <li>Kilometraje: <span>20.000</span></li>
-                                        <li>Color: <span>Gris</span></li>
-                                        <li>Combustible: <span>Bencina</span></li>
-                                        <li>Tipo: <span>Automóvil</span></li>
-                                        <li>Carrocería: <span>Coupe</span></li>
-                                        <li>Cilindraje: <span>2.0</span></li>
-                                        <li>Patente: <span>PZXC21</span></li>
-                                        <li>Precio: <span>$4.000.000</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="row veinte-pad">
-                                <div class="col-md-12">
-                                    <h2 class="verde">Equipamiento</h2>
-        <div class="row">
-		<div class="col-md-12">
-            
-            <div class="demo">
-        <ul id="demo" class="content-slider">
-            <li>
-                <h3>1</h3>
-            </li>
-            <li>
-                <h3>2</h3>
-            </li>
-            <li>
-                <h3>3</h3>
-            </li>
-            <li>
-                <h3>4</h3>
-            </li>
-            <li>
-                <h3>5</h3>
-            </li>
-            <li>
-                <h3>6</h3>
-            </li>
-        </ul>
-    </div>
-            
-                <div id="Carousel1" class="carousel slide" data-interval="false">
-                 
-                <ol class="carousel-indicators">
-                    <li data-target="#Carousel1" data-slide-to="0" class="active"></li>
-                    <li data-target="#Carousel1" data-slide-to="1"></li>
-                    
-                </ol>
-                 
-                <!-- Carousel items -->
-                <div class="carousel-inner">
-                    
-                <div class="item active">
-                	<div class="row equipa">
-                	  <div class="col-md-2"><div class="thumbnail"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><br>Cierre centralizado</div></div>
-                        <div class="col-md-2"><div class="thumbnail"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><br>Radio</div></div>
-                        <div class="col-md-2"><div class="thumbnail"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><br>Aire acondicionado</div></div>
-                        <div class="col-md-2"><div class="thumbnail"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><br>Alarma</div></div>
-                        <div class="col-md-2"><div class="thumbnail"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><br>Alzavidrios eléctrico</div></div>
-                        <div class="col-md-2"><div class="thumbnail"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><br>Frenos ABS</div></div>
-                		
-                	</div><!--.row-->
-                </div><!--.item-->
-                 
-                <div class="item">
-                	<div class="row equipa">
-                		<div class="col-md-2"><div class="thumbnail"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><br>Sun Roof</div></div>
-                        <div class="col-md-2"><div class="thumbnail"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><br>Airbag</div></div>
-                        <div class="col-md-2"><div class="thumbnail"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><br>Aire acondicionado</div></div>
-                        <div class="col-md-2"><div class="thumbnail"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><br>5 puertas</div></div>
-                        
-                	</div><!--.row-->
-                </div><!--.item-->
-                 
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+            <img alt="Brand" src="images/3.png">
+            </a>
+         </div>
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+             
+            <form class="navbar-form navbar-left" role="search">
                 
-                 
-                </div><!--.carousel-inner-->
-                  <a data-slide="prev" href="#Carousel1" class="left carousel-control1">‹</a>
-                  <a data-slide="next" href="#Carousel1" class="right carousel-control1">›</a>
-                </div><!--.Carousel-->
-                 
-		</div>
-	</div>
-                                    
-                                </div>
-                            </div>
-                            <div class="row gris-claro veinte-pad">
-                                <h2 class="verde">Vendedor</h2>
-                                
-                                <div class="col-md-12 wrapp">
-                                    <ul class="user-detalle">
-                                        <li><img src= "images/user.jpg" alt="user" class="img-circle"></li>
-                                        <li><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> Francisco Garcia-Huidobro</li>
-                                        <li><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> Calificación</li>
-                                        <li><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> +56 9 9214 90 89</li>
-                                        <li><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> franciscogh@gmail.com</li>
-                                        <li><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> Talca, VII Región</li>
-                                        <li><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> El auto está excelente, cero fallas. El comentario de mi auto en un máximo de 100 caracteres</li>
-                                    </ul>
-                                    <br>
-                                    
-                                </div>
-                                
-                            </div>
-                            <div class="row veinte-pad">
-                                <h2 class="verde">Similares</h2>
-                                <div class="col-md-4 col-sm-5 col-xs-12">
-
-                            <div class="thumbnail">
-
-                                <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
-                                   <img alt="300x200" src="images/coche4.png">
-                                </a>
-                                <div class="thumbprecio">
-                                    $3.000.000
-                                </div>
-                                <div class="caption">
-                                    <div class="marca">
-                                        <h4>
-                                        ford<span> windstar</span>
-                                        </h4>
+               <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Auto, Automotora, etc">
+               </div>
+               <button type="submit" class="btn btn-default">Buscar</button>
+            </form>
+            <ul id="demo-1" class="nav navbar-nav navbar-right">
+               <li><a href="#"><i class="fa fa-suitcase"></i> Publicar </a></li>
+               <li class="dropdown">
+                  <a href="#" class="dropdown-toggle profile-image" data-toggle="dropdown"><img src="images/user.jpg" class="img-circle special-img"> Alejandro <b class="caret"></b></a>
+                  <ul class="dropdown-menu dropdown-menu animated fadeInUp">
+                     <li><a href="#"><i class="fa fa-cog"></i> Perfil </a></li>
+                     <li class="divider"></li>
+                     <li><a href="#"><i class="fa fa-sign-out"></i> Salir </a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+</div>
+    
+<!---------------------------------------------------->      
+<!------------------- FILTRADO ----------------------->
+<!---------------------------------------------------->
+    
+<div class="container-fluid blanco">
+   <div class="container">
+      <div class="cien"></div>
+      <div class="row">
+         <div class="col-md-12">
+            <div class="col-md-2 hidden-sm"></div>
+            <div class="col-md-10 col-md-offset-1 col-sm-12">
+               <div class="row">
+                  <div class="col-md-12 col-sm-12 filtrado">
+                     <!--aqui-->
+                     <div class="collapse" id="collapseExample">
+                        <div class="row slide-rangos">
+                           <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 treinta">
+                              <!--<div class="row">
+                                 <div class="col-md-12">-->
+                              <form role="form">
+                                 <div class="controls">
+                                    <label class="label-bold">Ubicación</label>
+                                    <!--<input class="form-control input-sm" type="text" placeholder=".input-sm">-->
+                                    <select class="form-control input-sm">
+                                       <option value="">Región</option>
+                                       <option value="">Antofagasta</option>
+                                       <option value="">Metropolitana</option>
+                                       <option value="">Valparaíso</option>
+                                       <option value="">O'Higgins</option>
+                                       <option value="">Maule</option>
+                                    </select>
+                                    <select class="form-control input-sm">
+                                       <option value="">Ciudad</option>
+                                       <option value="">Antofagasta</option>
+                                       <option value="">Valparaiso</option>
+                                       <option value="">Viña del Mar</option>
+                                       <option value="">Santiago</option>
+                                       <option value="">Rancagua</option>
+                                       <option value="">Curicó</option>
+                                       <option value="">Talca</option>
+                                       <option value="">Linares</option>
+                                       <option value="">Maule</option>
+                                    </select>
+                                 </div>
+                              </form>
+                              <!-- </div>
+                                 </div>-->
+                           </div>
+                           <!--LINEA OCULTA-->
+                           <hr class="hidden-lg hidden-md hidden-sm col-xs-12">
+                           <div class="col-lg-6 col-md-6 col-sm-6  col-xs-12 treinta lineader">
+                              <form action="#">
+                                 <fieldset id="col-med">
+                                    <label class="label-bold">Precio</label><br>
+                                    <label for="valueA">Desde</label>
+                                    <select name="valueA" id="valueA">
+                                       <option value="6am">- $1.000.000</option>
+                                       <option value="7am">$1.000.000</option>
+                                       <option value="8am" selected="selected">$2.000.000</option>
+                                       <option value="9am">$3.000.000</option>
+                                       <option value="10am">$4.000.000</option>
+                                       <option value="11am">$5.000.000</option>
+                                       <option value="Noon">$6.000.000</option>
+                                       <option value="1pm">$7.000.000</option>
+                                       <option value="2pm">$8.000.000</option>
+                                       <option value="3pm">$9.000.000</option>
+                                       <option value="4pm">$10.000.000</option>
+                                       <option value="5pm">+ $10.000.000</option>
+                                    </select>
+                                    <label for="valueB">hasta</label>
+                                    <select name="valueB" id="valueB">
+                                       <option value="6am">-$1.000.000</option>
+                                       <option value="7am">$1.000.000</option>
+                                       <option value="8am">$2.000.000</option>
+                                       <option value="9am">$3.000.000</option>
+                                       <option value="10am">$4.000.000</option>
+                                       <option value="11am">$5.000.000</option>
+                                       <option value="Noon">$6.000.000</option>
+                                       <option value="1pm">$7.000.000</option>
+                                       <option value="2pm" selected="selected">$8.000.000</option>
+                                       <option value="3pm">$9.000.000</option>
+                                       <option value="4pm">$10.000.000</option>
+                                       <option value="5pm">+$10.000.000</option>
+                                       <!--<option value="6pm">6:00</option>
+                                          <option value="7pm">7:00</option>
+                                          <option value="8pm">8:00</option>
+                                          <option value="9pm">9:00</option>
+                                          <option value="10pm">10:00</option>
+                                          <option value="11pm">11:00</option>
+                                          <option value="12pm">12:00</option>-->
+                                    </select>
+                                 </fieldset>
+                              </form>
+                              <form action="#">
+                                 <fieldset>
+                                    <label class="label-bold">Año</label><br>
+                                    <label for="valueC">Desde</label>
+                                    <select name="valueC" id="valueC">
+                                       <option value="6am">- 1990</option>
+                                       <option value="7am">1990</option>
+                                       <option value="8am" >1991</option>
+                                       <option value="9am">1992</option>
+                                       <option value="10am">1993</option>
+                                       <option value="11am">1994</option>
+                                       <option value="Noon">1995</option>
+                                       <option value="1pm">1996</option>
+                                       <option value="2pm">1997</option>
+                                       <option value="3pm">1998</option>
+                                       <option value="4pm">1999</option>
+                                       <option value="5pm">2000</option>
+                                       <option value="6pm">2001</option>
+                                       <option value="7pm">2002</option>
+                                       <option value="8pm" selected="selected">2003</option>
+                                       <option value="9pm">2004</option>
+                                       <option value="10pm">2005</option>
+                                       <option value="11pm">2006</option>
+                                       <option value="12pm">2007</option>
+                                       <option value="13pm">2008</option>
+                                       <option value="14pm">2009</option>
+                                       <option value="15pm">2010</option>
+                                       <option value="16pm">2011</option>
+                                       <option value="17pm">2012</option>
+                                       <option value="18pm">2013</option>
+                                       <option value="19pm">2014</option>
+                                       <option value="20pm">2015</option>
+                                    </select>
+                                    <label for="valueD">hasta</label>
+                                    <select name="valueD" id="valueD">
+                                       <option value="6am">- 1990</option>
+                                       <option value="7am">1990</option>
+                                       <option value="8am">1991</option>
+                                       <option value="9am">1992</option>
+                                       <option value="10am">1993</option>
+                                       <option value="11am">1994</option>
+                                       <option value="Noon">1995</option>
+                                       <option value="1pm">1996</option>
+                                       <option value="2pm">1997</option>
+                                       <option value="3pm">1998</option>
+                                       <option value="4pm">1999</option>
+                                       <option value="5pm">2000</option>
+                                       <option value="6pm">2001</option>
+                                       <option value="7pm">2002</option>
+                                       <option value="8pm">2003</option>
+                                       <option value="9pm">2004</option>
+                                       <option value="10pm">2005</option>
+                                       <option value="11pm">2006</option>
+                                       <option value="12pm">2007</option>
+                                       <option value="13pm">2008</option>
+                                       <option value="14pm">2009</option>
+                                       <option value="15pm">2010</option>
+                                       <option value="16pm">2011</option>
+                                       <option value="17pm">2012</option>
+                                       <option value="18pm" selected="selected">2013</option>
+                                       <option value="19pm">2014</option>
+                                       <option value="20pm">2015</option>
+                                    </select>
+                                 </fieldset>
+                              </form>
+                              <form action="#">
+                                 <fieldset>
+                                    <label class="label-bold">Kilometraje</label><br>
+                                    <label for="valueE">Desde</label>
+                                    <select name="valueE" id="valueE">
+                                       <option value="6am">- 1990</option>
+                                       <option value="7am">1990</option>
+                                       <option value="8am" >1991</option>
+                                       <option value="9am">1992</option>
+                                       <option value="10am">1993</option>
+                                       <option value="11am">1994</option>
+                                       <option value="Noon">1995</option>
+                                       <option value="1pm">1996</option>
+                                       <option value="2pm">1997</option>
+                                       <option value="3pm">1998</option>
+                                       <option value="4pm">1999</option>
+                                       <option value="5pm">2000</option>
+                                       <option value="6pm">2001</option>
+                                       <option value="7pm">2002</option>
+                                       <option value="8pm" selected="selected">2003</option>
+                                       <option value="9pm">2004</option>
+                                       <option value="10pm">2005</option>
+                                       <option value="11pm">2006</option>
+                                       <option value="12pm">2007</option>
+                                       <option value="13pm">2008</option>
+                                       <option value="14pm">2009</option>
+                                       <option value="15pm">2010</option>
+                                       <option value="16pm">2011</option>
+                                       <option value="17pm">2012</option>
+                                       <option value="18pm">2013</option>
+                                       <option value="19pm">2014</option>
+                                       <option value="20pm">2015</option>
+                                    </select>
+                                    <label for="valueF">hasta</label>
+                                    <select name="valueF" id="valueF">
+                                       <option value="6am">- 1990</option>
+                                       <option value="7am">1990</option>
+                                       <option value="8am">1991</option>
+                                       <option value="9am">1992</option>
+                                       <option value="10am">1993</option>
+                                       <option value="11am">1994</option>
+                                       <option value="Noon">1995</option>
+                                       <option value="1pm">1996</option>
+                                       <option value="2pm">1997</option>
+                                       <option value="3pm">1998</option>
+                                       <option value="4pm">1999</option>
+                                       <option value="5pm">2000</option>
+                                       <option value="6pm">2001</option>
+                                       <option value="7pm">2002</option>
+                                       <option value="8pm">2003</option>
+                                       <option value="9pm">2004</option>
+                                       <option value="10pm">2005</option>
+                                       <option value="11pm">2006</option>
+                                       <option value="12pm">2007</option>
+                                       <option value="13pm">2008</option>
+                                       <option value="14pm">2009</option>
+                                       <option value="15pm">2010</option>
+                                       <option value="16pm">2011</option>
+                                       <option value="17pm">2012</option>
+                                       <option value="18pm" selected="selected">2013</option>
+                                       <option value="19pm">2014</option>
+                                       <option value="20pm">2015</option>
+                                    </select>
+                                 </fieldset>
+                              </form>
+                              <div class="row">
+                                 <div class="col-md-6 col-sm-8 col-xs-12">
+                                    <form action="#">
+                                       <fieldset>
+                                          <label class="label-bold">Cilindraje</label><br>
+                                          <label for="valueG">De</label>
+                                          <select name="valueG" id="valueG">
+                                             <option value="6am">- 1.6cc</option>
+                                             <option value="7am"selected="selected">1.6cc</option>
+                                             <option value="8am">1.8cc</option>
+                                             <option value="9am">2.0cc</option>
+                                             <option value="10am">2.2cc</option>
+                                             <option value="11am">2.6cc</option>
+                                             <option value="Noon">2.8cc</option>
+                                             <option value="1pm">3.0cc</option>
+                                             <option value="2pm">3.4cc</option>
+                                             <option value="3pm">4.0cc</option>
+                                             <option value="4pm">5.0cc</option>
+                                             <option value="5pm">6.0cc</option>
+                                             <option value="6pm">7.0cc</option>
+                                             <option value="7pm">8.0cc</option>
+                                             <option value="8pm">+ 8.0cc</option>
+                                          </select>
+                                          <label for="valueH">a</label>
+                                          <select name="valueH" id="valueH">
+                                             <option value="6am">- 1.6cc</option>
+                                             <option value="7am">1.6cc</option>
+                                             <option value="8am">1.8cc</option>
+                                             <option value="9am">2.0cc</option>
+                                             <option value="10am"selected="selected">2.2cc</option>
+                                             <option value="11am">2.6cc</option>
+                                             <option value="Noon">2.8cc</option>
+                                             <option value="1pm">3.0cc</option>
+                                             <option value="2pm">3.4cc</option>
+                                             <option value="3pm">4.0cc</option>
+                                             <option value="4pm">5.0cc</option>
+                                             <option value="5pm">6.0cc</option>
+                                             <option value="6pm">7.0cc</option>
+                                             <option value="7pm">8.0cc</option>
+                                             <option value="8pm" >+ 8.0cc</option>
+                                          </select>
+                                       </fieldset>
+                                    </form>
+                                 </div>
+                                 <div class="col-md-6 col-sm-4 col-xs-12 o veinte">
+                                    <div class="o">
+                                       <p>o</p>
                                     </div>
-
-                                    <div class="clear"></div>
-                                    <div class="thumbano">
-                                        2000
+                                    <div class="radio automatico">
+                                       <label><input type="checkbox" name="optradio">Automático</label>
                                     </div>
-                                    <div class="thumbvista">
-                                        <span class="glyphicon glyphicon-eye-open"></span> 17
-                                    </div>
-                                </div>
-
-                            </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--LINEA OCULTA-->
+                           <hr class="hidden-lg hidden-md hidden-sm col-xs-12">
+                           <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 treinta">
+                              <form role="form">
+                                 <div class="controls">
+                                    <!--<input class="form-control input-sm" type="text" placeholder=".input-sm">-->
+                                    <label class="label-bold">Detalles</label><br>
+                                    <select class="form-control input-sm">
+                                       <option value="" selected hidden="hidden">Marca</option>
+                                       <option value="">Todas las marcas</option>
+                                       <option value="82">Abat</option>
+                                       <option value="83">Acadian</option>
+                                       <option value="84">Acura</option>
+                                       <option value="85">Adventure</option>
+                                       <option value="86">Africa</option>
+                                       <option value="87">Agrale</option>
+                                       <option value="88">Agromaq</option>
+                                       <option value="89">Agusta</option>
+                                       <option value="90">AJS</option>
+                                       <option value="91">Alba Motors</option>
+                                       <option value="3">Alfa Romeo</option>
+                                       <option value="92">AMC</option>
+                                       <option value="93">American Motors</option>
+                                       <option value="94">Aprilia</option>
+                                       <option value="95">Aqualine</option>
+                                       <option value="96">Aro</option>
+                                       <option value="97">Articat</option>
+                                       <option value="98">Artigiana</option>
+                                       <option value="99">Asia</option>
+                                       <option value="4">Aston Martin</option>
+                                       <option value="100">Atlas</option>
+                                       <option value="101">ATV</option>
+                                       <option value="5">Audi</option>
+                                       <option value="102">Aupa</option>
+                                       <option value="103">Ausa</option>
+                                       <option value="104">Austin</option>
+                                       <option value="105">Automoto</option>
+                                       <option value="106">Autorrad</option>
+                                       <option value="107">Baja</option>
+                                       <option value="108">Bajaj</option>
+                                       <option value="109">Baldan</option>
+                                       <option value="110">Baolat</option>
+                                       <option value="111">Baotion</option>
+                                       <option value="112">Bashan</option>
+                                       <option value="113">Bayliner</option>
+                                       <option value="114">Belarus</option>
+                                       <option value="115">Belav - Tomav</option>
+                                       <option value="116">Benelli</option>
+                                       <option value="6">Bentley </option>
+                                       <option value="117">Benyi</option>
+                                       <option value="118">Benzhou</option>
+                                       <option value="119">Bertone</option>
+                                       <option value="120">Bimota</option>
+                                       <option value="121">Black Diamond</option>
+                                       <option value="7">BMW</option>
+                                       <option value="122">Bobcat</option>
+                                       <option value="123">Bohemia</option>
+                                       <option value="124">Bomag</option>
+                                       <option value="125">Bombard</option>
+                                       <option value="126">Bombardier</option>
+                                       <option value="127">Bonluck</option>
+                                       <option value="128">Borgward</option>
+                                       <option value="129">Bortex</option>
+                                       <option value="130">Breuer</option>
+                                       <option value="131">Breviglieri</option>
+                                       <option value="132">Brias</option>
+                                       <option value="133">Brilliant</option>
+                                       <option value="134">Brillon</option>
+                                       <option value="135">Bros</option>
+                                       <option value="136">BRP CAN-AM</option>
+                                       <option value="137">BSA</option>
+                                       <option value="8">Bugatti</option>
+                                       <option value="138">Buggy</option>
+                                       <option value="139">Buick</option>
+                                       <option value="140">Busscar</option>
+                                       <option value="141">BYD</option>
+                                       <option value="142">Caburga</option>
+                                       <option value="9">Cadillac</option>
+                                       <option value="143">Cagina</option>
+                                       <option value="144">Cagiva</option>
+                                       <option value="145">Caky</option>
+                                       <option value="146">Can-Am</option>
+                                       <option value="147">Canoa</option>
+                                       <option value="148">Case</option>
+                                       <option value="149">Catalina</option>
+                                       <option value="150">Caterpillar</option>
+                                       <option value="370">Cestari</option>
+                                       <option value="151">CF Moto</option>
+                                       <option value="152">CGB Trailer</option>
+                                       <option value="153">Chandler</option>
+                                       <option value="154">Changan</option>
+                                       <option value="155">Changjeng</option>
+                                       <option value="156">Cherokee</option>
+                                       <option value="10">Chery</option>
+                                       <option value="11">Chevrolet</option>
+                                       <option value="157">Chituma</option>
+                                       <option value="158">Choice</option>
+                                       <option value="12">Chrysler</option>
+                                       <option value="159">Cima</option>
+                                       <option value="2">Citroen</option>
+                                       <option value="160">Coachmen</option>
+                                       <option value="161">Cobalt</option>
+                                       <option value="162">Coleman</option>
+                                       <option value="163">Coloso</option>
+                                       <option value="164">Comil</option>
+                                       <option value="165">Compair</option>
+                                       <option value="166">Comuta-Car</option>
+                                       <option value="13">Corvette</option>
+                                       <option value="167">Cross</option>
+                                       <option value="168">Custom</option>
+                                       <option value="14">Dacia</option>
+                                       <option value="169">Dadyw</option>
+                                       <option value="170">Daelim</option>
+                                       <option value="171">Daewoo</option>
+                                       <option value="172">Daf</option>
+                                       <option value="15">Daihatsu</option>
+                                       <option value="173">Datsun</option>
+                                       <option value="174">Dax</option>
+                                       <option value="175">Dayun</option>
+                                       <option value="176">Demag</option>
+                                       <option value="177">Deutz-Fahr</option>
+                                       <option value="178">DFM</option>
+                                       <option value="179">Dimex</option>
+                                       <option value="204">Disher Sportscars</option>
+                                       <option value="180">Divermaq</option>
+                                       <option value="181">DKW</option>
+                                       <option value="16">Dodge</option>
+                                       <option value="182">Dongfeng</option>
+                                       <option value="183">Ducar</option>
+                                       <option value="184">Ducati</option>
+                                       <option value="185">Duroboat</option>
+                                       <option value="186">Eager Beaver</option>
+                                       <option value="187">Eagle</option>
+                                       <option value="188">Ecoline</option>
+                                       <option value="189">Elho</option>
+                                       <option value="190">Escape</option>
+                                       <option value="191">Estuder</option>
+                                       <option value="192">Euromot</option>
+                                       <option value="193">Europard</option>
+                                       <option value="194">Exel</option>
+                                       <option value="195">Fada</option>
+                                       <option value="196">Falc</option>
+                                       <option value="197">Farmtrac</option>
+                                       <option value="198">Fayser</option>
+                                       <option value="17">Ferrari</option>
+                                       <option value="18">Fiat</option>
+                                       <option value="199">Fiatallis</option>
+                                       <option value="200">Fibermold</option>
+                                       <option value="201">Fibertex</option>
+                                       <option value="202">Fina</option>
+                                       <option value="203">Firemax</option>
+                                       <option value="205">Fleewood</option>
+                                       <option value="206">FMA</option>
+                                       <option value="19">Ford</option>
+                                       <option value="207">Forson</option>
+                                       <option value="208">Foton </option>
+                                       <option value="209">Four</option>
+                                       <option value="210">Free Way</option>
+                                       <option value="211">Freightliner</option>
+                                       <option value="212">Fruehauf</option>
+                                       <option value="213">Fullcar</option>
+                                       <option value="214">Futong</option>
+                                       <option value="215">Galion</option>
+                                       <option value="216">Gama</option>
+                                       <option value="217">Gardella</option>
+                                       <option value="218">Garelli</option>
+                                       <option value="219">Gas Gas</option>
+                                       <option value="220">Geely</option>
+                                       <option value="221">Geo</option>
+                                       <option value="222">Gilera</option>
+                                       <option value="223">Glastrom</option>
+                                       <option value="224">GMC</option>
+                                       <option value="225">Goldini</option>
+                                       <option value="226">Goren</option>
+                                       <option value="227">Great Wall</option>
+                                       <option value="228">Greenmaster</option>
+                                       <option value="229">Gribaldi & Salvia</option>
+                                       <option value="230">Grimme</option>
+                                       <option value="231">Grove</option>
+                                       <option value="232">Grua</option>
+                                       <option value="233">Guzzi</option>
+                                       <option value="234">Hafei</option>
+                                       <option value="235">Haima</option>
+                                       <option value="236">Hardi</option>
+                                       <option value="237">Harford</option>
+                                       <option value="238">Harley Davidson</option>
+                                       <option value="239">Hechizo</option>
+                                       <option value="240">Heli</option>
+                                       <option value="241">Hensin</option>
+                                       <option value="242">Hero Puch</option>
+                                       <option value="243">Hino</option>
+                                       <option value="251">Hisqvarna</option>
+                                       <option value="244">Hitachi</option>
+                                       <option value="20">Honda</option>
+                                       <option value="245">Honex</option>
+                                       <option value="246">Howard</option>
+                                       <option value="247">Huatai</option>
+                                       <option value="248">Hudson</option>
+                                       <option value="21">Hummer</option>
+                                       <option value="249">Hunter</option>
+                                       <option value="250">Husaber</option>
+                                       <option value="252">Hyosung</option>
+                                       <option value="253">Hyster</option>
+                                       <option value="22">Hyundai</option>
+                                       <option value="254">Ibiza</option>
+                                       <option value="255">Ika</option>
+                                       <option value="256">Indusa</option>
+                                       <option value="23">Infiniti</option>
+                                       <option value="257">Ingersoll Rand</option>
+                                       <option value="258">Inrecar</option>
+                                       <option value="259">International</option>
+                                       <option value="24">Isuzu</option>
+                                       <option value="261">Iveco</option>
+                                       <option value="260">Ivermoto</option>
+                                       <option value="262">Ivesa</option>
+                                       <option value="263">Jaar</option>
+                                       <option value="264">JAC Motors</option>
+                                       <option value="265">Jacto</option>
+                                       <option value="25">Jaguar</option>
+                                       <option value="266">Jan</option>
+                                       <option value="267">Jayco</option>
+                                       <option value="268">JCB</option>
+                                       <option value="26">Jeep</option>
+                                       <option value="269">JF</option>
+                                       <option value="270">Jialing</option>
+                                       <option value="271">Jianshe</option>
+                                       <option value="272">Jiapeng</option>
+                                       <option value="273">Jin Lun</option>
+                                       <option value="274">Jinbei</option>
+                                       <option value="275">Jincheng</option>
+                                       <option value="276">Jinma</option>
+                                       <option value="277">JMC</option>
+                                       <option value="278">John Deere</option>
+                                       <option value="279">Jonh Henry</option>
+                                       <option value="280">Jonway</option>
+                                       <option value="281">Joyride</option>
+                                       <option value="282">Jumil</option>
+                                       <option value="283">Jurmar</option>
+                                       <option value="284">Kamaz</option>
+                                       <option value="285">Kawasaki</option>
+                                       <option value="286">Kayak</option>
+                                       <option value="287">Keeway</option>
+                                       <option value="288">Kenworth</option>
+                                       <option value="289">Keystone</option>
+                                       <option value="27">Kia</option>
+                                       <option value="290">Kia Motors</option>
+                                       <option value="291">Kingyard</option>
+                                       <option value="292">Kinlon</option>
+                                       <option value="293">Kinroad</option>
+                                       <option value="294">Knight</option>
+                                       <option value="295">Kobelco</option>
+                                       <option value="296">Komatsu</option>
+                                       <option value="297">KTM</option>
+                                       <option value="298">Kuhn</option>
+                                       <option value="299">Kvernerland</option>
+                                       <option value="300">Kymco</option>
+                                       <option value="301">KZ</option>
+                                       <option value="302">Labounty</option>
+                                       <option value="303">Lada</option>
+                                       <option value="309">Laike</option>
+                                       <option value="28">Lamborghini</option>
+                                       <option value="304">Lambretta</option>
+                                       <option value="29">Lancia</option>
+                                       <option value="305">Land Mark</option>
+                                       <option value="30">Land Rover</option>
+                                       <option value="306">Landini</option>
+                                       <option value="307">Larson</option>
+                                       <option value="308">Laverda</option>
+                                       <option value="310">Lely</option>
+                                       <option value="311">Lemken</option>
+                                       <option value="31">Lexus</option>
+                                       <option value="312">Leyland</option>
+                                       <option value="32">Lifan</option>
+                                       <option value="313">Lihhai</option>
+                                       <option value="314">Lincoln</option>
+                                       <option value="315">Lishan Bus</option>
+                                       <option value="316">Litostrog</option>
+                                       <option value="317">LML</option>
+                                       <option value="318">Loncin</option>
+                                       <option value="319">Longstar</option>
+                                       <option value="33">Lotus</option>
+                                       <option value="320">Luojia</option>
+                                       <option value="321">Machile</option>
+                                       <option value="322">Mack</option>
+                                       <option value="323">Madal</option>
+                                       <option value="324">Magirus Deutz</option>
+                                       <option value="326">Mahindra</option>
+                                       <option value="327">Maico</option>
+                                       <option value="328">MainMotor</option>
+                                       <option value="329">Majesa</option>
+                                       <option value="330">Manac</option>
+                                       <option value="325">Mangrinsa</option>
+                                       <option value="331">Marchesan</option>
+                                       <option value="332">Marcopolo</option>
+                                       <option value="333">Mariner</option>
+                                       <option value="34">Maserati</option>
+                                       <option value="334">Massey Ferguson</option>
+                                       <option value="335">Mathews Company</option>
+                                       <option value="336">Maxum</option>
+                                       <option value="35">Maybach</option>
+                                       <option value="337">Mayov</option>
+                                       <option value="36">Mazda</option>
+                                       <option value="37">Mercedes</option>
+                                       <option value="338">Mercedes Benz</option>
+                                       <option value="339">Mercruiser</option>
+                                       <option value="340">Mercury</option>
+                                       <option value="341">MG</option>
+                                       <option value="38">MG Rover</option>
+                                       <option value="342">Michigan</option>
+                                       <option value="343">Mikilon</option>
+                                       <option value="39">Mini</option>
+                                       <option value="344">Mini Cooper</option>
+                                       <option value="345">Mits</option>
+                                       <option value="40">Mitsubishi</option>
+                                       <option value="346">Monosem</option>
+                                       <option value="347">Monster</option>
+                                       <option value="348">Montelli</option>
+                                       <option value="349">Montenegro</option>
+                                       <option value="350">Monterrey</option>
+                                       <option value="351">Montesa</option>
+                                       <option value="352">Morbidelli</option>
+                                       <option value="41">Morgan </option>
+                                       <option value="353">Morris</option>
+                                       <option value="354">Moskito</option>
+                                       <option value="355">Moto ABC</option>
+                                       <option value="356">Moto-Vitale</option>
+                                       <option value="357">Motobi</option>
+                                       <option value="358">Motoguzzi</option>
+                                       <option value="359">Motorhome</option>
+                                       <option value="360">Motorrad</option>
+                                       <option value="361">Motosport</option>
+                                       <option value="362">Movil</option>
+                                       <option value="363">MSK</option>
+                                       <option value="364">MTD</option>
+                                       <option value="365">Mussre</option>
+                                       <option value="366">Mustang</option>
+                                       <option value="367">MV Agusta</option>
+                                       <option value="42">Nissan</option>
+                                       <option value="372">NSU</option>
+                                       <option value="43">Opel</option>
+                                       <option value="1">Otra marca</option>
+                                       <option value="44">Peugeot</option>
+                                       <option value="45">Pontiac</option>
+                                       <option value="46">Porsche</option>
+                                       <option value="47">Renault</option>
+                                       <option value="48">Rolls-Royce</option>
+                                       <option value="49">Rover</option>
+                                       <option value="50">Saab</option>
+                                       <option value="368">Samsung</option>
+                                       <option value="51">Santana </option>
+                                       <option value="52">Seat</option>
+                                       <option value="53">Skoda</option>
+                                       <option value="54">Smart</option>
+                                       <option value="55">Ssangyong</option>
+                                       <option value="56">Subaru</option>
+                                       <option value="57">Suzuki</option>
+                                       <option value="371">Takasaki</option>
+                                       <option value="58">Tata </option>
+                                       <option value="59">Toyota</option>
+                                       <option value="369">Triumph</option>
+                                       <option value="60">Volkswagen</option>
+                                       <option value="61">Volvo</option>
+                                       <option value="72">Yale</option>
+                                       <option value="73">Yamaha</option>
+                                       <option value="74">Yanmar</option>
+                                       <option value="75">Yarara</option>
+                                       <option value="76">Yepear</option>
+                                       <option value="77">Yingang</option>
+                                       <option value="78">Yinxiang</option>
+                                       <option value="79">Yomel</option>
+                                       <option value="80">Yuejin</option>
+                                       <option value="81">Yugo</option>
+                                       <option value="64">Zetor</option>
+                                       <option value="65">ZNA</option>
+                                       <option value="66">Znen Group</option>
+                                       <option value="67">Zodiac</option>
+                                       <option value="68">Zongshen</option>
+                                       <option value="69">Zotye</option>
+                                       <option value="70">Zueger</option>
+                                       <option value="63">Zumotho</option>
+                                       <option value="62">Zundapp</option>
+                                       <option value="71">ZX</option>
+                                    </select>
+                                    <input class="form-control input-sm" type="text" placeholder="Modelo">
+                                    <select class="form-control input-sm">
+                                       <option value="" selected hidden="hidden">Combustible</option>
+                                       <option value="0">Todos los combustibles</option>
+                                       <option value="2">Bencina</option>
+                                       <option value="3">Diesel</option>
+                                       <option value="4">Biodiesel</option>
+                                       <option value="5">Gas natural</option>
+                                       <option value="6">Eléctrico</option>
+                                       <option value="6">Híbrido</option>
+                                    </select>
+                                    <select class="form-control input-sm">
+                                       <option value="" selected hidden="hidden">Tipo</option>
+                                       <option value="0">Todos los tipos</option>
+                                       <option value="1">Automóvil</option>
+                                       <option value="2">Bus/Minibus</option>
+                                       <option value="3">Camión</option>
+                                       <option value="4">Camioneta</option>
+                                       <option value="5">Furgón</option>
+                                       <option value="6">Maquinaria</option>
+                                       <option value="7">Moto</option>
+                                       <option value="8">Naútico</option>
+                                       <option value="9">Todo terreno</option>
+                                       <option value="10">Van</option>
+                                    </select>
+                                    <select class="form-control input-sm">
+                                       <option value="" selected hidden="hidden">Carrocería</option>
+                                       <option value="0">Todas las carrocerías</option>
+                                       <option value="2">Cabina Simple</option>
+                                       <option value="3">City Car</option>
+                                       <option value="4">Coupe</option>
+                                       <option value="5">Doble Cabina</option>
+                                       <option value="6">Hatcback</option>
+                                       <option value="7">Sedan</option>
+                                       <option value="8">Station Vagon</option>
+                                       <option value="9">Suv</option>
+                                       <option value="1">Otra Carrocería</option>
+                                    </select>
+                                 </div>
+                                 <button type="submit" class="btn btn-default">Ver resultados</button>
+                              </form>
+                           </div>
                         </div>
-                    
-                    
-                    <div class="col-md-4 col-sm-5 col-xs-12">
-                         
-                        <div class="thumbnail">
-                            
-                            <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
-                               <img alt="300x200" src="images/coche5.png">
-                            </a>
-                            <div class="thumbprecio">
-                                $6.500.000
-                            </div>
-                            <div class="caption">
-                                <div class="marca">
-                                    <h4>
-                                    BMW<span> isetta</span>
-                                    </h4>
-                                </div>
-                                
-                                <div class="clear"></div>
-                                <div class="thumbano">
-                                    1954
-                                </div>
-                                <div class="thumbvista">
-                                    <span class="glyphicon glyphicon-eye-open"></span> 102
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="col-md-4 col-sm-5 col-xs-12">
-                         
-                        <div class="thumbnail">
-                            
-                            <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
-                               <img alt="300x200" src="images/coche6.png">
-                            </a>
-                            <div class="thumbprecio">
-                                $12.000.000
-                            </div>
-                            <div class="caption">
-                                <div class="marca">
-                                    <h4>
-                                    Volksvagen <span>Escaravajo</span>
-                                    </h4>
-                                </div>
-                                
-                                <div class="clear"></div>
-                                <div class="thumbano">
-                                    2011
-                                </div>
-                                <div class="thumbvista">
-                                    <span class="glyphicon glyphicon-eye-open"></span> 23
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                            </div>
-						</div>
-						<div class="modal-footer">
-							 <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-						</div>
-					</div>
-					
-				</div>
-				
-			</div> 
-          <!-------------------- FIN MODAL ---------------------->
-
-          <!----------------------------------------------------->
-          <!--------------------- THUMBS ------------------------>
-          <!----------------------------------------------------->
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-11 col-lg-offset-1">
-                    <h2>Estos son los últimos vehículos ingresados... <span>¡suerte!</span></h2><hr>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 t1">
-                <div class="thumbnail">
-                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+                     </div>
+                     <!--div oculto-->
                       
-                      <!-- Wrapper for slides -->
-                      <div class="carousel-inner" role="listbox" id="myCarousel" data-interval="10000">
-                        <div class="item active">
-                        <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
-                              <img src="images/yaris1.jpg" alt="foto"class="img-responsive">
-                        </a> 
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-2 hidden-sm"></div>
+         </div>
+      </div>
+   </div>
+   <!--fin contenedor normal-->
+</div>
+    
+<div class="container-fluid">
+    
+    <div class="col-lg-3 col-lg-offset-2 col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-2 col-xs-12 filtra">
+        
+        
+        
+        <a id="twit_1" class="twit" onclick="toggleTwit(1)" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <div>
+                <h2>Filtra tu búsqueda</h2>
+                <div class="arrow"></div>
+            </div>
+        </a>
+        
+    </div>
+    
+</div>
+<!--fin contenedor fluido-->
+                   
+<!------------------------------------------------------>      
+<!------------------ MODAL NORMAL ---------------------->
+<!------------------------------------------------------>
+          
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title" id="myModalLabel">
+               Modal title
+            </h4>
+         </div>
+         <div class="modal-body">
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> <button type="button" class="btn btn-primary">Save changes</button>
+         </div>
+      </div>
+   </div>
+</div>
+    
+<!---------------------------------------------------->      
+<!----------------- MODAL LARGE ---------------------->
+<!---------------------------------------------------->
+          
+<div class="modal fade" id="modal-container-786382" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 class="modal-title" id="myModalLabel">toyota<span> yaris</span>
+            </h3>
+            <div class="clear"></div>
+            <div class="row">
+               <div class="col-sm-6">
+                  <p>Publicado el 11 de Enero de 2014</p>
+               </div>
+               <div class="col-sm-6 verde textder">
+                  Agregar al comprador
+               </div>
+            </div>
+         </div>
+         <div class="modal-body">
+            <div class="row gris-claro">
+               <div class="col-md-7 carrusel">
+                  <div class="carrusel" style="width: 447px;">
+                     <ul id="imageGallery">
+                        <li data-thumb="img/thumb/cS-1.jpg" data-src="img/largeImage.jpg">
+                           <img src="img/cS-1.jpg" />
+                        </li>
+                        <li data-thumb="img/thumb/cS-2.jpg" data-src="img/largeImage1.jpg">
+                           <img src="img/cS-2.jpg" />
+                        </li>
+                        <li data-thumb="img/thumb/cS-3.jpg" data-src="img/largeImage2.jpg">
+                           <img src="img/cS-3.jpg" />
+                        </li>
+                        <li data-thumb="img/thumb/cS-4.jpg" data-src="img/largeImage3.jpg">
+                           <img src="img/cS-4.jpg" />
+                        </li>
+                        <!--<li data-thumb="img/thumb/cS-5.jpg" data-src="img/largeImage4.jpg">
+                           <img src="img/cS-5.jpg" />
+                           </li>
+                           <li data-thumb="img/thumb/cS-6.jpg" data-src="img/largeImage5.jpg">
+                           <img src="img/cS-6.jpg" />
+                           </li>
+                           <li data-thumb="img/thumb/cS-7.jpg" data-src="img/largeImage6.jpg">
+                           <img src="img/cS-7.jpg" />
+                           </li>
+                           <li data-thumb="img/thumb/cS-8.jpg" data-src="img/largeImage7.jpg">
+                           <img src="img/cS-8.jpg" />
+                           </li>-->
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-md-5 descripcion">
+                  <ul class="lista-descripcion">
+                     <li>Año: <span>2014</span></li>
+                     <li>Kilometraje: <span>20.000</span></li>
+                     <li>Color: <span>Gris</span></li>
+                     <li>Combustible: <span>Bencina</span></li>
+                     <li>Tipo: <span>Automóvil</span></li>
+                     <li>Carrocería: <span>Coupe</span></li>
+                     <li>Cilindraje: <span>2.0</span></li>
+                     <li>Patente: <span>PZXC21</span></li>
+                     <li>Precio: <span>$4.000.000</span></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="row veinte-pad">
+               <div class="col-md-12">
+                  <h2 class="verde">Equipamiento</h2>
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="demo">
+                           <ul id="demo" class="content-slider">
+                              <li>
+                                 <h3>1</h3>
+                              </li>
+                              <li>
+                                 <h3>2</h3>
+                              </li>
+                              <li>
+                                 <h3>3</h3>
+                              </li>
+                              <li>
+                                 <h3>4</h3>
+                              </li>
+                              <li>
+                                 <h3>5</h3>
+                              </li>
+                              <li>
+                                 <h3>6</h3>
+                              </li>
+                           </ul>
                         </div>
-                        <div class="item">
-                            <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal"><img src="images/yaris2.jpg" alt="foto"class="img-responsive">
-                            </a>
+                        <div id="Carousel1" class="carousel slide" data-interval="false">
+                           <ol class="carousel-indicators">
+                              <li data-target="#Carousel1" data-slide-to="0" class="active"></li>
+                              <li data-target="#Carousel1" data-slide-to="1"></li>
+                           </ol>
+                           <!-- Carousel items -->
+                           <div class="carousel-inner">
+                              <div class="item active">
+                                 <div class="row equipa">
+                                    <div class="col-md-2">
+                                       <div class="thumbnail"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><br>Cierre centralizado</div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="thumbnail"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><br>Radio</div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="thumbnail"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><br>Aire acondicionado</div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="thumbnail"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><br>Alarma</div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="thumbnail"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><br>Alzavidrios eléctrico</div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="thumbnail"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><br>Frenos ABS</div>
+                                    </div>
+                                 </div>
+                                 <!--.row-->
+                              </div>
+                              <!--.item-->
+                              <div class="item">
+                                 <div class="row equipa">
+                                    <div class="col-md-2">
+                                       <div class="thumbnail"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><br>Sun Roof</div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="thumbnail"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><br>Airbag</div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="thumbnail"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><br>Aire acondicionado</div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="thumbnail"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><br>5 puertas</div>
+                                    </div>
+                                 </div>
+                                 <!--.row-->
+                              </div>
+                              <!--.item-->
+                           </div>
+                           <!--.carousel-inner-->
+                           <a data-slide="prev" href="#Carousel1" class="left carousel-control1">‹</a>
+                           <a data-slide="next" href="#Carousel1" class="right carousel-control1">›</a>
                         </div>
-      
-                        <div class="item">
-                           <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal"><img src="images/yaris3.jpg" alt="foto"class="img-responsive">
-                           </a>
-                        </div>
-      
-                        <div class="item">
-                          <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal"><img src="images/yaris4.jpg" alt="foto"class="img-responsive">
-                          </a>
-                        </div>
-      
-                    </div>
-
-  <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                                
-                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                    </a>
-                </div>
-                    <div class="thumbprecio">
-                        $4.000.000
-                    </div>
-                    <div class="caption">
+                        <!--.Carousel-->
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row gris-claro veinte-pad">
+               <h2 class="verde">Vendedor</h2>
+               <div class="col-md-12 wrapp">
+                  <ul class="user-detalle">
+                     <li><img src= "images/user.jpg" alt="user" class="img-circle"></li>
+                     <li><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> Francisco Garcia-Huidobro</li>
+                     <li><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> Calificación</li>
+                     <li><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> +56 9 9214 90 89</li>
+                     <li><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> franciscogh@gmail.com</li>
+                     <li><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> Talca, VII Región</li>
+                     <li><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> El auto está excelente, cero fallas. El comentario de mi auto en un máximo de 100 caracteres</li>
+                  </ul>
+                  <br>
+               </div>
+            </div>
+            <div class="row veinte-pad">
+               <h2 class="verde">Similares</h2>
+               <div class="col-md-4 col-sm-5 col-xs-12">
+                  <div class="thumbnail">
+                     <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
+                     <img alt="300x200" src="images/coche4.png">
+                     </a>
+                     <div class="thumbprecio">
+                        $3.000.000
+                     </div>
+                     <div class="caption">
                         <div class="marca">
-                            <h4>toyota<span> yaris</span></h4>
+                           <h4>
+                              ford<span> windstar</span>
+                           </h4>
                         </div>
-                                
                         <div class="clear"></div>
                         <div class="thumbano">
-                                    2010
+                           2000
                         </div>
                         <div class="thumbvista">
-                            <span class="glyphicon glyphicon-eye-open"></span> 0
+                           <span class="glyphicon glyphicon-eye-open"></span> 17
                         </div>
-                    </div>    
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-5 col-xs-12">
+                  <div class="thumbnail">
+                     <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
+                     <img alt="300x200" src="images/coche5.png">
+                     </a>
+                     <div class="thumbprecio">
+                        $6.500.000
+                     </div>
+                     <div class="caption">
+                        <div class="marca">
+                           <h4>
+                              BMW<span> isetta</span>
+                           </h4>
                         </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 t1">
-                <div class="thumbnail">
-                                <a class="btn" href="#modal-container-786382" data-toggle="modal" data-target=".bs-example-modal-lg">
-                                   <img alt="300x200" src="images/coche.png">
-                                </a>
-                                <div class="thumbprecio">
-                                    $20.000.000
-                                </div>
-                                <div class="caption">
-                                    <div class="marca">
-                                        <h4>
-                                        auto union<span> 1000</span>
-                                        </h4>
-                                    </div>
-
-                                    <div class="clear"></div>
-                                    <div class="thumbano">
-                                        1958
-                                    </div>
-                                    <div class="thumbvista">
-                                        <span class="glyphicon glyphicon-eye-open"></span> 2
-                                    </div>
-                                </div>
-
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 t1">
-                <div class="thumbnail">
-                            <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
-                               <img alt="300x200" src="images/coche3.png">
-                            </a>
-                            <div class="thumbprecio">
-                                $2.000.000
-                            </div>
-                            <div class="caption">
-                                <div class="marca">
-                                    <h4>
-                                    vespa <span>946</span>
-                                    </h4>
-                                </div>
-                                
-                                <div class="clear"></div>
-                                <div class="thumbano">
-                                    2011
-                                </div>
-                                <div class="thumbvista">
-                                    <span class="glyphicon glyphicon-eye-open"></span> 56
-                                </div>
-                            </div>
-                            
+                        <div class="clear"></div>
+                        <div class="thumbano">
+                           1954
                         </div>
-            </div>
-            
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 t1 publicidad">
-                <p id="publi">Publicidad</p>
-            </div>
-            <div class="clear"></div>
-            <div class="col-lg-3 col-md-3 col-sm-6 t1">
-                <div class="thumbnail">
-
-                                <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
-                                   <img alt="300x200" src="images/coche4.png">
-                                </a>
-                                <div class="thumbprecio">
-                                    $3.000.000
-                                </div>
-                                <div class="caption">
-                                    <div class="marca">
-                                        <h4>
-                                        ford<span> windstar</span>
-                                        </h4>
-                                    </div>
-
-                                    <div class="clear"></div>
-                                    <div class="thumbano">
-                                        2000
-                                    </div>
-                                    <div class="thumbvista">
-                                        <span class="glyphicon glyphicon-eye-open"></span> 17
-                                    </div>
-                                </div>
-
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 t1">
-                <div class="thumbnail">
-                            <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
-                               <img alt="300x200" src="images/coche2.png">
-                            </a>
-                            <div class="thumbprecio">
-                                $2.300.000
-                            </div>
-                            <div class="caption">
-                                <div class="marca">
-                                    <h4>
-                                    suzuki<span> maruti</span>
-                                    </h4>
-                                </div>
-                                
-                                <div class="clear"></div>
-                                <div class="thumbano">
-                                    2005
-                                </div>
-                                <div class="thumbvista">
-                                    <span class="glyphicon glyphicon-eye-open"></span> 10
-                                </div>
-                            </div>
-                            
+                        <div class="thumbvista">
+                           <span class="glyphicon glyphicon-eye-open"></span> 102
                         </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-5 col-xs-12">
+                  <div class="thumbnail">
+                     <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
+                     <img alt="300x200" src="images/coche6.png">
+                     </a>
+                     <div class="thumbprecio">
+                        $12.000.000
+                     </div>
+                     <div class="caption">
+                        <div class="marca">
+                           <h4>
+                              Volksvagen <span>Escaravajo</span>
+                           </h4>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="thumbano">
+                           2011
+                        </div>
+                        <div class="thumbvista">
+                           <span class="glyphicon glyphicon-eye-open"></span> 23
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 t1">
-                 <div class="thumbnail">
-                            
-                            <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
-                               <img alt="300x200" src="images/coche5.png">
-                            </a>
-                            <div class="thumbprecio">
-                                $6.500.000
-                            </div>
-                            <div class="caption">
-                                <div class="marca">
-                                    <h4>
-                                    BMW<span> isetta</span>
-                                    </h4>
-                                </div>
-                                
-                                <div class="clear"></div>
-                                <div class="thumbano">
-                                    1954
-                                </div>
-                                <div class="thumbvista">
-                                    <span class="glyphicon glyphicon-eye-open"></span> 102
-                                </div>
-                            </div>
-                            
-                </div>
-            </div>
-            
-            <div class="col-lg-3 col-md-3 col-sm-6 t1">
-                <div class="thumbnail">
-                            
-                            <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
-                               <img alt="300x200" src="images/coche6.png">
-                            </a>
-                            <div class="thumbprecio">
-                                $12.000.000
-                            </div>
-                            <div class="caption">
-                                <div class="marca">
-                                    <h4>
-                                    Volksvagen <span>Escaravajo</span>
-                                    </h4>
-                                </div>
-                                
-                                <div class="clear"></div>
-                                <div class="thumbano">
-                                    2011
-                                </div>
-                                <div class="thumbvista">
-                                    <span class="glyphicon glyphicon-eye-open"></span> 23
-                                </div>
-                            </div>
-                            
-                </div>
-            </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 t1">
-                <div class="thumbnail">
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+         </div>
+      </div>
+   </div>
+</div>
 
-                                <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
-                                   <img alt="300x200" src="images/coche7.png">
-                                </a>
-                                <div class="thumbprecio">
-                                    $6.000.000
-                                </div>
-                                <div class="caption">
-                                    <div class="marca">
-                                        <h4>
-                                        renault<span> 4cv</span>
-                                        </h4>
-                                    </div>
+<!----------------------------------------------------->
+<!--------------------- THUMBS ------------------------>
+<!----------------------------------------------------->
 
-                                    <div class="clear"></div>
-                                    <div class="thumbano">
-                                        2011
-                                    </div>
-                                    <div class="thumbvista">
-                                        <span class="glyphicon glyphicon-eye-open"></span> 23
-                                    </div>
-                                </div>
-
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 t1">
-                <div class="thumbnail">
-                            
-                            <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
-                               <img alt="300x200" src="images/coche8.png">
-                            </a>
-                            <div class="thumbprecio">
-                                $6.000.000
-                            </div>
-                            <div class="caption">
-                                <div class="marca">
-                                    <h4>
-                                    fiat<span> cubo</span>
-                                    </h4>
-                                </div>
-                                
-                                <div class="clear"></div>
-                                <div class="thumbano">
-                                    2013
-                                </div>
-                                <div class="thumbvista">
-                                    <span class="glyphicon glyphicon-eye-open"></span> 15
-                                </div>
-                            </div>
-                            
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 t1">
-                <div class="thumbnail">
-                            
-                            <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
-                               <img alt="300x200" src="images/coche9.png">
-                            </a>
-                            <div class="thumbprecio">
-                                $12.000.000
-                            </div>
-                            <div class="caption">
-                                <div class="marca">
-                                    <h4>
-                                    zaporozhets <span>ZAZ-965A</span>
-                                    </h4>
-                                </div>
-                                
-                                <div class="clear"></div>
-                                <div class="thumbano">
-                                    1960
-                                </div>
-                                <div class="thumbvista">
-                                    <span class="glyphicon glyphicon-eye-open"></span> 42
-                                </div>
-                            </div>
-                            
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 t1">
-                 <div class="thumbnail">
-
-                                <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
-                                   <img alt="300x200" src="images/coche10.png">
-                                </a>
-                                <div class="thumbprecio">
-                                    $5.500.000
-                                </div>
-                                <div class="caption">
-                                    <div class="marca">
-                                        <h4>
-                                        ford<span> 100 F</span>
-                                        </h4>
-                                    </div>
-
-                                    <div class="clear"></div>
-                                    <div class="thumbano">
-                                        1965
-                                    </div>
-                                    <div class="thumbvista">
-                                        <span class="glyphicon glyphicon-eye-open"></span> 11
-                                    </div>
-                                </div>
-
-                    </div>
-            </div>
-        </div>
-    </div>
-
-
-
-        
-          
-          <!------------Paginación---------------> 
+<div class="container-fluid">
+   <div class="row">
+       <!--<div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12 veinte">
+               <div class="thumbnail bannerhor">
+                <a href="#" class="btn">
+                    <img alt="300x200" src="images/bannerhor1.jpg">
+                </a>
+               </div>
+            </div> 
+       </div>-->
+       
+      <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs col-publicidad"><!------ PUBLICIDAD ------->
           <div class="row">
-              
-              <div class="col-md-12 centrado">
-                  <ul class="pagination">
-                      <li><a href="#">&laquo;</a></li>
-                      <li><a href="#" id="focus">1</a></li>
-                      <li><a href="#">2</a></li>
-                      <li><a href="#">3</a></li>
-                      <li><a href="#">4</a></li>
-                      <li><a href="#">5</a></li>
-                      <li><a href="#">&raquo;</a></li>
-                  </ul>
+              <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12"><!------ BANNER ------->
+                <div class="thumbnail">
+                    <a href="#" class="btn">
+                        <img alt="300x200" src="images/bnnr8.png">
+                    </a>
+                </div> 
               </div>
-          </div>    
-          <!------------Footer--------------->
-          <footer id="footer-2" class="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 footer-info-wrapper">
-                            <span>SobreCoches © 2014. Todos los derechos reservados. <a href="http://getbootstrap.com/">Desarrollado en Bootstrap v3.0.0</a>.</span>                        
-                        </div>
-                        <!-- /.footer-info-wrapper -->
-                        <div class="col-xs-12 col-sm-6 footer-links-wrapper">
-                            <ul class="list-inline">
-                                <li><a href="#">Políticas de Privacidad</a></li>
-                                <li><a href="#">Términos de Servicio</a></li>
-                                <li><a href="#">Descargo de Responsabilidad</a></li>
-                            </ul>
-                            
-                        </div>
-                            
-                        
-                        <!-- /.footer-links-wrapper -->
-                    </div>
-                    
-                    <!-- /.row -->
-                </div>
-                <!-- /.container -->
               
-            </footer>
-
+              <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12"><!------ BANNER ------->
+                <div class="thumbnail">
+                    <a href="#" class="btn">
+                        <img alt="300x200" src="images/bnnr4.png">
+                    </a>
+                </div> 
+              </div>
+              <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12"><!------ BANNER ------->
+                <div class="thumbnail">
+                    <a href="#" class="btn">
+                        <img alt="300x200" src="images/bnnr3.png">
+                    </a>
+                </div> 
+              </div>
+          </div>
           
+      </div><!---- FIN PUBLICIDAD ---->
+       
+       
+      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 gris">
           
+         
           
+         <h2>Estos son los últimos vehículos ingresados... <span>¡suerte!</span></h2>
+         <hr>
+         <div class="row">
+             
+         
           
+          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 t1"><!------ THUMBNAIL ------->
           
-          
-          
-          
-          
-          
-          
+          <div class="thumbnail">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+               <!-- Wrapper for slides -->
+               <div class="carousel-inner" role="listbox" id="myCarousel" data-interval="10000">
+                  <div class="item active">
+                     <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
+                     <img src="images/yaris1.jpg" alt="foto"class="img-responsive">
+                     </a> 
+                  </div>
+                  <div class="item">
+                     <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal"><img src="images/yaris2.jpg" alt="foto"class="img-responsive">
+                     </a>
+                  </div>
+                  <div class="item">
+                     <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal"><img src="images/yaris3.jpg" alt="foto"class="img-responsive">
+                     </a>
+                  </div>
+                  <div class="item">
+                     <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal"><img src="images/yaris4.jpg" alt="foto"class="img-responsive">
+                     </a>
+                  </div>
+               </div>
+               <!-- Controls -->
+               <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+               <span class="sr-only">Previous</span>
+               </a>
+               <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+               <span class="sr-only">Next</span>
+               </a>
+            </div>
+            <div class="thumbprecio">
+               $4.000.000
+            </div>
+            <div class="caption">
+               <div class="marca">
+                  <h4>toyota<span> yaris</span></h4>
+               </div>
+               <div class="clear"></div>
+               <div class="thumbano">
+                  2010
+               </div>
+               <div class="thumbvista">
+                  <span class="glyphicon glyphicon-eye-open"></span> 0
+               </div>
+            </div>
+         </div>
           
       </div>
-      <!------------------FIN THUMBS-------------------------->
+             
+      <div class="hidden-lg hidden-md hidden-sm col-xs-12"> <!--Publicidad oculta-->
+          <div class="bannerhor">
+              <div class="thumbnail">
+                  <a href="#" class="btn">
+                    <img src="images/bannerhor.jpg">
+                  </a>
+              </div>
+          </div>
+      </div> 
+             
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 t1"><!------ THUMBNAIL ------->
+          
+          <div class="thumbnail">
+            <a class="btn" href="#modal-container-786382" data-toggle="modal" data-target=".bs-example-modal-lg">
+            <img alt="300x200" src="images/coche.png">
+            </a>
+            <div class="thumbprecio">
+               $20.000.000
+            </div>
+            <div class="caption">
+               <div class="marca">
+                  <h4>
+                     auto union<span> 1000</span>
+                  </h4>
+               </div>
+               <div class="clear"></div>
+               <div class="thumbano">
+                  1958
+               </div>
+               <div class="thumbvista">
+                  <span class="glyphicon glyphicon-eye-open"></span> 2
+               </div>
+            </div>
+         </div>
+          
+      </div>
+             
+      <div class="hidden-lg hidden-md hidden-sm col-xs-12"> <!--Publicidad oculta-->
+          <div class="bannerhor">
+              <div class="thumbnail">
+                  <a href="#" class="btn">
+                    <img src="images/bannerhor.jpg">
+                  </a>
+              </div>
+          </div>
+      </div> 
+               
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 t1"><!------ THUMBNAIL ------->
+          
+          <div class="thumbnail">
+            <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
+            <img alt="300x200" src="images/coche3.png">
+            </a>
+            <div class="thumbprecio">
+               $2.000.000
+            </div>
+            <div class="caption">
+               <div class="marca">
+                  <h4>
+                     vespa <span>946</span>
+                  </h4>
+               </div>
+               <div class="clear"></div>
+               <div class="thumbano">
+                  2011
+               </div>
+               <div class="thumbvista">
+                  <span class="glyphicon glyphicon-eye-open"></span> 56
+               </div>
+            </div>
+         </div>
+          
+      </div>
+             
+      <div class="hidden-lg hidden-md hidden-sm col-xs-12"> <!--Publicidad oculta-->
+          <div class="bannerhor">
+              <div class="thumbnail">
+                  <a href="#" class="btn">
+                    <img src="images/bannerhor.jpg">
+                  </a>
+              </div>
+          </div>
+      </div> 
+
+    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 t1"><!------ THUMBNAIL ------->
+          
+        <div class="thumbnail">
+           <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
+           <img alt="300x200" src="images/coche7.png">
+           </a>
+           <div class="thumbprecio">
+              $4.000.000
+           </div>
+           <div class="caption">
+              <div class="marca">
+                 <h4>
+                    chevrolet<span> spark</span>
+                 </h4>
+              </div>
+              <div class="clear"></div>
+              <div class="thumbano">
+                 2010
+              </div>
+              <div class="thumbvista">
+                 <span class="glyphicon glyphicon-eye-open"></span> 0
+              </div>
+           </div>
+        </div>
+          
+      </div>
+             
+      <div class="hidden-lg hidden-md hidden-sm col-xs-12"> <!--Publicidad oculta-->
+          <div class="bannerhor">
+              <div class="thumbnail">
+                  <a href="#" class="btn">
+                    <img src="images/bannerhor.jpg">
+                  </a>
+              </div>
+          </div>
+      </div> 
+             
+    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 t1"><!------ THUMBNAIL ------->
+          
+        <div class="thumbnail">
+           <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
+           <img alt="300x200" src="images/coche8.png">
+           </a>
+           <div class="thumbprecio">
+              $6.000.000
+           </div>
+           <div class="caption">
+              <div class="marca">
+                 <h4>
+                    fiat<span> cubo</span>
+                 </h4>
+              </div>
+              <div class="clear"></div>
+              <div class="thumbano">
+                 2013
+              </div>
+              <div class="thumbvista">
+                 <span class="glyphicon glyphicon-eye-open"></span> 15
+              </div>
+           </div>
+        </div>
+          
+      </div>
+             
+      <div class="hidden-lg hidden-md hidden-sm col-xs-12"> <!--Publicidad oculta-->
+          <div class="bannerhor">
+              <div class="thumbnail">
+                  <a href="#" class="btn">
+                    <img src="images/bannerhor.jpg">
+                  </a>
+              </div>
+          </div>
+      </div> 
+             
+    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 t1"><!------ THUMBNAIL ------->
+          
+        <div class="thumbnail">
+           <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
+           <img alt="300x200" src="images/coche5.png">
+           </a>
+           <div class="thumbprecio">
+              $5.500.000
+           </div>
+           <div class="caption">
+              <div class="marca">
+                 <h4>
+                    ford<span> 100 F</span>
+                 </h4>
+              </div>
+              <div class="clear"></div>
+              <div class="thumbano">
+                 1965
+              </div>
+              <div class="thumbvista">
+                 <span class="glyphicon glyphicon-eye-open"></span> 11
+              </div>
+           </div>
+        </div>
+          
+      </div>
+      
+      <div class="hidden-lg hidden-md hidden-sm col-xs-12"> <!--Publicidad oculta-->
+          <div class="bannerhor">
+              <div class="thumbnail">
+                  <a href="#" class="btn">
+                    <img src="images/bannerhor.jpg">
+                  </a>
+              </div>
+          </div>
+      </div> 
+             
+    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 t1"><!------ THUMBNAIL ------->
+          
+        <div class="thumbnail">
+           <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
+           <img alt="300x200" src="images/coche12.png">
+           </a>
+           <div class="thumbprecio">
+              $4.000.000
+           </div>
+           <div class="caption">
+              <div class="marca">
+                 <h4>
+                    kia <span>morning</span>
+                 </h4>
+              </div>
+              <div class="clear"></div>
+              <div class="thumbano">
+                 2010
+              </div>
+              <div class="thumbvista">
+                 <span class="glyphicon glyphicon-eye-open"></span> 7
+              </div>
+           </div>
+        </div>
+          
+      </div>
+             
+          <div class="hidden-lg hidden-md hidden-sm col-xs-12"> <!--Publicidad oculta-->
+          <div class="bannerhor">
+              <div class="thumbnail">
+                  <a href="#" class="btn">
+                    <img src="images/bannerhor.jpg">
+                  </a>
+              </div>
+          </div>
+      </div> 
+             
+    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 t1"><!------ THUMBNAIL ------->
+          
+        <div class="thumbnail">
+           <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
+           <img alt="300x200" src="images/sinfoto.png">
+           </a>
+           <div class="thumbprecio">
+              $4.000.000
+           </div>
+           <div class="caption">
+              <div class="marca">
+                 <h4>
+                    kia <span>morning</span>
+                 </h4>
+              </div>
+              <div class="clear"></div>
+              <div class="thumbano">
+                 2010
+              </div>
+              <div class="thumbvista">
+                 <span class="glyphicon glyphicon-eye-open"></span> 7
+              </div>
+           </div>
+        </div>
+          
+      </div>
+             
+      <div class="hidden-lg hidden-md hidden-sm col-xs-12"> <!--Publicidad oculta-->
+          <div class="bannerhor">
+              <div class="thumbnail">
+                  <a href="#" class="btn">
+                    <img src="images/bannerhor.jpg">
+                  </a>
+              </div>
+          </div>
+      </div>  
+            
+    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 t1"><!------ THUMBNAIL ------->
+          
+        <div class="thumbnail">
+           <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
+           <img alt="300x200" src="images/coche9.png">
+           </a>
+           <div class="thumbprecio">
+              $5.500.000
+           </div>
+           <div class="caption">
+              <div class="marca">
+                 <h4>
+                    ford<span> 100 F</span>
+                 </h4>
+              </div>
+              <div class="clear"></div>
+              <div class="thumbano">
+                 1965
+              </div>
+              <div class="thumbvista">
+                 <span class="glyphicon glyphicon-eye-open"></span> 11
+              </div>
+           </div>
+        </div>
+          
+      </div>
+             
+      <div class="hidden-lg hidden-md hidden-sm col-xs-12"> <!--Publicidad oculta-->
+          <div class="bannerhor">
+              <div class="thumbnail">
+                  <a href="#" class="btn">
+                    <img src="images/bannerhor.jpg">
+                  </a>
+              </div>
+          </div>
+      </div> 
+             
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 t1"><!------ THUMBNAIL ------->
+          
+          <div class="thumbnail">
+            <a class="btn" href="#modal-container-786382" data-toggle="modal" data-target=".bs-example-modal-lg">
+            <img alt="300x200" src="images/coche.png">
+            </a>
+            <div class="thumbprecio">
+               $20.000.000
+            </div>
+            <div class="caption">
+               <div class="marca">
+                  <h4>
+                     auto union<span> 1000</span>
+                  </h4>
+               </div>
+               <div class="clear"></div>
+               <div class="thumbano">
+                  1958
+               </div>
+               <div class="thumbvista">
+                  <span class="glyphicon glyphicon-eye-open"></span> 2
+               </div>
+            </div>
+         </div>
+          
+      </div>
+             
+      <div class="hidden-lg hidden-md hidden-sm col-xs-12"> <!--Publicidad oculta-->
+          <div class="bannerhor">
+              <div class="thumbnail">
+                  <a href="#" class="btn">
+                    <img src="images/bannerhor.jpg">
+                  </a>
+              </div>
+          </div>
+      </div> 
+               
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 t1"><!------ THUMBNAIL ------->
+          
+          <div class="thumbnail">
+            <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
+            <img alt="300x200" src="images/coche3.png">
+            </a>
+            <div class="thumbprecio">
+               $2.000.000
+            </div>
+            <div class="caption">
+               <div class="marca">
+                  <h4>
+                     vespa <span>946</span>
+                  </h4>
+               </div>
+               <div class="clear"></div>
+               <div class="thumbano">
+                  2011
+               </div>
+               <div class="thumbvista">
+                  <span class="glyphicon glyphicon-eye-open"></span> 56
+               </div>
+            </div>
+         </div>
+          
+      </div>
+             
+      <div class="hidden-lg hidden-md hidden-sm col-xs-12"> <!--Publicidad oculta-->
+          <div class="bannerhor">
+              <div class="thumbnail">
+                  <a href="#" class="btn">
+                    <img src="images/bannerhor.jpg">
+                  </a>
+              </div>
+          </div>
+      </div> 
+
+    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 t1"><!------ THUMBNAIL ------->
+          
+        <div class="thumbnail">
+           <a id="modal-786382" href="#modal-container-786382" role="button" class="btn" data-toggle="modal">
+           <img alt="300x200" src="images/coche7.png">
+           </a>
+           <div class="thumbprecio">
+              $4.000.000
+           </div>
+           <div class="caption">
+              <div class="marca">
+                 <h4>
+                    chevrolet<span> spark</span>
+                 </h4>
+              </div>
+              <div class="clear"></div>
+              <div class="thumbano">
+                 2010
+              </div>
+              <div class="thumbvista">
+                 <span class="glyphicon glyphicon-eye-open"></span> 0
+              </div>
+           </div>
+        </div>
+          
+      </div>
+       
+      </div>  
+      </div>
+      
+      
+       
+      <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs col-publicidad"><!------ PUBLICIDAD ------->
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-3 col-md-10 col-md-offset-1 col-sm-12"><!------ BANNER ------->
+                <div class="thumbnail">
+                    <a href="#" class="btn">
+                        <img alt="300x200" src="images/bnnr6.png">
+                    </a>
+                </div> 
+              </div>
+              
+              <div class="col-lg-8 col-lg-offset-3 col-md-10 col-md-offset-1 col-sm-12"><!------ BANNER ------->
+                <div class="thumbnail">
+                    <a href="#" class="btn">
+                        <img alt="300x200" src="images/bnnr1.png">
+                    </a>
+                </div> 
+              </div>
+              <div class="col-lg-8 col-lg-offset-3 col-md-10 col-md-offset-1 col-sm-12"><!------ BANNER ------->
+                <div class="thumbnail">
+                    <a href="#" class="btn">
+                        <img alt="300x200" src="images/bnnr2.png">
+                    </a>
+                </div> 
+              </div>
+          </div>
+          
+      </div><!---- FIN PUBLICIDAD ---->
+   </div>
+    
+</div>
+    
+<!---------------------------------------------------->      
+<!------------------ PAGINACIÓN ---------------------->
+<!----------------------------------------------------> 
+    
+<div class="row">
+   <div class="col-md-12 centrado">
+      <ul class="pagination">
+         <li><a href="#">&laquo;</a></li>
+         <li><a href="#" id="focus">1</a></li>
+         <li><a href="#">2</a></li>
+         <li><a href="#">3</a></li>
+         <li><a href="#">4</a></li>
+         <li><a href="#">5</a></li>
+         <li><a href="#">&raquo;</a></li>
+      </ul>
+   </div>
+</div> 
+    
+<!---------------------------------------------------->      
+<!-------------------- FOOTER ------------------------>
+<!---------------------------------------------------->
+    
+<footer id="footer-2" class="footer">
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-12 col-sm-6 footer-info-wrapper">
+            <span>SobreCoches © 2014. Todos los derechos reservados. <a href="http://getbootstrap.com/">Desarrollado en Bootstrap v3.0.0</a>.</span>                        
+         </div>
+         <!-- /.footer-info-wrapper -->
+         <div class="col-xs-12 col-sm-6 footer-links-wrapper">
+            <ul class="list-inline">
+               <li><a href="#">Políticas de Privacidad</a></li>
+               <li><a href="#">Términos de Servicio</a></li>
+               <li><a href="#">Descargo de Responsabilidad</a></li>
+            </ul>
+         </div>
+         <!-- /.footer-links-wrapper -->
+      </div>
+      <!-- /.row -->
+   </div>
+   <!-- /.container -->
+</footer>
+  
+</div>
       
        
      
@@ -1626,7 +1691,7 @@
       
 	<script type="text/javascript" src="js/jquery-ui-1.7.1.custom.min.js"></script>
      
-      
+    <script type="text/javascript" src="js/bootstrap-dropdown-on-hover.js"></script>  
       
     
     <script type="text/javascript">
@@ -1659,10 +1724,13 @@
                 });
             }
     </script>
-      
+
+     
     
       
-    <!------CARRUSEL MODAL------->
+<!---------------------------------------------------->      
+<!---------------- CARRUSEL MODAL -------------------->
+<!---------------------------------------------------->
       
     <!--<script>
         $(document).ready(function() {
@@ -1672,7 +1740,9 @@
             });
     </script>-->
     
-    <!------CARRUSEL LIGHTSLIDER------->
+<!---------------------------------------------------->      
+<!------------- CARRUSEL LIGHTSLIDER ----------------->
+<!---------------------------------------------------->
       
      
     <script>
@@ -1686,40 +1756,54 @@
     
     
     <script>
-        $(document).ready(function() {
-        $('#imageGallery').lightSlider({
-        gallery:true,
-        item:1,
-        thumbItem:9,
-        loop:true,
-        slideMargin:0,
-        currentPagerPosition:'left',
-        onSliderLoad: function(plugin) {
-            plugin.lightGallery();
-        }   
-    });  
-  });
+            $(document).ready(function() {
+            $('#imageGallery').lightSlider({
+            gallery:true,
+            item:1,
+            thumbItem:9,
+            loop:true,
+            slideMargin:0,
+            currentPagerPosition:'left',
+            onSliderLoad: function(plugin) {
+                plugin.lightGallery();
+            }   
+        });  
+      });
     
     </script>
-    <!------FIN CARRUSEL LIGHTSLIDER------->
+    
+<!---------------------------------------------------->      
+<!------------------ TOGGLE TWIT --------------------->
+<!---------------------------------------------------->
+    
+    <script> 
+        function toggleTwit(id)
+        {
+          var div = document.getElementById("twit_" + id);
+          if ( div.className == "twit" )
+            div.className = "twat";
+          else
+            div.className = "twit";
+        }
+    </script>
+<!---------------------------------------------------->      
+<!--------------- DROPDOWN HOVER --------------------->
+<!---------------------------------------------------->  
+    
     <script>
-        
-1
-2
-3
-4
-5
-6
-7
-8
-function toggleTwit(id)
-{
-  var div = document.getElementById("twit_" + id);
-  if ( div.className == "twit" )
-    div.className = "twat";
-  else
-    div.className = "twit";
-}
-    </script>  
+        $(function() {
+            
+            $("#demo-1").bootstrapDropdownOnHover({
+                mouseOutDelay: 500, // Number of milliseconds to wait before closing the menu on mouseleave
+                responsiveThreshold: 992, // Pixel width where the menus should no-longer be activated by hover
+                hideBackdrop: true // Whether to remove the menu backdrop upon hover (mobile only)
+                });
+            });
+
+    </script>        
+ 
+    
+
+    
   </body>
 </html>
