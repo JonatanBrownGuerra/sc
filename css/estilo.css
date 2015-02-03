@@ -441,11 +441,11 @@ select {
 .automatico{
     font-size: 12px;
     float: left;
-    margin: 20px 0 0 10%;
+    margin: 10px 0 0 10px;
 }
 .o{
     float: left;
-    margin: 18px 0 0 0;
+    margin: 5px 0 0 0;
 }
 
 .radio input[type="checkbox"]{
@@ -458,6 +458,7 @@ select {
     margin: 0;
     position: absolute;
     left: 0px;
+    cursor: pointer;
 }
 .radio input[type="checkbox"]:hover{
     border: 1px solid #aaa;
@@ -1028,22 +1029,25 @@ ul{
         padding: 0 10px 10px;
     }
     label{
-        padding-top:4px; 
+        padding-top:4px;
         
     }
     .veinte{
         padding: 0;
     }
     .o{
-        margin: 15px 0 0 0;
+        margin: 0 0 0 0;
     }
     .automatico{
-        padding: 14px 0 0 10%;
+        padding: 0 0 0 10px;
         margin: 0 0 0 5px ;
     }
     .radio label{
         padding-left: 10px;
         
+    }
+    fieldset{
+        margin-top: 10px;
     }
     
     
