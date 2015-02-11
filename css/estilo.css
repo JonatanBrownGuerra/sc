@@ -146,6 +146,9 @@ h2 span{
 .veinte{
     padding: 0 20px;
 }
+.bg-blanco{
+    background-color: #fff;
+}
 .blanco .btn{
     width: 100%;
     color: #fff;
@@ -163,6 +166,33 @@ h2 span{
     border-radius: 2px;
     
 }
+.ingresar select.input-sm{
+    margin: 0;
+    color: #888;
+    font-weight: normal;
+}
+.input-group{
+    margin: 30px 0;
+}
+.der{
+    float: right;
+}
+.pad{
+    padding:0 20px;
+}
+.pad2{
+    padding:0 0 0 40px;
+}
+.pad3{
+    padding:40px 0 1px;
+}
+.mar{
+    margin: 60px 0;
+}
+.ingresar p{
+    margin: -30px 0 0 0 ;
+    padding: 0;
+}
 
 
 /**************************************/
@@ -174,8 +204,7 @@ h2 span{
 }
 .navbar-default .navbar-nav>li>a{
     font-family: 'ralewaymedium';
-    color: #7d7c7c;
-    
+    color: #7d7c7c;  
 }
 .navbar-default .navbar-nav>li>a:hover{
     font-family: 'ralewaymedium';
@@ -372,6 +401,12 @@ laber{
     -moz-box-shadow:    0px 2px 5px 0px rgba(50, 50, 50, 0.08);
     box-shadow:         0px 2px 5px 0px rgba(50, 50, 50, 0.08);
 }
+.ui-state-default:hover, .ui-widget-content .ui-state-default:hover{
+    background-color: #a2b603;
+}
+.ui-state-default:active, .ui-widget-content .ui-state-default:active{
+    background-color: #a2b603;
+}
 .ui-widget-header{
     background: #b9c42c;
     border:0;
@@ -423,8 +458,7 @@ fieldset {
 label {
     font-weight: normal; 
     float: left; 
-    margin-right: .5em;
-    font-family: 'ralewayextralight';
+    font-family: 'open_sanssemibold';
     font-size: 1em;
     margin-bottom: 0;
 }
@@ -447,7 +481,29 @@ select {
     float: left;
     margin: 7px 0 0 0;
 }
-
+.checkbox input[type="checkbox"]{
+    
+}
+.checkbox input{
+    display: none;
+}
+.checkbox span{
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    border: 1px solid #777;
+    display: inline-block;
+    vertical-align: middle;
+}
+[type=checkbox]:checked + span {/* <-- style its checked state */
+    background-color: #777;
+    background-image: url(../images/bgcheck.png);
+    background-repeat: no-repeat;
+}
+[type=checkbox]:hover span{
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
 .radio input[type="checkbox"]{
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -459,6 +515,10 @@ select {
     position: absolute;
     left: 0px;
     cursor: pointer;
+}
+.checkbox input[type="checkbox"]:focus,.radio input[type="checkbox"]:focus{
+    box-shadow: 0 0 0 rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
 }
 .radio input[type="checkbox"]:hover{
     border: 1px solid #aaa;
@@ -491,7 +551,13 @@ select {
     -moz-box-shadow: inset 0px 0px 0px -100px #FFFFFF;
     -o-box-shadow: inset 0px 0px 0px -100px #FFFFFF;
 }
+.lineader select:hover{
+    border: none;
+}
 
+.form-group input[type=text]:hover, select:hover, button:hover, .controls input[type=text]:hover {
+    border:1px solid rgba(170,170,170,1);
+}
 input[type=text], textarea, select, button{
     border: transparent;
     color: #B6C30A;
@@ -541,8 +607,9 @@ input[type=text]:focus, textarea:focus, select:focus, button:focus{
     color:#565a5c;
 }
 .filtra{
-    padding: 0 60px;
+    padding: 0 60px 0 58px;
 }
+
 /**************************************/
 /** page structure **/
 #w {
@@ -647,7 +714,7 @@ input[type=text]:focus, textarea:focus, select:focus, button:focus{
     font-family: 'open_sanssemibold';
     position: relative;
     top:-10px;
-    right: 2px;
+    right: 0;
     float: right;
     -webkit-border-top-left-radius: 3px;
     -webkit-border-bottom-left-radius: 3px;
@@ -770,12 +837,15 @@ modal-dialog{
     padding: 6px 22px;
     font-family: 'open_sanssemibold';
     border: 1px solid #c8c8c8;
+    
 }
 .pagination>li>a:hover{
     color:#a2b603;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     text-decoration: none;
+    background-color: #fff;
+    border: 1px solid rgba(170, 170, 170, 1);
 }
 
 /**************************************/
@@ -1001,6 +1071,9 @@ ul{
 /*****************************************/
     
 @media (max-width: 992px) {
+    .lineader select:hover{
+    border:1px solid rgba(170,170,170,1);
+    }
      .buscarNav .form-control{
     width: 200px;
      }
@@ -1030,7 +1103,7 @@ ul{
     }
     label{
         padding-top:4px;
-        
+        margin-right: 6px;
     }
     .veinte{
         padding: 0;
@@ -1047,8 +1120,14 @@ ul{
         
     }
     fieldset{
-        margin-top: 10px;
+        margin:0;
+        padding: 0;
+        height: 5em;
     }
+    .separador{
+        border-bottom:1px solid #ddd;
+        padding: 5px 0;
+}
     
     
 }
@@ -1167,9 +1246,10 @@ ul{
     }
     fieldset{
         margin: 0 0 30px 0;
+        height: 7em;
     }
     .automatico{
-        padding: 8px 0 0 2%;
+        padding: 0 0 0 2%;
         margin: 0 0 0 20px;
     }
     .radio input[type="checkbox"]{
@@ -1203,7 +1283,19 @@ ul{
     margin: 20px 0 10px 17px;
     }
     .o{
-        margin: 20px 0 0 0;
+        margin: 0 0 0 0;
+    }
+    .o p{
+        margin: 7px 0 0 0;
+    }
+    .sin-margen{
+        margin: 0;
+    }
+    .ingresar{
+       padding: 30px; 
+    }
+    .ingresar h2{
+        margin: 0;
     }
     
 }
@@ -1234,7 +1326,7 @@ ul{
        font-size: 10px;
    }
     .cien{
-        height: 0;
+        height: 100px;
     }
     .navbar{
         margin-bottom: 0;
