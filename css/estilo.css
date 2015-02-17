@@ -111,6 +111,9 @@ h2 span{
 .veinte-pad{
     padding: 0 25px;
 }
+.cuarenta-pad{
+    padding: 0 40px;
+}
 
 .blanco{
     background-color: #fff;
@@ -800,8 +803,11 @@ modal-dialog{
 /******* CARRUSEL EQUIPAMIENTO ********/
 /**************************************/
 #myCarousel1 .thumbnail img{
-    float: left;
-    margin:-20px 10px;
+    opacity: 0.5;
+    width: 60px;
+    height: 60px;
+    /*float: left;
+    margin:-20px 10px;*/
 }
 #myCarousel1 .carousel-control.right, #myCarousel1 .carousel-control.left{
     width: 50px;
@@ -815,7 +821,14 @@ modal-dialog{
 }
 .equi{
     overflow: hidden;
-    height: 240px;
+    height: 230px;
+}
+.grisosc{
+    font-size: 1em;
+     
+}
+.grisosc{
+    word-spacing:100px;
 }
 
 
@@ -982,7 +995,7 @@ a.carousel-control.left img{
 .carousel-indicators {
 	right: 50%;
 	top: auto;
-	bottom: -30px;
+	bottom: -20px;
 	margin-right: -19px;
 }
 /* The colour of the indicators */
@@ -1041,13 +1054,15 @@ ul.user-detalle li{
     list-style: none;
     color:#656565;
     font-family: 'ralewaylight';
-    padding: 3px 5px;
+    padding: 5px;
 }
 .wrapp{
-    padding: 0 50px 40px 30px;
+    padding: 0 50px 20px 30px;
 }
-.nombre-rating{
+.nombre-rating, .foto-user{
     margin: 15px 0;
+    vertical-align: middle;
+    display: table-cell;
 }
 
 br{
@@ -1083,8 +1098,12 @@ ul{
 .cuatro-stars{
     background-image: url(../images/cuatro-stars.png);
     background-repeat: no-repeat;
-    width: 100px;
+    width: 180px;
     height: 30px;
+    
+}
+li .cuatro-stars{
+    color: #ccc;
 }
 
 /*****************************************/
@@ -1137,7 +1156,9 @@ ul{
 }
 /***********************************/
 
-
+.grisosc{
+    text-align: center;
+}
 
 /*///////////////////////////////////////////*/
 /*********************************************/
