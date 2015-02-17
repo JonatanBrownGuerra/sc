@@ -193,7 +193,9 @@ h2 span{
     margin: -30px 0 0 0 ;
     padding: 0;
 }
-
+.brd{
+    border: 1px solid #ccc;
+}
 
 /**************************************/
 /************** NAV-BAR ***************/
@@ -764,12 +766,18 @@ modal-dialog{
     font-family: 'ralewaymedium';
 }
 .carrusel{
-    height: 400px;
+    height: 460px;
     padding: 0;
 }
 .descripcion{
-    height: 400px;
-    padding: 10%;
+    height: 460px;
+    display: table;
+
+}
+.lista-descripcion{
+   display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
 .modal-body{
     padding: 0px;
@@ -782,6 +790,34 @@ modal-dialog{
     color: #a2b603;
     font-family: 'ralewaymedium';
 }
+.mini-header{
+    padding:30px 40px; 
+}
+.user-detalle{
+    display: table;
+}
+/**************************************/
+/******* CARRUSEL EQUIPAMIENTO ********/
+/**************************************/
+#myCarousel1 .thumbnail img{
+    float: left;
+    margin:-20px 10px;
+}
+#myCarousel1 .carousel-control.right, #myCarousel1 .carousel-control.left{
+    width: 50px;
+    visibility: visible;
+    padding:45px 0px;     
+}
+#myCarousel1 .carousel-inner{
+    width: 840px;
+    height: 130px;
+    margin:0 0 0 30px;
+}
+.equi{
+    overflow: hidden;
+    height: 240px;
+}
+
 
 /**************************************/
 /************** BANNERS ***************/
@@ -946,7 +982,7 @@ a.carousel-control.left img{
 .carousel-indicators {
 	right: 50%;
 	top: auto;
-	bottom: -10px;
+	bottom: -30px;
 	margin-right: -19px;
 }
 /* The colour of the indicators */
@@ -968,24 +1004,52 @@ background: #a2b603;
     color:#aaa;
     padding: 40px 0 0 0; 
 }
-.user-detalle img{
-    width: 80px;
+
+/*.user-detalle{
+    -moz-column-count: 4;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 20px;
+    column-count: 4;
+    column-gap: 20px;
 }
 ul.user-detalle li{
-    list-style: none;
-    color:#656565;
-    font-family: 'ralewaylight'; 
+    float: left;
+}
+ul.user-detalle li{
+    width: 100px;
+    overflow: hidden;
 }
 ul.user-detalle{
     width: 60em;
 }
+*/
+.user-detalle span{
+    height: auto;
+}
+ul.user-detalle .foto-user img{
+    width: 80px;
+    height: 80px;
+    margin-left: 35px;
+}
+.user-detalle li img{
+    width: 20px;
+    height: 20px;
+    margin: 0 5px 0 0;
+}
 ul.user-detalle li{
-    float: left;
-    width: 20em;
+    list-style: none;
+    color:#656565;
+    font-family: 'ralewaylight';
+    padding: 3px 5px;
 }
 .wrapp{
-    margin-bottom: 1em;
+    padding: 0 50px 40px 30px;
 }
+.nombre-rating{
+    margin: 15px 0;
+}
+
 br{
     clear: left;
 }
@@ -1016,6 +1080,64 @@ ul{
 .filtra h2{
     margin-top: 20px;
     }
+.cuatro-stars{
+    background-image: url(../images/cuatro-stars.png);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 30px;
+}
+
+/*****************************************/
+/********** GALLERY STYLES ***************/
+/*****************************************/
+
+.navigation-outer-wrap {
+  width: 489px;
+  height: 55px;
+  overflow: hidden;
+  display: inline-block;
+}
+.thumbnail-navigation {
+    width: 533px;
+    height: 56px;
+    background-color: #4f4f4f;
+    position: relative;
+}
+.thumbnail-navigation ul.thumbnail-navigation-list {
+  width: 5000px;
+  transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.thumbnail-navigation ul.thumbnail-navigation-list li {
+  display: inline-block;
+  text-decoration: none;
+  padding: 2px;
+  margin: 1px 0 0 0 ;
+}
+.thumbnail-navigation ul.thumbnail-navigation-list li.active {
+    background: #B9C609;
+}
+.thumbnail-navigation .navigation {
+    /*opacity: 0.5;
+    filter: alpha(opacity=50);*/
+    background-color: #4f4f4f;
+    padding: 18px 4px 17px;
+    margin: 0;
+  
+}
+.thumbnail-navigation .navigation:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  cursor: pointer;
+}
+/***********************************/
+
+
 
 /*///////////////////////////////////////////*/
 /*********************************************/

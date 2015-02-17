@@ -23,13 +23,11 @@
     
 //DROPDOWN ON HOVER --------->    
 
-        $(function() {
-            
-            $("#demo-1").bootstrapDropdownOnHover({
-                mouseOutDelay: 500, // Number of milliseconds to wait before closing the menu on mouseleave
-                responsiveThreshold: 992, // Pixel width where the menus should no-longer be activated by hover
-                hideBackdrop: true // Whether to remove the menu backdrop upon hover (mobile only)
-                });
-            });
+        
 
+///////////////////////////////////////
+
+   
+
+    
  
