@@ -28,6 +28,19 @@
    <style>
         .pager-active { border: 2px solid #5280DD; }
     </style>
+   <!--SCRIPT QUE LLAMA AL MAPA DE GOOGLE MAPS--> 
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+      }
+    </script>
 </head>
     
 <body>
@@ -823,17 +836,17 @@
             </h3>
             <div class="clear"></div>
             <div class="row">
-               <div class="col-sm-6">
+               <div class="col-lg-6">
                   <p>Publicado el 11 de Enero de 2014</p>
                </div>
-               <div class="col-sm-6 textder">
+               <div class="col-lg-6 col-sm-12  textder">
                   <a class="verde" href="#">Agregar al comprador</a>
                </div>
             </div>
          </div>
          <div class="modal-body">
             <div class="row gris-claro">
-               <div class="col-md-7 carrusel">
+               <div class="col-lg-7 col-sm-12 carrusel">
                   <div class="tab-content">
         <div id="tabs5-pane1" class="margin-top-10 featured-box tab-pane background-white active">
             <img src="images/foto1.jpg">
@@ -872,7 +885,7 @@
         <a class="navigation right pull-right"><img src="images/flecha-ade.png"></a>
     </div> 
                </div>
-               <div class="col-md-5 descripcion">
+               <div class="col-lg-5 col-sm-12 descripcion">
                   <ul class="lista-descripcion">
                      <li>Año: <span>2014</span></li>
                      <li>Kilometraje: <span>20.000</span></li>
@@ -1027,22 +1040,24 @@
                <div class="col-md-12 wrapp">
                   <ul class="user-detalle">
                      
-                     <li class="col-md-2 foto-user">
+                     <li class="col-md-2 col-sm-6 foto-user">
                          <img src= "images/user.jpg" alt="user" class="img-circle">
                       </li>
-                     <span class="col-md-3 nombre-rating ">
+                     <span class="col-md-3 col-sm-6 col-xs-6 nombre-rating ">
                      <li>Francisco Garcia-Huidobro de las Mercedes</li>
                      <li class="cuatro-stars text-right">(<img src="images/user.png" style="width:13px; height:13px;">501)</li>
                      </span>
                       
-                     <span class="col-md-4 ">
-                     <li><img src="images/ico-phone.png"> +56 9 9214 90 89</li>
-                     <li><img src="images/ico-mail.png"> francifddffgsdscogh@gmail.com</li>
+                     <span class="col-md-4 col-sm-12 col-xs-6 ">
+                    <li class="hidden-lg hidden-md hidden-sm"><button type="button" class="btn btn-success"> +56 9 9214 90 89</button></li>
+                    <li class="hidden-lg hidden-md hidden-sm"><button type="button" class="btn btn-success"> <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">francifddffgsdscogh@gmail.com</a></button></li>
+                     <li class="hidden-xs"><img src="images/ico-phone.png"> +56 9 9214 90 89</li>
+                     <li class="hidden-xs"><img src="images/ico-mail.png"> francifddffgsdscogh@gmail.com</li>
                          
                      <li><img src="images/ico-marker.png">Región Metropolitana de Santiago</li>
                     </span>
                     
-                    <span class="col-md-3 ">
+                    <span class="col-md-3 col-sm-12">
                      <li><img src="images/ico-comment.png"> El auto está excelente, cero fallas. El comentario de mi auto en un máximo de 100 caracteres.</li>
                     </span>
                       
@@ -1051,6 +1066,163 @@
                   <br>
                </div>
             </div>
+             <div class="mini-header">
+                       <h2 class="verde">Similares</h2>
+                   </div> 
+            <div class="row cuarenta-pad">
+               
+               <div class="col-md-4 col-sm-5 col-xs-12">
+                  <div class="thumbnail">
+                     <a href="#" data-toggle="modal" data-target="#modal-detalle">
+                     <img alt="300x200" src="images/coche4.png">
+                     </a>
+                     <div class="thumbprecio">
+                        $3.000.000
+                     </div>
+                     <div class="caption">
+                        <div class="marca">
+                           <h4>
+                              ford<span> windstar</span>
+                           </h4>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="thumbano">
+                           2000
+                        </div>
+                        <div class="thumbvista">
+                           <span class="glyphicon glyphicon-eye-open"></span> 17
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-5 col-xs-12">
+                  <div class="thumbnail">
+                     <a href="#" data-toggle="modal" data-target="#modal-detalle">
+                     <img alt="300x200" src="images/coche5.png">
+                     </a>
+                     <div class="thumbprecio">
+                        $6.500.000
+                     </div>
+                     <div class="caption">
+                        <div class="marca">
+                           <h4>
+                              BMW<span> isetta</span>
+                           </h4>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="thumbano">
+                           1954
+                        </div>
+                        <div class="thumbvista">
+                           <span class="glyphicon glyphicon-eye-open"></span> 102
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-5 col-xs-12">
+                  <div class="thumbnail">
+                     <a href="#" data-toggle="modal" data-target="#modal-detalle">
+                     <img alt="300x200" src="images/coche6.png">
+                     </a>
+                     <div class="thumbprecio">
+                        $12.000.000
+                     </div>
+                     <div class="caption">
+                        <div class="marca">
+                           <h4>
+                              Volksvagen <span>Escaravajo</span>
+                           </h4>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="thumbano">
+                           2011
+                        </div>
+                        <div class="thumbvista">
+                           <span class="glyphicon glyphicon-eye-open"></span> 23
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+         </div>
+      </div>
+   </div>
+</div>
+    
+    
+<!---------------------------------------------------->      
+<!----------------- MODAL AUTOMOTORA------------------>
+<!---------------------------------------------------->
+          
+<div class="modal fade" id="modal-automotora" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 class="modal-title text-capitalize" id="myModalLabel">Automotora<span class="text-capitalize"> arauco</span>
+            </h3>
+            <div class="clear"></div>
+            <div class="row">
+               <div class="col-lg-6">
+                  <p>www.automotoraarauco.cl.cl</p>
+                   <p>9:00 a las 17:00 hrs</p>
+               </div>
+               <div class="col-lg-6 col-sm-12  textder cuatro-stars">
+                  <a class="verde" href="#">Agregar al comprador</a>
+               </div>
+            </div>
+         </div>
+         <div class="modal-body">
+            <div class="row gris-claro">
+                <div class="col-lg-5 local-foto">
+                    <img src="images/local-foto.png">
+                </div>
+                <div class="col-lg-4 local-info">
+                    <ul class="info">
+                        <li>Francisco Garcia-Huidobro</li>
+                        <li>Atención al cliente</li>
+                        <li>+56 9 9214 84 38</li>
+                        <li>+56 9 1256 84 37</li>
+                        <li>franciscogh@automotoraaruco.cl</li>
+                        <li>Región Metropolitana de Santiago</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 local-contacto mini-header2">
+                    <div>
+                        <h2 class="verde">Contacto</h2>
+                    </div> 
+                       
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="7" placeholder="Comentarios"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-default der text-uppercase">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 local-ubicacion">
+                   <div class="mini-header">
+                       <h2 class="verde">Ubicación</h2>
+                       <p>Avenida San Miguel #3385 - Talca</p>
+                   </div> 
+                  <div class="row">
+                     <div id="map-canvas" class="col-md-12">
+                        
+                        
+                         
+                     </div>
+                  </div>
+               </div>
+            </div>
+        
              <div class="mini-header">
                        <h2 class="verde">Similares</h2>
                    </div> 
@@ -1434,7 +1606,7 @@
       <div class="col-md-12 hidden-sm col-xs-12"> <!--Publicidad oculta-->
           <div class="bannerhor">
               <div class="thumbnail">
-                  <a href="#" class="btn">
+                  <a href="#" class="btn" data-toggle="modal" data-target="#modal-automotora">
                     <img src="images/bannerhor.jpg" alt="banner publicitario">
                   </a>
               </div>
