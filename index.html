@@ -28,19 +28,7 @@
    <style>
         .pager-active { border: 2px solid #5280DD; }
     </style>
-   <!--SCRIPT QUE LLAMA AL MAPA DE GOOGLE MAPS--> 
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-      function initialize() {
-        var mapCanvas = document.getElementById('map-canvas');
-        var mapOptions = {
-          center: new google.maps.LatLng(44.5403, -78.5463),
-          zoom: 8,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions);
-      }
-    </script>
+   
 </head>
     
 <body>
@@ -1182,9 +1170,10 @@
                     <img src="images/local-foto.png">
                 </div>
                 <div class="col-lg-4 local-info">
-                    <ul class="info">
+                    <ul>
+                        <li><img src="images/user.jpg"></li>
                         <li>Francisco Garcia-Huidobro</li>
-                        <li>Atención al cliente</li>
+                        <li id="cargo"><span>Atención al cliente</span></li>
                         <li>+56 9 9214 84 38</li>
                         <li>+56 9 1256 84 37</li>
                         <li>franciscogh@automotoraaruco.cl</li>
@@ -1214,8 +1203,8 @@
                        <p>Avenida San Miguel #3385 - Talca</p>
                    </div> 
                   <div class="row">
-                     <div id="map-canvas" class="col-md-12">
-                        
+                     <div class="col-md-12">
+                        <script type="text/javascript" src="http://www.webestools.com/google_map_gen.js?lati=-35.4326745&long=-71.6345792,17&zoom=16&width=900&height=230&mapType=normal&map_btn_normal=yes&map_btn_satelite=yes&map_btn_mixte=yes&map_small=yes&marqueur=yes&info_bulle="></script><br />
                         
                          
                      </div>
@@ -1975,7 +1964,19 @@
 });
     
     </script>
-    
+    <!--SCRIPT QUE LLAMA AL MAPA DE GOOGLE MAPS--> 
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+      }
+    </script>
       
  
     

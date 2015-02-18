@@ -850,12 +850,35 @@ modal-dialog{
     padding: 0;
     margin: 0 0 0 -5px;
 }
-#map-canvas{
+.mapa iframe{
     width: 100%;
-    height: 230px;
+    height: 530px;
     background-color: #CCC;
 }
-
+.local-contacto{
+    border-left: 1px solid #ccc;
+}
+.local-info ul li img{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    
+}
+.local-info{
+    text-align: center;
+    line-height: 2em;
+    padding: 40px 15px;
+}
+.local-info ul li span{
+    font-size:12px;
+    line-height: 3em;
+    font-family: 'ralewayextralight';
+}
+#cargo{
+    margin: -13px 0 0 0;
+    
+    
+}
 /**************************************/
 /************** BANNERS ***************/
 /**************************************/
