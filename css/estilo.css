@@ -728,6 +728,15 @@ input[type=text]:focus, textarea:focus, select:focus, button:focus{
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;  
 }
+.marcas{
+    text-align: center;
+    padding: 0 30px 40px;
+}
+.marcas img{
+    width: 75px;
+    display: inline-block;
+    margin: 10px 10px 20px 10px;
+}
 
 /**************************************/
 /*************** MODAL ****************/
@@ -797,13 +806,43 @@ modal-dialog{
     padding:30px 40px; 
 }
 .mini-header2{
-    padding:40px 15px;
+    padding:0 30px 0;
+    margin-top: 50px;
 }
 .mini-header2 h2{
     margin-bottom: 10px;
 }
+.mini-header3{
+    padding:30px 40px 10px; 
+}
 .user-detalle{
     display: table;
+}
+.cont-cas-ser{
+    text-align: center;
+    padding: 0 30px 30px;
+}
+.casilla-serv{
+    width: 180px;
+    margin: 0px 10px 10px 10px;
+    padding:0 10px;
+    overflow: hidden;
+    display: inline-block;
+}
+.casilla-serv img{
+    opacity: 0.5;
+    float: left;
+    width: 50px;
+}
+.casilla-serv h2{
+    font-size: 1em;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+.tabla{
+    display: table;
+    text-align: left;
 }
 
 /**************************************/
@@ -817,7 +856,22 @@ modal-dialog{
     /*float: left;
     margin:-20px 10px;*/
 }
-#myCarousel1 .carousel-control.right, #myCarousel1 .carousel-control.left{
+#myCarousel2 .thumbnail img {
+    width: 50px;
+    margin-right: 10px;
+    float: left;
+}
+.bigger img{
+    width: 60px;
+}
+#myCarousel3 .thumbnail img{
+    opacity: 0.5;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    float: left;
+}
+#myCarousel1 .carousel-control.right, #myCarousel1 .carousel-control.left, #myCarousel2 .carousel-control.right, #myCarousel2 .carousel-control.left, #myCarousel3 .carousel-control.right, #myCarousel3 .carousel-control.left{
     width: 50px;
     visibility: visible;
     padding:45px 0px;     
@@ -839,6 +893,23 @@ modal-dialog{
     word-spacing:100px;
 }
 
+#myCarousel3 .thumbnail{
+    text-align: left;
+}
+#myCarousel3 .carousel-inner{
+    width: 840px;
+    height: 230px;
+    margin:0 0 0 30px;
+}
+#myCarousel3 .carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: -40px;
+	margin-right: -19px;
+}
+.serv{
+    /*height: 300px;*/
+}
 
 /**************************************/
 /********* MODAL AUTOMOTORA ***********/
@@ -874,10 +945,11 @@ modal-dialog{
     line-height: 3em;
     font-family: 'ralewayextralight';
 }
-#cargo{
+#local-cargo{
     margin: -13px 0 0 0;
-    
-    
+}
+#local-user{
+    font-family: 'ralewaybold';
 }
 /**************************************/
 /************** BANNERS ***************/
@@ -1152,6 +1224,7 @@ ul{
 li .cuatro-stars{
     color: #ccc;
 }
+q
 
 /*****************************************/
 /********** GALLERY STYLES ***************/
