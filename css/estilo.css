@@ -101,8 +101,9 @@ a:hover{
 }
 h2{
    font-family: 'ralewaylight';
-    font-size: 1.15em;
+    font-size: 1.25em;
     margin: 0 0 0 0;
+    letter-spacing: 0.04em;
 }
 h2 span{
     color: #a2b603;
@@ -115,7 +116,7 @@ h2 span{
     padding: 0 40px;
 }
 .similares{
-    padding: 10px 30px 30px;
+    padding: 10px 60px 50px;
 }
 
 .blanco{
@@ -140,7 +141,8 @@ h2 span{
     height: 160px;
 }
 .verde{
-    color: #a2b603;
+    /*color: #a2b603;*/
+    color:#92A500;
 }
 .centrado{
     text-align: center;
@@ -329,6 +331,17 @@ h2 span{
 .container-fluid>.navbar-header{
     background-color: #fff;
     
+}
+.opciones .btn-default{
+    background-color: #a2b603;
+    border-bottom: 2px solid #a2b603;
+    color: #fff;
+    padding:6px 14px 4px;
+    margin:8px 0;
+}
+.opciones .btn-default: hover{
+    background-color: #B9C609;
+    border-bottom: 2px solid #a2b603;
 }
 
 /**************************************/
@@ -724,10 +737,12 @@ input[type=text]:focus, textarea:focus, select:focus, button:focus{
 .thumbvista{
     float: right;
     font-size: 0.9em;
-    color: #919191;
+    color: #807F7F;
     margin: 0 3px 0 0;
     position: relative;
     top: -2px;
+    font-family: 'open_sanssemibold';
+    
 }
 .clear{
     clear: both;
@@ -748,14 +763,15 @@ input[type=text]:focus, textarea:focus, select:focus, button:focus{
     -moz-border-radius-topleft: 3px;
     -moz-border-radius-bottomleft: 3px;
     border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;  
+    border-bottom-left-radius: 3px;
+    letter-spacing: 0.02em;
 }
 .marcas{
     text-align: center;
-    padding: 0 30px 40px;
+    padding: 0 40px 20px;
 }
 .marcas img{
-    width: 75px;
+    width: 60px;
     display: inline-block;
     margin: 10px 10px 20px 10px;
 }
@@ -766,6 +782,10 @@ input[type=text]:focus, textarea:focus, select:focus, button:focus{
     line-height: 38px;
 
 }
+.cuarenta-pad hr{
+    margin: 0;
+}
+
 
 /**************************************/
 /*************** MODAL ****************/
@@ -789,7 +809,7 @@ input[type=text]:focus, textarea:focus, select:focus, button:focus{
     font-family: 'ralewaylight';
     font-size: 1em;
     margin: 0 0 0 3px;
-    color: #aaa;
+    color:#898989;
 }
 .modal-backdrop.in{
     background-color: #eee;
@@ -828,8 +848,10 @@ modal-dialog{
     font-family: 'ralewaylight';  
 }
 .lista-descripcion span{
-    color: #a2b603;
+    color: #6c6c6c;
     font-family: 'ralewaymedium';
+    font-family: 'open_sanssemibold';
+    
 }
 .mini-header{
     padding:30px 40px; 
@@ -848,8 +870,8 @@ modal-dialog{
     display: table;
 }
 .cont-cas-ser{
-    text-align: center;
-    padding: 0 30px 30px;
+    text-align: left;
+    padding: 0 30px 30px 50px;
 }
 .casilla-serv{
     width: 180px;
@@ -859,9 +881,9 @@ modal-dialog{
     display: inline-block;
 }
 .casilla-serv img{
-    opacity: 0.5;
+    opacity: .8;
     float: left;
-    width: 50px;
+    width: 30px;
 }
 .casilla-serv h2{
     font-size: 1em;
@@ -873,15 +895,58 @@ modal-dialog{
     display: table;
     text-align: left;
 }
+.vendedor{
+    padding: 0 40px;
+    font-family: 'ralewaylight';
+    letter-spacing: 0.03em;
+}
 
+.usuario img{
+    width: 65px;
+}
+.usuario{
+    height: 130px;
+    border-right: 1px solid #ddd;
+    text-align: center;
+    padding: 0 20px 0;
+    margin: 20px 0 0 0;
+}
+.datos{
+    height: 200px;
+    line-height: 2em;
+    padding: 20px 20px 0;
+}
+.datos:before{
+    content: "Datos";
+    font-family: 'open_sanssemibold';
+}
+.comentarios{
+    height: 130px;
+    padding: 0 20px 0;
+    border-left: 1px solid #ddd;
+    margin: 20px 0 0 0;
+}
+.comentarios:before{
+    content: "Comentarios";
+    font-family: 'open_sanssemibold';
+    line-height: 2em;
+}
+.stars{
+    width: 75px;
+    height: 16px;
+    background-image: url(../images/stars.png)
+}
+.rat{
+    font-size: 12px;
+}
 /**************************************/
 /******* CARRUSEL EQUIPAMIENTO ********/
 /**************************************/
 
 #myCarousel1 .thumbnail img{
-    opacity: 0.5;
-    width: 60px;
-    height: 60px;
+    opacity: .8;
+    width: 30px;
+    margin-bottom: 6px;
     /*float: left;
     margin:-20px 10px;*/
 }
@@ -905,6 +970,23 @@ modal-dialog{
     visibility: visible;
     padding:45px 0px;     
 }
+#myCarousel4 .carousel-control.right{
+    opacity: .3;
+    width: 50px;
+    visibility: visible;
+    padding:110px 0px;
+    margin: 0 -55px 0 0;
+}
+#myCarousel4 .carousel-control.left{
+    opacity: .3;
+    width: 50px;
+    visibility: visible;
+    padding:110px 0px;
+    margin: 0 0 0 -55px;
+}
+#myCarousel4 .carousel-control.right:hover, #myCarousel4 .carousel-control.left:hover {
+    opacity: .7;
+}
 #myCarousel1 .carousel-inner{
     width: 840px;
     height: 130px;
@@ -915,8 +997,8 @@ modal-dialog{
     height: 230px;
 }
 .grisosc{
-    font-size: 1em;
-     
+    font-size: 13px;
+     color:#888;
 }
 .grisosc{
     word-spacing:100px;
@@ -934,6 +1016,13 @@ modal-dialog{
 	right: 50%;
 	top: auto;
 	bottom: -40px;
+	margin-right: -19px;
+}
+
+#myCarousel4 .carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: -50px;
 	margin-right: -19px;
 }
 .serv{
@@ -1114,7 +1203,7 @@ modal-dialog{
 }
 .carousel-control{
    opacity: .5;
-   transition:opacity .4s linear;    
+   /*transition:opacity .4s linear;*/    
 }
 .carousel-control:hover{
     opacity: 1;
