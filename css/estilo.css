@@ -131,11 +131,12 @@ h2 span{
 .gris-claro{
     background-color: #fafaf7;
     margin: 0 1px;
+    border-bottom: 1px solid #ccc;
 }
 .gris{
     /*background-color: #777;
     border: 1px solid #ccc;*/
-    padding: 20px 60px 0;
+    padding: 60px 60px 0;
 }
 .gris1{
     height: 160px;
@@ -649,6 +650,41 @@ input[type=text]:focus, textarea:focus, select:focus, button:focus{
 .filtra{
     padding: 0 60px 0 58px;
 }
+.filtra a{
+    color:#848484;
+}
+.filtra a:hover{
+    color:#444;
+}
+
+.filter{
+    text-align: center;
+    background-color: #fff;
+    max-width: 140px;
+    margin:-1px auto 0;
+    padding: 4px 1px;
+    border: 1px solid #ddd;
+    border-top-color: #fff;
+    -webkit-border-bottom-right-radius: 15px;
+    -webkit-border-bottom-left-radius: 15px;
+    -moz-border-radius-bottomright: 15px;
+    -moz-border-radius-bottomleft: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+}
+.form-control{
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.0);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.0); 
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-control:focus{
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    border: 1px solid rgba(0, 0, 0, .35);  
+}
 
 /**************************************/
 /** page structure **/
@@ -827,8 +863,9 @@ modal-dialog{
     font-family: 'ralewaymedium';
 }
 .carrusel{
-    height: 460px;
+    height: 467px;
     padding: 0;
+    margin-left: -1px;
 }
 .descripcion{
     height: 460px;
@@ -939,6 +976,7 @@ modal-dialog{
 .rat{
     font-size: 12px;
 }
+
 /**************************************/
 /******* CARRUSEL EQUIPAMIENTO ********/
 /**************************************/
@@ -970,21 +1008,21 @@ modal-dialog{
     visibility: visible;
     padding:45px 0px;     
 }
-#myCarousel4 .carousel-control.right{
+#myCarousel4 .carousel-control.right, #myCarousel5 .carousel-control.right{
     opacity: .3;
     width: 50px;
     visibility: visible;
     padding:110px 0px;
     margin: 0 -55px 0 0;
 }
-#myCarousel4 .carousel-control.left{
+#myCarousel4 .carousel-control.left, #myCarousel5 .carousel-control.left{
     opacity: .3;
     width: 50px;
     visibility: visible;
     padding:110px 0px;
     margin: 0 0 0 -55px;
 }
-#myCarousel4 .carousel-control.right:hover, #myCarousel4 .carousel-control.left:hover {
+#myCarousel4 .carousel-control.right:hover,#myCarousel5 .carousel-control.right:hover, #myCarousel4 .carousel-control.left:hover, #myCarousel5 .carousel-control.left:hover {
     opacity: .7;
 }
 #myCarousel1 .carousel-inner{
@@ -1075,6 +1113,7 @@ modal-dialog{
     text-align: center;
     line-height: 2em;
     padding: 40px 15px;
+    font-family: 'ralewaylight';
 }
 .local-info ul li span{
     font-size:12px;
@@ -1117,7 +1156,7 @@ modal-dialog{
     font-size: 1.2em;
 }
 .col-publicidad{
-    padding-top: 20px;
+    padding-top: 115px;
 }
 .col-publicidad .thumbnail{
     padding: 0;
@@ -1387,16 +1426,19 @@ li .cuatro-stars{
 /*****************************************/
 
 .navigation-outer-wrap {
-  width: 489px;
-  height: 55px;
+  width: 409px;
+  height: 68px;
   overflow: hidden;
   display: inline-block;
 }
 .thumbnail-navigation {
     width: 533px;
-    height: 56px;
-    background-color: #4f4f4f;
+    height: 67px;
+    background-color: #fff;
     position: relative;
+    border: 1px solid #ddd;
+    border-bottom: 1px solid transparent;
+border-left: 1px solid transparent;
 }
 .thumbnail-navigation ul.thumbnail-navigation-list {
   width: 5000px;
@@ -1411,28 +1453,34 @@ li .cuatro-stars{
 .thumbnail-navigation ul.thumbnail-navigation-list li {
   display: inline-block;
   text-decoration: none;
-  padding: 2px;
-  margin: 1px 0 0 0 ;
+  margin: 3px 0 0 0 ;
 }
 .thumbnail-navigation ul.thumbnail-navigation-list li.active {
-    background: #B9C609;
+    /*background: #B9C609;*/
 }
 .thumbnail-navigation .navigation {
     /*opacity: 0.5;
     filter: alpha(opacity=50);*/
-    background-color: #4f4f4f;
-    padding: 18px 4px 17px;
+    background-color: #FFFFFF;
+    padding: 21px 25px;
     margin: 0;
   
+}
+.thumbnail-navigation a.pull-right, .thumbnail-navigation a.pull-left{
+    opacity: .5;
+}
+.thumbnail-navigation a.pull-right:hover, .thumbnail-navigation a.pull-left:hover{
+    opacity: 1;
+}
+.pull-left img, .pull-right img{
+    width: 10px;
 }
 .thumbnail-navigation .navigation:hover {
   opacity: 1;
   filter: alpha(opacity=100);
   cursor: pointer;
 }
-.tab-pane img{
-    
-}
+.form-control::-moz-placeholder{color:#a3a3a3;opacity:1}.form-control:-ms-input-placeholder{color:#color: #a3a3a3;}.form-control::-webkit-input-placeholder{color:#a3a3a3}
 /***********************************/
 
 .grisosc{
@@ -1441,6 +1489,13 @@ li .cuatro-stars{
 .tab-content{
     width: 100%;
 }
+select option[selected] {
+    color: #ccc;
+}
+select option: first-child{
+    color: #ccc;
+}
+
 /*///////////////////////////////////////////*/
 /*********************************************/
 /************** MEDIA QUERYS *****************/
