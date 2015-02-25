@@ -89,6 +89,10 @@ body{
     font-family: 'ralewaymedium';
     max-width: 1440px;
 }
+
+.cien{
+    height: 100px;
+}
 a{
   color:#ccc;  
 }
@@ -116,7 +120,7 @@ h2 span{
     padding: 0 40px;
 }
 .similares{
-    padding: 10px 60px 50px;
+    padding: 10px 60px 70px;
 }
 
 .blanco{
@@ -648,7 +652,7 @@ input[type=text]:focus, textarea:focus, select:focus, button:focus{
     color:#565a5c;
 }
 .filtra{
-    padding: 0 60px 0 58px;
+    padding: 0;
 }
 .filtra a{
     color:#848484;
@@ -760,6 +764,9 @@ input[type=text]:focus, textarea:focus, select:focus, button:focus{
 .thumbnail .caption h4 span{
     font-family: 'ralewaylight';
 }
+.thumbnail .caption h4 span:before{
+    content: " ";
+}
 .thumbano{
     font-family: 'open_sanssemibold';
     text-align: left;
@@ -826,6 +833,30 @@ input[type=text]:focus, textarea:focus, select:focus, button:focus{
 /**************************************/
 /*************** MODAL ****************/
 /**************************************/
+button.close{
+    width: 30px;
+    padding: 0 0 3px 1px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 1);
+    border: 0;
+    -webkit-appearance: none;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #000;
+}
+.close {
+float: right;
+font-size: 21px;
+font-weight: bold;
+line-height: 1;
+color: #000;
+text-shadow: 0 1px 0 #fff;
+opacity: .3;
+filter: alpha(opacity=20);
+} 
+.close:hover {
+  opacity: .5;  
+}
 
 .modal-header{
     padding: 25px;
@@ -1057,7 +1088,7 @@ modal-dialog{
 	margin-right: -19px;
 }
 
-#myCarousel4 .carousel-indicators {
+#myCarousel4 .carousel-indicators, #myCarousel5 .carousel-indicators{
 	right: 50%;
 	top: auto;
 	bottom: -50px;
@@ -1299,6 +1330,7 @@ a.carousel-control.left img{
 .carousel-indicators .active {
 background: #a2b603;
 }
+
 .equipa .thumbnail{
     text-align: center;
     color:#aaa;
@@ -1455,8 +1487,12 @@ border-left: 1px solid transparent;
   text-decoration: none;
   margin: 3px 0 0 0 ;
 }
+.thumbnail-navigation ul.thumbnail-navigation-list li.active a img {
+    opacity: 0.6;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+}
 .thumbnail-navigation ul.thumbnail-navigation-list li.active {
-    /*background: #B9C609;*/
+    background: #B9C609;
 }
 .thumbnail-navigation .navigation {
     /*opacity: 0.5;
@@ -1495,7 +1531,107 @@ select option[selected] {
 select option: first-child{
     color: #ccc;
 }
+/**************************************/
+/************* RESULTADOS *************/
+/**************************************/
+.bg-bl{
+    background-color: #fff;
+    padding: 30px 40px;
+    border-bottom: 1px solid #ddd;
+    }
+.resultados{
+    background-color: #fff;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border:1px solid #eee;
+    height: 208px;
+}
+.resultados:hover{
+    border:1px solid #ddd;
+    /*border:1px solid #ddd;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow:    0px 1px 2px 0px rgba(50, 50, 50, 0.3);
+    box-shadow:         0px 1px 2px 0px rgba(50, 50, 50, 0.3);*/
+    
+}
+.destacado{
+    background-color: #F3FFCF;
+}
+.thumbnail-res{
+    padding: 0;
+}
 
+.medio-table{
+    display: table;
+}
+.medio-table .medio{
+    display:table-cell;
+    vertical-align: middle;
+}
+.res-info{
+    padding: 30px 30px 0;
+}
+.res-img{
+    padding: 0;
+}
+.res-img img{
+    width: 100%;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.mini-header4{
+    padding: 0 0 30px;
+}
+.resultados p span{
+    color:#92A500;
+    font-family: 'ralewaymedium';
+}
+.resultados p:nth-child(2):before{
+    content: "Horario ";
+    font-family: 'ralewaybold';
+    color:#777;
+}
+.resultados p:nth-child(3):before{
+    content: "Ciudad ";
+    font-family: 'ralewaybold';
+    color:#777;
+}
+
+.resultados p{
+    font-family: 'ralewaylight';
+    margin: 0;
+    font-size: 13px;
+}
+.res-info h2{
+    font-size: 22px;
+    font-family: 'ralewaymedium';
+    margin-bottom: 5px;
+}
+.servicios-list{
+    margin-top: 15px;
+}
+.servicios-list li{
+    display: inline-block;
+    list-style-type: none;
+    font-family: 'ralewaylight';
+    padding: 7px;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    margin:0 0 0 -3px;
+}
+.servicios-list li:first-child{
+    border-top: 1px solid #ddd;
+}
+.servicios-list li:last-child{
+    border-right: 1px solid transparent;
+}
+.cont-resultados a{
+    color:#565a5c;
+}
 /*///////////////////////////////////////////*/
 /*********************************************/
 /************** MEDIA QUERYS *****************/
