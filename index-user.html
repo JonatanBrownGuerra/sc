@@ -60,7 +60,21 @@
                </div>
                <button type="submit" class="btn btn-default">Buscar</button>
             </form>
-            <ul id="demo-1" class="nav navbar-nav navbar-right">
+             
+             <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu animated fadeInUp" role="menu">
+                <li><a href="#">Perfil</a></li>
+                <li><a href="#">Otra acción</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Salir</a></li>
+              </ul>
+            </li>
+        </ul>
+             
+           <!-- <ul id="demo-1" class="nav navbar-nav navbar-right">
                <li><a href="publica.html"><i class="fa fa-suitcase"></i>Publicar</a></li>
                <li class="dropdown">
                   <a href="#" class="dropdown-toggle profile-image" data-toggle="dropdown"><img src="images/user.jpg" alt="usuario" class="img-circle special-img"> Alejandro <b class="caret"></b></a>
@@ -70,7 +84,7 @@
                      <li><a href="#"><i class="fa fa-sign-out"></i> Salir </a></li>
                   </ul>
                </li>
-            </ul>
+            </ul>-->
          </div>
       </div>
    </nav>
@@ -2326,7 +2340,21 @@
      
     <script type="text/javascript" src="js/bootstrap-dropdown-on-hover.js"></script>  
       
+     <script>
     
+        $(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+    </script>
     
     
     <script type="text/javascript">
@@ -2359,17 +2387,7 @@
                 });
             }
     </script>
-    <script>
-    $(function() {
-            
-            $("#demo-1").bootstrapDropdownOnHover({
-                mouseOutDelay: 500, // Number of milliseconds to wait before closing the menu on mouseleave
-                responsiveThreshold: 992, // Pixel width where the menus should no-longer be activated by hover
-                hideBackdrop: true // Whether to remove the menu backdrop upon hover (mobile only)
-                });
-            });
-
-    </script>
+    
 <script>
     $(document).ready(function() {
     $('#myCarousel1').carousel({
@@ -2378,25 +2396,15 @@
 });
     
     </script>
-    <!--SCRIPT QUE LLAMA AL MAPA DE GOOGLE MAPS--> 
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-      function initialize() {
-        var mapCanvas = document.getElementById('map-canvas');
-        var mapOptions = {
-          center: new google.maps.LatLng(44.5403, -78.5463),
-          zoom: 8,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions);
-      }
-    </script>
+            
+    
+    
   <script>
     $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
     </script>    
- 
+
     
 
     

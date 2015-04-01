@@ -185,7 +185,7 @@ h2 span{
     font-weight: normal;
 }
 .input-group{
-    margin: 30px 0;
+    margin: 0;
 }
 .der{
     float: right;
@@ -963,6 +963,9 @@ modal-dialog{
     display: table;
     text-align: left;
 }
+.tabla1{
+    display: table;
+}
 .vendedor{
     padding: 0 40px;
     font-family: 'ralewaylight';
@@ -1108,14 +1111,21 @@ modal-dialog{
     font-size: 2em;
     margin:40px 0 20px 0;
 }
-.ingresa{
-    padding: 30px;
+
+.visto{
+    font-family: 'open_sanssemibold';
+    position: absolute;
+    display: inline-table;
+    right:0;
+    top: 5px;
+    color: #f5f5f5;
+    padding: 10px;
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 1);
+    
 }
-.ingresa .checkbox{
-    font-size: 12px;
-    color: #888;
-    font-family: 'ralewaylight';
-}
+
+
+
 /**************************************/
 /********* MODAL AUTOMOTORA ***********/
 /**************************************/
@@ -1201,7 +1211,47 @@ modal-dialog{
 .bannerhor{
     margin-bottom: 70px;
 }
+/**************************************/
+/************ PUBLICA *****************/
+/**************************************/
 
+.exceeded { 
+    color: #f9439d; 
+}
+/**************************************/
+/************ PUBLICA *****************/
+/**************************************/
+
+#wrapper {
+    width:578px;
+    margin:75px auto;
+}
+/* TinyLimiter */
+ #text {
+    
+    padding:10px;
+    line-height:1.4;
+    resize:vertical;
+    font:16px;
+}
+.info {
+    margin-bottom:10px;
+    color:#fff;
+}
+.chars {
+    margin-top:10px;
+    color:#d1a727;
+    display: inline-block;
+}
+.chars:after{
+    content: " caracteres disponibles";
+}
+.maxLimit {
+    color: #f9439d;
+}
+.minLimit {
+    color: #888;
+}
 /**************************************/
 /************ PAGINACIÓN **************/
 /**************************************/
@@ -1534,20 +1584,23 @@ select option: first-child{
 /**************************************/
 /************* RESULTADOS *************/
 /**************************************/
+.titulo-res{
+    padding: 25px 0 0 0;
+}
 .bg-bl{
     background-color: #fff;
-    padding: 30px 40px;
+    padding: 20px 40px;
     border-bottom: 1px solid #ddd;
     }
 .resultados{
     background-color: #fff;
     margin-bottom: 30px;
     border-radius: 5px;
-    border:1px solid #eee;
-    height: 208px;
+    border:1px solid #ddd;
+    /*max-height: 208px;*/  
 }
 .resultados:hover{
-    border:1px solid #ddd;
+    border:1px solid #ccc;
     /*border:1px solid #ddd;
     -webkit-box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.3);
     -moz-box-shadow:    0px 1px 2px 0px rgba(50, 50, 50, 0.3);
@@ -1572,10 +1625,10 @@ select option: first-child{
     padding: 30px 30px 0;
 }
 .res-img{
-    padding: 0;
+    
 }
 .res-img img{
-    width: 100%;
+     width: 100%;
     -webkit-border-top-left-radius: 5px;
     -webkit-border-bottom-left-radius: 5px;
     -moz-border-radius-topleft: 5px;
@@ -1631,6 +1684,77 @@ select option: first-child{
 }
 .cont-resultados a{
     color:#565a5c;
+}
+.pruebabg{
+    max-width: 100%;
+    min-height:210px;
+    background-position: center;
+     -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+/*****************************************/
+/************ MODAL INGRESAR *************/
+/*****************************************/
+
+.modal-sm {
+width: 500px;
+}
+.ingresa a{
+    font-family: 'ralewaylight';
+    color: #888;
+    font-size: 12px;
+}
+.ingresa button{
+    background-color:#92A500;
+    color: #fff;
+    padding:5px 60px;
+    border: 1px solid #92A500;
+    margin-top: 10px;
+}
+.ingresa{
+    padding: 30px;
+}
+.ingresa .checkbox{
+    font-size: 12px;
+    color: #888;
+    font-family: 'ralewaylight';
+}
+.ingresa .checkbox{
+    margin: 0;
+}
+.t1 p{
+    text-align: center;
+    font-size: 14px;
+    font-family: 'ralewaylight';
+    margin: 0;
+}
+.t1 p span a{
+   font-family: 'open_sanssemibold';
+    color:#92A500;
+}
+.ingresa .medio-table{
+    display: table;
+}
+.ingresa .medio-table .medio{
+    display:table-cell;
+    vertical-align: middle;
+}
+.ancho{
+    width: 100%;
+}
+
+.input-group .form-control:not(:first-child):not(:last-child){
+    border-radius: 0;
+    border: 1px solid #ccc;
+    border-left: transparent;
 }
 /*///////////////////////////////////////////*/
 /*********************************************/
