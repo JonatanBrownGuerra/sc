@@ -230,6 +230,161 @@ h2 span{
 .btn-facebook .badge{color:#3b5998;background-color:#fff}
 
 /**************************************/
+/************** ÍCONOS ***************/
+/**************************************/
+
+.anti-robo{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)0 0;
+    opacity: .8;
+}
+.aire{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-34px 0;
+    opacity: .8;
+}
+.abs{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-68px 0;
+    opacity: .8;
+}
+.radio{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-102px 0;
+    opacity: .8;
+}
+.llantas{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-136px 0;
+    opacity: .8;
+}
+.usb{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)0 -34px;
+    opacity: .8;
+}
+.ninos{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-34px -34px;
+    opacity: .8;
+}
+.aux{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-68px -34px;
+    opacity: .8;
+}
+.todoterreno{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-102px -34px;
+    opacity: .8;
+}
+.catalitico{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-136px -34px;
+    opacity: .8;
+}
+.censores{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)0 -68px;
+    opacity: .8;
+}
+.cierre{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-34px -68px;
+    opacity: .8;
+}
+.alzavidrios-e{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-68px -68px;
+    opacity: .8;
+}
+.retrovisores-e{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-102px -68px;
+    opacity: .8;
+}
+.airbag{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-136px -68px;
+    opacity: .8;
+}
+.camara{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)0 -102px;
+    opacity: .8;
+}
+.crucero{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-34px -102px;
+    opacity: .8;
+}
+.clima{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-68px -102px;
+    opacity: .8;
+}
+.bluetooth{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-102px -102px;
+    opacity: .8;
+}
+.neblineros{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)0 -136px;
+    opacity: .8;
+}
+.control{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-34px -136px;
+    opacity: .8;
+}
+.airbag-lat{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-68px -136px;
+    opacity: .8;
+}
+.flecha-atras{
+    width: 19px;
+    height: 32px;
+    background: url(../images/flechas1.png)0 0;
+    position: absolute;
+    top: 42%;
+    left: 10px;
+}
+.flecha-adelante{
+    width: 19px;
+    height: 32px;
+    background: url(../images/flechas1.png)-19px 0;
+    position: absolute;
+    top: 42%;
+    right: 10px;
+}
+
+
+
+/**************************************/
 /************** NAV-BAR ***************/
 /**************************************/
 
@@ -319,6 +474,7 @@ h2 span{
     height: 30px;
 }
 .dropdown-menu{
+    margin: 0;
     box-shadow: inset 0px 0px 0px -100px #FFFFFF;
     -webkit-box-shadow: inset 0px 0px 0px -100px #FFFFFF;
     -moz-box-shadow: inset 0px 0px 0px -100px #FFFFFF;
@@ -1322,7 +1478,7 @@ modal-dialog{
     background-color: gray;
 }
 .carousel-control{
-   opacity: .5;
+   opacity: .8;
    /*transition:opacity .4s linear;*/    
 }
 .carousel-control:hover{
