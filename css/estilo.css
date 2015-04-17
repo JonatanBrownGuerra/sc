@@ -237,133 +237,133 @@ h2 span{
     width: 34px;
     height: 34px;
     background: url(../images/iconos-SC.png)0 0;
-    opacity: .8;
+    opacity: .7;
 }
 .aire{
     width: 34px;
     height: 34px;
     background: url(../images/iconos-SC.png)-34px 0;
-    opacity: .8;
+    opacity: .7;
 }
 .abs{
     width: 34px;
     height: 34px;
     background: url(../images/iconos-SC.png)-68px 0;
-    opacity: .8;
+    opacity: .7;
 }
-.radio{
+.musica{
     width: 34px;
     height: 34px;
     background: url(../images/iconos-SC.png)-102px 0;
-    opacity: .8;
+    opacity: .7;
 }
 .llantas{
     width: 34px;
     height: 34px;
     background: url(../images/iconos-SC.png)-136px 0;
-    opacity: .8;
+    opacity: .7;
 }
 .usb{
     width: 34px;
     height: 34px;
     background: url(../images/iconos-SC.png)0 -34px;
-    opacity: .8;
+    opacity: .7;
 }
 .ninos{
     width: 34px;
     height: 34px;
     background: url(../images/iconos-SC.png)-34px -34px;
-    opacity: .8;
+    opacity: .7;
 }
 .aux{
     width: 34px;
     height: 34px;
     background: url(../images/iconos-SC.png)-68px -34px;
-    opacity: .8;
+    opacity: .7;
 }
 .todoterreno{
     width: 34px;
     height: 34px;
     background: url(../images/iconos-SC.png)-102px -34px;
-    opacity: .8;
+    opacity: .7;
 }
 .catalitico{
     width: 34px;
     height: 34px;
     background: url(../images/iconos-SC.png)-136px -34px;
-    opacity: .8;
+    opacity: .7;
 }
 .censores{
     width: 34px;
     height: 34px;
     background: url(../images/iconos-SC.png)0 -68px;
-    opacity: .8;
+    opacity: .7;
 }
 .cierre{
     width: 34px;
     height: 34px;
     background: url(../images/iconos-SC.png)-34px -68px;
-    opacity: .8;
+    opacity: .7;
 }
 .alzavidrios-e{
     width: 34px;
     height: 34px;
     background: url(../images/iconos-SC.png)-68px -68px;
-    opacity: .8;
+    opacity: .7;
 }
 .retrovisores-e{
     width: 34px;
     height: 34px;
     background: url(../images/iconos-SC.png)-102px -68px;
-    opacity: .8;
+    opacity: .7;
 }
 .airbag{
     width: 34px;
     height: 34px;
     background: url(../images/iconos-SC.png)-136px -68px;
-    opacity: .8;
+    opacity: .7;
 }
 .camara{
     width: 34px;
     height: 34px;
     background: url(../images/iconos-SC.png)0 -102px;
-    opacity: .8;
+    opacity: .7;
 }
 .crucero{
     width: 34px;
     height: 34px;
     background: url(../images/iconos-SC.png)-34px -102px;
-    opacity: .8;
+    opacity: .7;
 }
 .clima{
     width: 34px;
     height: 34px;
     background: url(../images/iconos-SC.png)-68px -102px;
-    opacity: .8;
+    opacity: .7;
 }
 .bluetooth{
     width: 34px;
     height: 34px;
     background: url(../images/iconos-SC.png)-102px -102px;
-    opacity: .8;
+    opacity: .7;
 }
 .neblineros{
     width: 34px;
     height: 34px;
     background: url(../images/iconos-SC.png)0 -136px;
-    opacity: .8;
+    opacity: .7;
 }
 .control{
     width: 34px;
     height: 34px;
     background: url(../images/iconos-SC.png)-34px -136px;
-    opacity: .8;
+    opacity: .7;
 }
 .airbag-lat{
     width: 34px;
     height: 34px;
     background: url(../images/iconos-SC.png)-68px -136px;
-    opacity: .8;
+    opacity: .7;
 }
 .flecha-atras{
     width: 19px;
@@ -676,7 +676,10 @@ select {
 .automatico{
     font-size: 12px;
     float: left;
-    margin: 10px 0 0 10px;
+    margin: 8px 0 0 10px;
+}
+.automatico span{
+    margin: 0 8px 0 0;
 }
 .o{
     float: left;
@@ -1050,7 +1053,6 @@ modal-dialog{
     font-family: 'ralewaymedium';
 }
 .carrusel{
-    height: 467px;
     padding: 0;
     margin-left: -1px;
 }
@@ -1664,13 +1666,14 @@ li .cuatro-stars{
 /*****************************************/
 
 .navigation-outer-wrap {
-  width: 409px;
+  width: 100%;
   height: 68px;
+  padding: 0 60px;
   overflow: hidden;
   display: inline-block;
 }
 .thumbnail-navigation {
-    width: 533px;
+    width: 100%;
     height: 67px;
     background-color: #fff;
     position: relative;
@@ -1704,18 +1707,23 @@ border-left: 1px solid transparent;
     /*opacity: 0.5;
     filter: alpha(opacity=50);*/
     background-color: #FFFFFF;
-    padding: 21px 25px;
+    padding: 21px 23px;
     margin: 0;
+    position: absolute;
+    top:1px;
   
 }
 .thumbnail-navigation a.pull-right, .thumbnail-navigation a.pull-left{
-    opacity: .5;
+    opacity: 1;
 }
 .thumbnail-navigation a.pull-right:hover, .thumbnail-navigation a.pull-left:hover{
     opacity: 1;
 }
 .pull-left img, .pull-right img{
     width: 10px;
+}
+.pull-right{
+    right: -1px;
 }
 .thumbnail-navigation .navigation:hover {
   opacity: 1;
@@ -1730,6 +1738,10 @@ border-left: 1px solid transparent;
 }
 .tab-content{
     width: 100%;
+}
+.tab-content img{
+    width: 100%;
+    
 }
 select option[selected] {
     color: #ccc;
@@ -1966,6 +1978,30 @@ width: 500px;
 /*****************************************/
     
 @media (max-width: 992px) {
+    #myCarousel4 .carousel-control.right, #myCarousel5 .carousel-control.right, #myCarousel4 .carousel-control.left, #myCarousel5 .carousel-control.left{
+        padding: 0;
+    }
+    .carousel-control img{
+        margin-top: 500px;
+    }
+    .similares .thumbnail{
+        padding: 0 60px 30px;
+    }
+    .datos:before{
+        display: block;
+        border: none;
+    }
+    .comentarios:before{
+        display: block;
+    }
+    
+    .cont-cas-ser{
+        padding: 0 30px 30px 130px;
+    }
+    .datos, .comentarios{
+        text-align: center;
+    }
+    
     .lineader select:hover{
     border:1px solid rgba(170,170,170,1);
     }
@@ -2030,10 +2066,16 @@ width: 500px;
     
 }
 /*****************************************/
-/************* TABLETS 768 ***************/
+/********** TABLETS 768 - SM *************/
 /*****************************************/
 
 @media (max-width: 768px) {
+    
+    .cont-cas-ser{
+        text-align: center;
+        padding: 0 30px 30px 30px;
+    }
+    
     .footer{
         text-align: center;
     }
@@ -2205,6 +2247,9 @@ width: 500px;
 /*****************************************/
 
 @media (max-width: 470px) {
+    .similares .thumbnail{
+        padding: 0 10px 30px;
+    }
     .publicidad{
         display: none;
     }
