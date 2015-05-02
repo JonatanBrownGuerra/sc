@@ -1951,6 +1951,44 @@ width: 500px;
 .tooltip.top{
     margin-top:-17px;
 }
+.upload-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-color: #ccc;
+    background-image: url(../images/useruser.png);
+    background-repeat: no-repeat;
+    margin: 0 auto 30px;
+}
+.upload-image .btn-default{
+    font-size: 25px;
+    padding: 0 12px;
+    border-radius: 10px;
+}
+.add-foto{
+    background-color: #ccc;
+    border-radius: 5px;
+    width: 140px;
+    height: 95px;
+    background-image: url(../images/sinfoto5.png);
+    background-repeat: no-repeat;
+    float: right;
+    overflow: hidden;
+    text-align: center;
+}
+.texto-der{
+    text-align: right;
+}
+.bandera{
+
+   
+}
+.bandera-txt{
+    overflow: hidden;
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 3px;    
+}
 /*///////////////////////////////////////////*/
 /*********************************************/
 /************** MEDIA QUERYS *****************/
