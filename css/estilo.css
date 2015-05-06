@@ -109,10 +109,14 @@ a:hover{
     text-align: right;
 }
 h2{
-   font-family: 'ralewaylight';
-    font-size: 1.25em;
+   font-family: 'ralewaymedium';
+    font-size: 1.5em;
     margin: 0 0 0 0;
     letter-spacing: 0.04em;
+}
+h2.titulo-index{
+   font-size: 1.4em;
+   font-family: 'ralewaylight';
 }
 h2 span{
     color: #a2b603;
@@ -237,7 +241,17 @@ h2 span{
 /**************************************/
 /************** ÍCONOS ***************/
 /**************************************/
-
+.ojo {
+  width: 22px;
+  height: 22px;
+  float: left;
+  position: relative;
+  top: -2px;
+  right: 2px;
+  opacity: .5;
+  background: url(../images/ico-ojo.png);
+  background-repeat: no-repeat;
+}
 .anti-robo{
     width: 34px;
     height: 34px;
@@ -412,6 +426,7 @@ h2 span{
 /************** NAV-BAR ***************/
 /**************************************/
 
+
 .navbar-default .navbar-collapse{
     background-color: #fff;
 }
@@ -421,7 +436,7 @@ h2 span{
 }
 .navbar-default .navbar-nav>li>a:hover{
     font-family: 'ralewaymedium';
-    color:#a2b603;
+    color:#555;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     text-decoration: none;  
@@ -517,9 +532,12 @@ h2 span{
     background-color: #fff;
     
 }
+.opciones li{
+    color: #fff;
+}
 .opciones .btn-default{
     background-color: #a2b603;
-    border-bottom: 2px solid #a2b603;
+    border-bottom: 2px solid #8A9B06;
     color: #fff;
     padding:6px 14px 4px;
     margin:8px 0;
@@ -847,7 +865,7 @@ input[type=text]:focus, textarea:focus, select:focus, button:focus{
 .filter{
     text-align: center;
     background-color: #fff;
-    max-width: 140px;
+    max-width: 155px;
     margin:-1px auto 0;
     padding: 4px 1px;
     border: 1px solid #ddd;
@@ -945,7 +963,7 @@ input[type=text]:focus, textarea:focus, select:focus, button:focus{
     top:-4px; 
 }
 .thumbnail .caption h4 span{
-    font-family: 'ralewaylight';
+    font-family: 'Open Sans', sans-serif;
 }
 .thumbnail .caption h4 span:before{
     content: " ";
@@ -967,7 +985,7 @@ input[type=text]:focus, textarea:focus, select:focus, button:focus{
     margin: 0 3px 0 0;
     position: relative;
     top: -2px;
-    font-family: 'open_sanssemibold';
+    font-family: 'Open Sans', sans-serif;
     
 }
 .clear{
@@ -984,12 +1002,12 @@ input[type=text]:focus, textarea:focus, select:focus, button:focus{
     top:-10px;
     right: 0;
     float: right;
-    -webkit-border-top-left-radius: 3px;
-    -webkit-border-bottom-left-radius: 3px;
-    -moz-border-radius-topleft: 3px;
-    -moz-border-radius-bottomleft: 3px;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
+    -webkit-border-top-left-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    -moz-border-radius-topleft: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
     letter-spacing: 0.02em;
 }
 .marcas{
@@ -1011,7 +1029,6 @@ input[type=text]:focus, textarea:focus, select:focus, button:focus{
 .cuarenta-pad hr{
     margin: 0;
 }
-
 
 /**************************************/
 /*************** MODAL ****************/
@@ -1046,7 +1063,7 @@ filter: alpha(opacity=20);
     overflow: hidden;
 }
 .modal-header h3{
-    font-family: 'ralewaybold';
+    font-family: 'ralewaymedium';
     text-transform: capitalize;
     font-size: 1.875em;
     margin: 0 0 0 3px;
@@ -1056,7 +1073,7 @@ filter: alpha(opacity=20);
     font-family: 'ralewaylight';
 }
 .modal-header p{
-    font-family: 'ralewaylight';
+    font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     margin: 0 0 0 3px;
     color:#898989;
@@ -1193,6 +1210,202 @@ modal-dialog{
     font-size: 12px;
 }
 
+
+
+
+
+/**************************************/
+/********* MODAL AUTOMOTORA ***********/
+/**************************************/
+
+.local-foto img{
+    width: 100%;
+    max-width: 374px;
+    padding: 0;
+    margin: 0 0 0 -5px;
+}
+.mapa iframe{
+    width: 100%;
+    height: 530px;
+    background-color: #CCC;
+}
+.local-contacto{
+    border-left: 1px solid #ccc;
+}
+.local-info ul li img{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    
+}
+.local-info{
+    text-align: center;
+    line-height: 2em;
+    padding: 40px 15px;
+    font-family: 'ralewaylight';
+}
+.local-info-det{
+    text-align: left;
+}
+.local-info ul li span{
+    font-size:12px;
+    line-height: 3em;
+    font-family: 'ralewayextralight';
+}
+#local-cargo{
+    margin: -13px 0 0 0;
+}
+#local-user{
+    font-family: 'ralewaybold';
+}
+
+/**************************************/
+/************** BANNERS ***************/
+/**************************************/
+
+.banner{
+    margin-top: 90px;
+}
+
+.banner .thumbnail{
+    padding: 0;
+    margin: 0 0 10px 0;
+    border: none;
+    
+}
+.banner .thumbnail img{
+    border: 1px solid #d1d1d1;
+}
+.publicidad{
+    text-align: center;
+    vertical-align:t;
+    background-color: #ccc;
+    height: 90px;
+    border-radius: 2px;
+    margin-bottom: 30px;
+}
+#publi{
+    line-height: 90px;
+    font-size: 1.2em;
+}
+.col-publicidad{
+    padding-top: 115px;
+}
+.col-publicidad .thumbnail{
+    padding: 0;
+}
+.col-publicidad .thumbnail>img, .col-publicidad .thumbnail a>img, .bannerhor img{
+    border: 1px solid #ddd;
+    border-bottom: 2px solid #ccc;
+    border-radius: 5px;
+    
+}
+.bannerhor{
+    margin-bottom: 70px;
+}
+/**************************************/
+/************ PUBLICA *****************/
+/**************************************/
+
+.exceeded { 
+    color: #f9439d; 
+}
+/**************************************/
+/************ PUBLICA *****************/
+/**************************************/
+
+#wrapper {
+    width:578px;
+    margin:75px auto;
+}
+/* TinyLimiter */
+ #text {
+    
+    padding:10px;
+    line-height:1.4;
+    resize:vertical;
+    font:16px;
+}
+.info {
+    margin-bottom:10px;
+    color:#fff;
+}
+.chars {
+    margin-top:10px;
+    color:#d1a727;
+    display: inline-block;
+}
+.chars:after{
+    content: " caracteres disponibles";
+}
+.maxLimit {
+    color: #f9439d;
+}
+.minLimit {
+    color: #888;
+}
+/**************************************/
+/************ PAGINACIÓN **************/
+/**************************************/
+
+.pagination>li>a{
+    color:#6C6C6C;
+    padding: 6px 12px;
+    margin: 2px;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #c8c8c8;
+    
+}
+.pagination>li>a:hover{
+    color:#444;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid rgba(170, 170, 170, 1);
+}
+
+/**************************************/
+/************** FOOTER ****************/
+/**************************************/
+
+#footer-2{
+    padding: 35px 0;
+    background-color: #fff;
+    font-family: 'ralewaymedium';
+    font-size: 12px;
+    color:#8c8c8c;
+    border-top: 1px solid #ddd;
+    margin-top: 60px;
+}
+#footer-2 a{
+    color: #7d7c7c;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    font-weight: 800;
+}
+#footer-2 a:hover, a:focus {
+    color: #565a5c; 
+    text-decoration: none;
+}
+#footer-2 .list-inline li {
+    border-right: 1px solid #ecf0f1;
+    padding-right: 10px;
+}
+.list-inline > li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+#footer-2 .list-inline {
+    margin-bottom: 0;
+    text-align: right;
+}
+
+/*****************************************/
+/************** CARRUSEL *****************/
+/*****************************************/
 /**************************************/
 /******* CARRUSEL EQUIPAMIENTO ********/
 /**************************************/
@@ -1295,7 +1508,7 @@ modal-dialog{
 }
 
 .visto{
-    font-family: 'open_sanssemibold';
+    font-family: 'Open Sans', sans-serif;
     position: absolute;
     display: inline-table;
     right:0;
@@ -1305,226 +1518,6 @@ modal-dialog{
     text-shadow: 0px 0px 7px rgba(0, 0, 0, 1);
     
 }
-
-
-
-/**************************************/
-/********* MODAL AUTOMOTORA ***********/
-/**************************************/
-
-.local-foto img{
-    width: 100%;
-    max-width: 374px;
-    padding: 0;
-    margin: 0 0 0 -5px;
-}
-.mapa iframe{
-    width: 100%;
-    height: 530px;
-    background-color: #CCC;
-}
-.local-contacto{
-    border-left: 1px solid #ccc;
-}
-.local-info ul li img{
-    width: 70px;
-    height: 70px;
-    border-radius: 35px;
-    
-}
-.local-info{
-    text-align: center;
-    line-height: 2em;
-    padding: 40px 15px;
-    font-family: 'ralewaylight';
-}
-.local-info ul li span{
-    font-size:12px;
-    line-height: 3em;
-    font-family: 'ralewayextralight';
-}
-#local-cargo{
-    margin: -13px 0 0 0;
-}
-#local-user{
-    font-family: 'ralewaybold';
-}
-/**************************************/
-/************** BANNERS ***************/
-/**************************************/
-
-.banner{
-    margin-top: 90px;
-}
-
-.banner .thumbnail{
-    padding: 0;
-    margin: 0 0 10px 0;
-    border: none;
-    
-}
-.banner .thumbnail img{
-    border: 1px solid #d1d1d1;
-}
-.publicidad{
-    text-align: center;
-    vertical-align:t;
-    background-color: #ccc;
-    height: 90px;
-    border-radius: 2px;
-    margin-bottom: 30px;
-}
-#publi{
-    line-height: 90px;
-    font-size: 1.2em;
-}
-.col-publicidad{
-    padding-top: 115px;
-}
-.col-publicidad .thumbnail{
-    padding: 0;
-}
-.col-publicidad .thumbnail>img, .col-publicidad .thumbnail a>img, .bannerhor img{
-    border: 1px solid #ddd;
-    border-bottom: 2px solid #ccc;
-    border-radius: 5px;
-    
-}
-.bannerhor{
-    margin-bottom: 70px;
-}
-/**************************************/
-/************ PUBLICA *****************/
-/**************************************/
-
-.exceeded { 
-    color: #f9439d; 
-}
-/**************************************/
-/************ PUBLICA *****************/
-/**************************************/
-
-#wrapper {
-    width:578px;
-    margin:75px auto;
-}
-/* TinyLimiter */
- #text {
-    
-    padding:10px;
-    line-height:1.4;
-    resize:vertical;
-    font:16px;
-}
-.info {
-    margin-bottom:10px;
-    color:#fff;
-}
-.chars {
-    margin-top:10px;
-    color:#d1a727;
-    display: inline-block;
-}
-.chars:after{
-    content: " caracteres disponibles";
-}
-.maxLimit {
-    color: #f9439d;
-}
-.minLimit {
-    color: #888;
-}
-/**************************************/
-/************ PAGINACIÓN **************/
-/**************************************/
-
-.pagination>li>a{
-    color:#98ab04;
-    padding: 6px 22px;
-    font-family: 'open_sanssemibold';
-    border: 1px solid #c8c8c8;
-    
-}
-.pagination>li>a:hover{
-    color:#a2b603;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-    text-decoration: none;
-    background-color: #fff;
-    border: 1px solid rgba(170, 170, 170, 1);
-}
-
-/**************************************/
-/************** FOOTER ****************/
-/**************************************/
-
-#footer-2{
-    padding: 35px 0;
-    background-color: #fff;
-    font-family: 'ralewaymedium';
-    font-size: 12px;
-    color:#8c8c8c;
-    border-top: 1px solid #ddd;
-}
-#footer-2 a{
-    color: #7d7c7c;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-    text-decoration: none;
-    font-weight: 800;
-}
-#footer-2 a:hover, a:focus {
-    color: #565a5c; 
-    text-decoration: none;
-}
-#footer-2 .list-inline li {
-    border-right: 1px solid #ecf0f1;
-    padding-right: 10px;
-}
-.list-inline > li {
-    display: inline-block;
-    padding-right: 5px;
-    padding-left: 5px;
-}
-#footer-2 .list-inline {
-    margin-bottom: 0;
-    text-align: right;
-}
-
-/*****************************************/
-/************** CARRUSEL *****************/
-/*****************************************/
-
-#wrapper {
-    width: 90%;
-    margin: 0;
-    text-align: left;
-    font-family: Georgia, serif;
-    color: #222;
-    background-color: gray;
-}
-.carousel-control{
-   opacity: .8;
-   /*transition:opacity .4s linear;*/    
-}
-.carousel-control:hover{
-    opacity: 1;
-}
-.carousel-inner .btn{
-    padding: 0;
-}
-a.carousel-control.left img{
-    top:40px;
-}
-.carousel-control .thumbprecio{
-    right: 0;
-}
-.carousel .carousel-control { visibility: hidden; }
-.carousel:hover .carousel-control { visibility: visible; }
-.carousel-control.right, .carousel-control.left{
-    background-image: none;
-}
-
 /********CARRUSEL MODAL*************/
 
 .carousel1 {
@@ -1562,6 +1555,37 @@ a.carousel-control.left img{
 .carousel-indicators .active {
 background: #a2b603;
 }
+#wrapper {
+    width: 90%;
+    margin: 0;
+    text-align: left;
+    font-family: Georgia, serif;
+    color: #222;
+    background-color: gray;
+}
+.carousel-control{
+   opacity: .8;
+   /*transition:opacity .4s linear;*/    
+}
+.carousel-control:hover{
+    opacity: 1;
+}
+.carousel-inner .btn{
+    padding: 0;
+}
+a.carousel-control.left img{
+    top:40px;
+}
+.carousel-control .thumbprecio{
+    right: 0;
+}
+.carousel .carousel-control { visibility: hidden; }
+.carousel:hover .carousel-control { visibility: visible; }
+.carousel-control.right, .carousel-control.left{
+    background-image: none;
+}
+
+
 
 .equipa .thumbnail{
     text-align: center;
@@ -1621,6 +1645,9 @@ ul.user-detalle li{
     margin: 15px 0;
     vertical-align: middle;
     display: table-cell;
+}
+.mini-header h2, .mini-header3 h2{
+    font-size: 1.3em;
 }
 
 br{
@@ -1895,9 +1922,18 @@ select option: first-child{
 /*****************************************/
 /************ MODAL INGRESAR *************/
 /*****************************************/
+.imagen-ingresa{
+     
+}
+.imagen-ingresa img {
+  width: 290px;
+  margin: 30px 0;
+  padding: 0 10px 0 10px;
+  border-right: 1px solid #ddd;
+}
 
 .modal-sm {
-width: 500px;
+width: 760px;
 }
 .ingresa a{
     font-family: 'ralewaylight';
@@ -2145,6 +2181,10 @@ width: 500px;
 /*****************************************/
 
 @media (max-width: 768px) {
+    .modal-sm{
+        width: auto;
+        
+    }
     .mini-header4 h2{
         margin-top: 40px;
     }
@@ -2325,6 +2365,57 @@ width: 500px;
         margin: 0;
     }
     
+    .boton-movil{
+        background-color: #fff;
+        margin: 0;
+        border-radius: 0px;
+        padding: 10px 30px;
+        color: #555;
+        text-align: left;
+        font-size: 15px;
+        border: 1px solid #bbb;
+        border-bottom: transparent;
+        cursor:pointer;
+        
+        
+}
+.boton-movil:active{
+    background-color: #eee;
+}
+    
+    .botonera-up{
+        -webkit-border-top-left-radius: 3px;
+        -webkit-border-top-right-radius: 3px;
+        -moz-border-radius-topleft: 3px;
+        -moz-border-radius-topright: 3px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+    .botonera-down{
+        -webkit-border-bottom-right-radius: 3px;
+        -webkit-border-bottom-left-radius: 3px;
+        -moz-border-radius-bottomright: 3px;
+        -moz-border-radius-bottomleft: 3px;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+        border-bottom: 1px solid #bbb;
+        margin-bottom: 10px;
+    }
+    .fono-ico:after{
+        content: url("../images/ico-phone-jr.png");
+        float: right;
+        padding: 4px 0 0 0;
+        opacity: .7;
+        
+    }
+    .mail-ico:after{
+        content: url("../images/ico-mail-jr.png");
+        float: right;
+        padding: 4px 0 0 0;
+        opacity: .7;
+        
+        
+    }
     
 }
     
@@ -2334,6 +2425,7 @@ width: 500px;
 /*****************************************/
 
 @media (max-width: 470px) {
+    
     .similares .thumbnail{
         padding: 0 10px 30px;
     }

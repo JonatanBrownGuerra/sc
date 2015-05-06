@@ -45,13 +45,43 @@
              
             <form class="navbar-form navbar-left" role="search">
                 
-               <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Auto, Automotora, etc">
-               </div>
-               <button type="submit" class="btn btn-default">Buscar</button>
+               <div class="input-group">
+                <div class="input-group-btn search-panel dropdown">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    	<span id="search_concept">Filtrar por</span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu animated fadeInUp" role="menu">
+                      <li><a href="#automotora">Automotora</a></li>
+                      <li><a href="#servicios">Servicios</a></li>
+                      <li><a href="#vehiculos">Vehículos</a></li>
+                    </ul>
+                </div>
+                <input type="hidden" name="search_param" value="all" id="search_param">         
+                <input type="text" class="form-control" name="x" placeholder="Buscar...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+            </div> 
             </form>
-            <ul id="demo-1" class="nav navbar-nav navbar-right">
-               <li><a href="#"><i class="fa fa-suitcase"></i>Publicar</a></li>
+             
+             <ul class="nav navbar-nav navbar-right opciones">
+            <a href="publica.html" class="btn btn-default" role="button">Publicar anuncio</a>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle profile-image" data-toggle="dropdown"><img src="images/user.jpg" alt="usuario" class="img-circle special-img"><span class="caret"></span></a>
+              <ul class="dropdown-menu animated fadeInUp" role="menu">
+                <li><a href="#">Perfil</a></li>
+                <li><a href="#">Otra acción</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Salir</a></li>
+              </ul>
+            </li>
+            
+            
+        </ul>
+        
+             
+           <!-- <ul id="demo-1" class="nav navbar-nav navbar-right">
+               <li><a href="publica.html"><i class="fa fa-suitcase"></i>Publicar</a></li>
                <li class="dropdown">
                   <a href="#" class="dropdown-toggle profile-image" data-toggle="dropdown"><img src="images/user.jpg" alt="usuario" class="img-circle special-img"> Alejandro <b class="caret"></b></a>
                   <ul class="dropdown-menu dropdown-menu animated fadeInUp">
@@ -60,7 +90,7 @@
                      <li><a href="#"><i class="fa fa-sign-out"></i> Salir </a></li>
                   </ul>
                </li>
-            </ul>
+            </ul>-->
          </div>
       </div>
    </nav>
@@ -463,7 +493,22 @@
         $(":file").filestyle({buttonText: "Find file"});
     </script>
     
-
+    <!---------------DROPDOWN BUSCAR - TRANSICIÓN ON HOVER--------------->
+    <script>
+    
+        $(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+    </script>
 
     
       

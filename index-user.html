@@ -55,16 +55,29 @@
              
             <form class="navbar-form navbar-left" role="search">
                 
-               <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Auto, Automotora, etc">
-               </div>
-               <button type="submit" class="btn btn-default">Buscar</button>
+               <div class="input-group">
+                <div class="input-group-btn search-panel dropdown">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    	<span id="search_concept">Filtrar por</span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu animated fadeInUp" role="menu">
+                      <li><a href="#automotora">Automotora</a></li>
+                      <li><a href="#servicios">Servicios</a></li>
+                      <li><a href="#vehiculos">Vehículos</a></li>
+                    </ul>
+                </div>
+                <input type="hidden" name="search_param" value="all" id="search_param">         
+                <input type="text" class="form-control" name="x" placeholder="Buscar...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+            </div> 
             </form>
              
-             <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
+             <ul class="nav navbar-nav navbar-right opciones">
+            <a href="publica.html" class="btn btn-default" role="button">Publicar anuncio</a>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle profile-image" data-toggle="dropdown"><img src="images/user.jpg" alt="usuario" class="img-circle special-img"><span class="caret"></span></a>
               <ul class="dropdown-menu animated fadeInUp" role="menu">
                 <li><a href="#">Perfil</a></li>
                 <li><a href="#">Otra acción</a></li>
@@ -72,7 +85,10 @@
                 <li><a href="#">Salir</a></li>
               </ul>
             </li>
+            
+            
         </ul>
+        
              
            <!-- <ul id="demo-1" class="nav navbar-nav navbar-right">
                <li><a href="publica.html"><i class="fa fa-suitcase"></i>Publicar</a></li>
@@ -382,374 +398,6 @@
                                        <option value="83">Acadian</option>
                                        <option value="84">Acura</option>
                                        <option value="85">Adventure</option>
-                                       <option value="86">Africa</option>
-                                       <option value="87">Agrale</option>
-                                       <option value="88">Agromaq</option>
-                                       <option value="89">Agusta</option>
-                                       <option value="90">AJS</option>
-                                       <option value="91">Alba Motors</option>
-                                       <option value="3">Alfa Romeo</option>
-                                       <option value="92">AMC</option>
-                                       <option value="93">American Motors</option>
-                                       <option value="94">Aprilia</option>
-                                       <option value="95">Aqualine</option>
-                                       <option value="96">Aro</option>
-                                       <option value="97">Articat</option>
-                                       <option value="98">Artigiana</option>
-                                       <option value="99">Asia</option>
-                                       <option value="4">Aston Martin</option>
-                                       <option value="100">Atlas</option>
-                                       <option value="101">ATV</option>
-                                       <option value="5">Audi</option>
-                                       <option value="102">Aupa</option>
-                                       <option value="103">Ausa</option>
-                                       <option value="104">Austin</option>
-                                       <option value="105">Automoto</option>
-                                       <option value="106">Autorrad</option>
-                                       <option value="107">Baja</option>
-                                       <option value="108">Bajaj</option>
-                                       <option value="109">Baldan</option>
-                                       <option value="110">Baolat</option>
-                                       <option value="111">Baotion</option>
-                                       <option value="112">Bashan</option>
-                                       <option value="113">Bayliner</option>
-                                       <option value="114">Belarus</option>
-                                       <option value="115">Belav - Tomav</option>
-                                       <option value="116">Benelli</option>
-                                       <option value="6">Bentley </option>
-                                       <option value="117">Benyi</option>
-                                       <option value="118">Benzhou</option>
-                                       <option value="119">Bertone</option>
-                                       <option value="120">Bimota</option>
-                                       <option value="121">Black Diamond</option>
-                                       <option value="7">BMW</option>
-                                       <option value="122">Bobcat</option>
-                                       <option value="123">Bohemia</option>
-                                       <option value="124">Bomag</option>
-                                       <option value="125">Bombard</option>
-                                       <option value="126">Bombardier</option>
-                                       <option value="127">Bonluck</option>
-                                       <option value="128">Borgward</option>
-                                       <option value="129">Bortex</option>
-                                       <option value="130">Breuer</option>
-                                       <option value="131">Breviglieri</option>
-                                       <option value="132">Brias</option>
-                                       <option value="133">Brilliant</option>
-                                       <option value="134">Brillon</option>
-                                       <option value="135">Bros</option>
-                                       <option value="136">BRP CAN-AM</option>
-                                       <option value="137">BSA</option>
-                                       <option value="8">Bugatti</option>
-                                       <option value="138">Buggy</option>
-                                       <option value="139">Buick</option>
-                                       <option value="140">Busscar</option>
-                                       <option value="141">BYD</option>
-                                       <option value="142">Caburga</option>
-                                       <option value="9">Cadillac</option>
-                                       <option value="143">Cagina</option>
-                                       <option value="144">Cagiva</option>
-                                       <option value="145">Caky</option>
-                                       <option value="146">Can-Am</option>
-                                       <option value="147">Canoa</option>
-                                       <option value="148">Case</option>
-                                       <option value="149">Catalina</option>
-                                       <option value="150">Caterpillar</option>
-                                       <option value="370">Cestari</option>
-                                       <option value="151">CF Moto</option>
-                                       <option value="152">CGB Trailer</option>
-                                       <option value="153">Chandler</option>
-                                       <option value="154">Changan</option>
-                                       <option value="155">Changjeng</option>
-                                       <option value="156">Cherokee</option>
-                                       <option value="10">Chery</option>
-                                       <option value="11">Chevrolet</option>
-                                       <option value="157">Chituma</option>
-                                       <option value="158">Choice</option>
-                                       <option value="12">Chrysler</option>
-                                       <option value="159">Cima</option>
-                                       <option value="2">Citroen</option>
-                                       <option value="160">Coachmen</option>
-                                       <option value="161">Cobalt</option>
-                                       <option value="162">Coleman</option>
-                                       <option value="163">Coloso</option>
-                                       <option value="164">Comil</option>
-                                       <option value="165">Compair</option>
-                                       <option value="166">Comuta-Car</option>
-                                       <option value="13">Corvette</option>
-                                       <option value="167">Cross</option>
-                                       <option value="168">Custom</option>
-                                       <option value="14">Dacia</option>
-                                       <option value="169">Dadyw</option>
-                                       <option value="170">Daelim</option>
-                                       <option value="171">Daewoo</option>
-                                       <option value="172">Daf</option>
-                                       <option value="15">Daihatsu</option>
-                                       <option value="173">Datsun</option>
-                                       <option value="174">Dax</option>
-                                       <option value="175">Dayun</option>
-                                       <option value="176">Demag</option>
-                                       <option value="177">Deutz-Fahr</option>
-                                       <option value="178">DFM</option>
-                                       <option value="179">Dimex</option>
-                                       <option value="204">Disher Sportscars</option>
-                                       <option value="180">Divermaq</option>
-                                       <option value="181">DKW</option>
-                                       <option value="16">Dodge</option>
-                                       <option value="182">Dongfeng</option>
-                                       <option value="183">Ducar</option>
-                                       <option value="184">Ducati</option>
-                                       <option value="185">Duroboat</option>
-                                       <option value="186">Eager Beaver</option>
-                                       <option value="187">Eagle</option>
-                                       <option value="188">Ecoline</option>
-                                       <option value="189">Elho</option>
-                                       <option value="190">Escape</option>
-                                       <option value="191">Estuder</option>
-                                       <option value="192">Euromot</option>
-                                       <option value="193">Europard</option>
-                                       <option value="194">Exel</option>
-                                       <option value="195">Fada</option>
-                                       <option value="196">Falc</option>
-                                       <option value="197">Farmtrac</option>
-                                       <option value="198">Fayser</option>
-                                       <option value="17">Ferrari</option>
-                                       <option value="18">Fiat</option>
-                                       <option value="199">Fiatallis</option>
-                                       <option value="200">Fibermold</option>
-                                       <option value="201">Fibertex</option>
-                                       <option value="202">Fina</option>
-                                       <option value="203">Firemax</option>
-                                       <option value="205">Fleewood</option>
-                                       <option value="206">FMA</option>
-                                       <option value="19">Ford</option>
-                                       <option value="207">Forson</option>
-                                       <option value="208">Foton </option>
-                                       <option value="209">Four</option>
-                                       <option value="210">Free Way</option>
-                                       <option value="211">Freightliner</option>
-                                       <option value="212">Fruehauf</option>
-                                       <option value="213">Fullcar</option>
-                                       <option value="214">Futong</option>
-                                       <option value="215">Galion</option>
-                                       <option value="216">Gama</option>
-                                       <option value="217">Gardella</option>
-                                       <option value="218">Garelli</option>
-                                       <option value="219">Gas Gas</option>
-                                       <option value="220">Geely</option>
-                                       <option value="221">Geo</option>
-                                       <option value="222">Gilera</option>
-                                       <option value="223">Glastrom</option>
-                                       <option value="224">GMC</option>
-                                       <option value="225">Goldini</option>
-                                       <option value="226">Goren</option>
-                                       <option value="227">Great Wall</option>
-                                       <option value="228">Greenmaster</option>
-                                       <option value="229">Gribaldi & Salvia</option>
-                                       <option value="230">Grimme</option>
-                                       <option value="231">Grove</option>
-                                       <option value="232">Grua</option>
-                                       <option value="233">Guzzi</option>
-                                       <option value="234">Hafei</option>
-                                       <option value="235">Haima</option>
-                                       <option value="236">Hardi</option>
-                                       <option value="237">Harford</option>
-                                       <option value="238">Harley Davidson</option>
-                                       <option value="239">Hechizo</option>
-                                       <option value="240">Heli</option>
-                                       <option value="241">Hensin</option>
-                                       <option value="242">Hero Puch</option>
-                                       <option value="243">Hino</option>
-                                       <option value="251">Hisqvarna</option>
-                                       <option value="244">Hitachi</option>
-                                       <option value="20">Honda</option>
-                                       <option value="245">Honex</option>
-                                       <option value="246">Howard</option>
-                                       <option value="247">Huatai</option>
-                                       <option value="248">Hudson</option>
-                                       <option value="21">Hummer</option>
-                                       <option value="249">Hunter</option>
-                                       <option value="250">Husaber</option>
-                                       <option value="252">Hyosung</option>
-                                       <option value="253">Hyster</option>
-                                       <option value="22">Hyundai</option>
-                                       <option value="254">Ibiza</option>
-                                       <option value="255">Ika</option>
-                                       <option value="256">Indusa</option>
-                                       <option value="23">Infiniti</option>
-                                       <option value="257">Ingersoll Rand</option>
-                                       <option value="258">Inrecar</option>
-                                       <option value="259">International</option>
-                                       <option value="24">Isuzu</option>
-                                       <option value="261">Iveco</option>
-                                       <option value="260">Ivermoto</option>
-                                       <option value="262">Ivesa</option>
-                                       <option value="263">Jaar</option>
-                                       <option value="264">JAC Motors</option>
-                                       <option value="265">Jacto</option>
-                                       <option value="25">Jaguar</option>
-                                       <option value="266">Jan</option>
-                                       <option value="267">Jayco</option>
-                                       <option value="268">JCB</option>
-                                       <option value="26">Jeep</option>
-                                       <option value="269">JF</option>
-                                       <option value="270">Jialing</option>
-                                       <option value="271">Jianshe</option>
-                                       <option value="272">Jiapeng</option>
-                                       <option value="273">Jin Lun</option>
-                                       <option value="274">Jinbei</option>
-                                       <option value="275">Jincheng</option>
-                                       <option value="276">Jinma</option>
-                                       <option value="277">JMC</option>
-                                       <option value="278">John Deere</option>
-                                       <option value="279">Jonh Henry</option>
-                                       <option value="280">Jonway</option>
-                                       <option value="281">Joyride</option>
-                                       <option value="282">Jumil</option>
-                                       <option value="283">Jurmar</option>
-                                       <option value="284">Kamaz</option>
-                                       <option value="285">Kawasaki</option>
-                                       <option value="286">Kayak</option>
-                                       <option value="287">Keeway</option>
-                                       <option value="288">Kenworth</option>
-                                       <option value="289">Keystone</option>
-                                       <option value="27">Kia</option>
-                                       <option value="290">Kia Motors</option>
-                                       <option value="291">Kingyard</option>
-                                       <option value="292">Kinlon</option>
-                                       <option value="293">Kinroad</option>
-                                       <option value="294">Knight</option>
-                                       <option value="295">Kobelco</option>
-                                       <option value="296">Komatsu</option>
-                                       <option value="297">KTM</option>
-                                       <option value="298">Kuhn</option>
-                                       <option value="299">Kvernerland</option>
-                                       <option value="300">Kymco</option>
-                                       <option value="301">KZ</option>
-                                       <option value="302">Labounty</option>
-                                       <option value="303">Lada</option>
-                                       <option value="309">Laike</option>
-                                       <option value="28">Lamborghini</option>
-                                       <option value="304">Lambretta</option>
-                                       <option value="29">Lancia</option>
-                                       <option value="305">Land Mark</option>
-                                       <option value="30">Land Rover</option>
-                                       <option value="306">Landini</option>
-                                       <option value="307">Larson</option>
-                                       <option value="308">Laverda</option>
-                                       <option value="310">Lely</option>
-                                       <option value="311">Lemken</option>
-                                       <option value="31">Lexus</option>
-                                       <option value="312">Leyland</option>
-                                       <option value="32">Lifan</option>
-                                       <option value="313">Lihhai</option>
-                                       <option value="314">Lincoln</option>
-                                       <option value="315">Lishan Bus</option>
-                                       <option value="316">Litostrog</option>
-                                       <option value="317">LML</option>
-                                       <option value="318">Loncin</option>
-                                       <option value="319">Longstar</option>
-                                       <option value="33">Lotus</option>
-                                       <option value="320">Luojia</option>
-                                       <option value="321">Machile</option>
-                                       <option value="322">Mack</option>
-                                       <option value="323">Madal</option>
-                                       <option value="324">Magirus Deutz</option>
-                                       <option value="326">Mahindra</option>
-                                       <option value="327">Maico</option>
-                                       <option value="328">MainMotor</option>
-                                       <option value="329">Majesa</option>
-                                       <option value="330">Manac</option>
-                                       <option value="325">Mangrinsa</option>
-                                       <option value="331">Marchesan</option>
-                                       <option value="332">Marcopolo</option>
-                                       <option value="333">Mariner</option>
-                                       <option value="34">Maserati</option>
-                                       <option value="334">Massey Ferguson</option>
-                                       <option value="335">Mathews Company</option>
-                                       <option value="336">Maxum</option>
-                                       <option value="35">Maybach</option>
-                                       <option value="337">Mayov</option>
-                                       <option value="36">Mazda</option>
-                                       <option value="37">Mercedes</option>
-                                       <option value="338">Mercedes Benz</option>
-                                       <option value="339">Mercruiser</option>
-                                       <option value="340">Mercury</option>
-                                       <option value="341">MG</option>
-                                       <option value="38">MG Rover</option>
-                                       <option value="342">Michigan</option>
-                                       <option value="343">Mikilon</option>
-                                       <option value="39">Mini</option>
-                                       <option value="344">Mini Cooper</option>
-                                       <option value="345">Mits</option>
-                                       <option value="40">Mitsubishi</option>
-                                       <option value="346">Monosem</option>
-                                       <option value="347">Monster</option>
-                                       <option value="348">Montelli</option>
-                                       <option value="349">Montenegro</option>
-                                       <option value="350">Monterrey</option>
-                                       <option value="351">Montesa</option>
-                                       <option value="352">Morbidelli</option>
-                                       <option value="41">Morgan </option>
-                                       <option value="353">Morris</option>
-                                       <option value="354">Moskito</option>
-                                       <option value="355">Moto ABC</option>
-                                       <option value="356">Moto-Vitale</option>
-                                       <option value="357">Motobi</option>
-                                       <option value="358">Motoguzzi</option>
-                                       <option value="359">Motorhome</option>
-                                       <option value="360">Motorrad</option>
-                                       <option value="361">Motosport</option>
-                                       <option value="362">Movil</option>
-                                       <option value="363">MSK</option>
-                                       <option value="364">MTD</option>
-                                       <option value="365">Mussre</option>
-                                       <option value="366">Mustang</option>
-                                       <option value="367">MV Agusta</option>
-                                       <option value="42">Nissan</option>
-                                       <option value="372">NSU</option>
-                                       <option value="43">Opel</option>
-                                       <option value="1">Otra marca</option>
-                                       <option value="44">Peugeot</option>
-                                       <option value="45">Pontiac</option>
-                                       <option value="46">Porsche</option>
-                                       <option value="47">Renault</option>
-                                       <option value="48">Rolls-Royce</option>
-                                       <option value="49">Rover</option>
-                                       <option value="50">Saab</option>
-                                       <option value="368">Samsung</option>
-                                       <option value="51">Santana </option>
-                                       <option value="52">Seat</option>
-                                       <option value="53">Skoda</option>
-                                       <option value="54">Smart</option>
-                                       <option value="55">Ssangyong</option>
-                                       <option value="56">Subaru</option>
-                                       <option value="57">Suzuki</option>
-                                       <option value="371">Takasaki</option>
-                                       <option value="58">Tata </option>
-                                       <option value="59">Toyota</option>
-                                       <option value="369">Triumph</option>
-                                       <option value="60">Volkswagen</option>
-                                       <option value="61">Volvo</option>
-                                       <option value="72">Yale</option>
-                                       <option value="73">Yamaha</option>
-                                       <option value="74">Yanmar</option>
-                                       <option value="75">Yarara</option>
-                                       <option value="76">Yepear</option>
-                                       <option value="77">Yingang</option>
-                                       <option value="78">Yinxiang</option>
-                                       <option value="79">Yomel</option>
-                                       <option value="80">Yuejin</option>
-                                       <option value="81">Yugo</option>
-                                       <option value="64">Zetor</option>
-                                       <option value="65">ZNA</option>
-                                       <option value="66">Znen Group</option>
-                                       <option value="67">Zodiac</option>
-                                       <option value="68">Zongshen</option>
-                                       <option value="69">Zotye</option>
-                                       <option value="70">Zueger</option>
-                                       <option value="63">Zumotho</option>
-                                       <option value="62">Zundapp</option>
-                                       <option value="71">ZX</option>
                                     </select>
                                     <input class="form-control input-sm" type="text" placeholder="Modelo">
                                     <select class="form-control input-sm">
@@ -809,14 +457,13 @@
     
 <div class="container-fluid">
     
-    <div class="col-lg-3 col-lg-offset-2 col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-2 col-xs-12 filtra">
+    <div class="col-md-2 col-md-offset-5 filtra">
         
         
         
-        <a id="twit_1" class="twit" onclick="toggleTwit(1)" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            <div>
-                <h2>Filtra tu búsqueda</h2>
-                <div class="arrow"></div>
+        <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <div class=" filter">
+                Búsqueda avanzada
             </div>
         </a>
         
