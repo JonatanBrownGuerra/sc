@@ -92,9 +92,11 @@ body{
     background-color: #fafaf7;
     color:#565a5c;
     font-family: 'ralewaymedium';
-    max-width: 1440px;
+   /* max-width: 1440px;*/
 }
-
+.contenedor-thumbs{
+    margin: 0 auto;
+}
 .cien{
     height: 100px;
 }
@@ -190,7 +192,6 @@ h2 span{
 }
 .ingresar select.input-sm{
     margin: 0;
-    color: #888;
     font-weight: normal;
 }
 .input-group{
@@ -382,6 +383,120 @@ h2 span{
     width: 34px;
     height: 34px;
     background: url(../images/iconos-SC.png)-68px -136px;
+    opacity: .7;
+}
+.escape{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-170px 0;
+    opacity: .7;
+}
+.sensores{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-204px 0;
+    opacity: .7;
+}
+.alternador{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-170px -34px;
+    opacity: .7;
+}
+.correas{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-204px -34px;
+    opacity: .7;
+}
+.electrico{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-170px -68px;
+    opacity: .7;
+}
+.empaquetadura{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-204px -68px;
+    opacity: .7;
+}
+.gas{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-136px -102px;
+    opacity: .7;
+}
+.aceite{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-170px -102px;
+    opacity: .7;
+}
+.transmision{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-204px -102px;
+    opacity: .7;
+}
+.tren{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-102px -136px;
+    opacity: .7;
+}
+.checkeo{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-136px -136px;
+    opacity: .7;
+}
+.alineacion{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-170px -136px;
+    opacity: .7;
+}
+.reparacion{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-204px -136px;
+    opacity: .7;
+}
+.diesel{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)0px -170px;
+    opacity: .7;
+}
+.neumaticos{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-34px -170px;
+    opacity: .7;
+}
+.alimentacion{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-68px -170px;
+    opacity: .7;
+}
+.accesorios{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-102px -170px;
+    opacity: .7;
+}
+.afinamiento{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-136px -170px;
+    opacity: .7;
+}
+.amortiguador{
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconos-SC.png)-170px -170px;
     opacity: .7;
 }
 .flecha-atras{
@@ -607,7 +722,7 @@ h2 span{
     -moz-box-shadow: inset 0px 0px 0px -100px #FFFFFF;
     -o-box-shadow: inset 0px 0px 0px -100px #FFFFFF;
     font-size: 1em;
-    color:#565a5c;
+    color:#555;
 }
 
 select.input-sm{
@@ -740,6 +855,7 @@ select {
     border: 1px solid #777;
     display: inline-block;
     vertical-align: middle;
+    cursor: pointer;
 }
 [type=checkbox]:checked + span {/* <-- style its checked state */
     background-color: #777;
@@ -806,7 +922,8 @@ select {
 }
 input[type=text], textarea, select, button{
     border: transparent;
-    color: #B6C30A;
+    color:#555;
+    /*color: #B6C30A;*/
 }
 .controls input[type=text]:focus, .form-group input[type=text]:focus{
     box-shadow: 0 0 0 rgba(0, 0, 0, 1);
@@ -1984,6 +2101,7 @@ width: 760px;
     border: 1px solid #ccc;
     border-left: transparent;
 }
+
 .tooltip.top{
     margin-top:-17px;
 }
