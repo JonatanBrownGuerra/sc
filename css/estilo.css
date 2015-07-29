@@ -1133,11 +1133,18 @@ input[type=text]:focus, textarea:focus, select:focus, button:focus{
     text-align: center;
     padding: 0 40px 20px;
 }
-.marcas img{
+.marcas img {
     width: 60px;
     display: inline-block;
     margin: 10px 10px 20px 10px;
 }
+.marcas .car-logo{
+    width: 60px;
+    display: inline-block;
+    margin: 10px 10px 20px 10px;
+    vertical-align: middle;
+}
+
 .separador1{
     padding: 40px 0;
 }
@@ -2151,6 +2158,327 @@ width: 760px;
     display: inline-block;
     font-size: 12px;
     margin-top: 3px;    
+}
+/*****************************************/
+/************* AUTOS LOGOS ****************/
+/*****************************************/
+
+#mark3{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)0 0;  
+}
+#mark10{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-60px 0;
+}
+#mark21{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-120px 0;
+}
+#mark22{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-180px 0;
+}
+#mark25{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-240px 0;
+}
+#mark47{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-300px 0;
+}
+#mark54{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-360px 0;
+}
+#mark62{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-420px 0;
+}
+#mark64{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-480px 0;
+}
+#chana{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-540px 0;
+}
+
+
+#mark74{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)0 -36px;
+}
+#mark79{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-60px -36px;
+}
+#mark80{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-120px -36px;
+}
+#mark81{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-180px -36px;
+}
+#mark83{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-240px -36px;
+}
+#dacia{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-300px -36px;
+}
+#mark94{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-360px -36px;
+}
+#mark96{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-420px -36px;
+}
+#mark97{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-480px -36px;
+}
+#mark101{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-540px -36px;
+}
+
+#mark105{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)0 -72px;
+}
+#mark127{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-60px -72px;
+}
+#mark134{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-120px -72px;
+}
+#mark148{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-180px -72px;
+}
+#mark160{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-240px -72px;
+}
+#mark168{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-300px -72px;
+}
+#mark181{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-360px -72px;
+}
+#mark191{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-420px -72px;
+}
+#mark194{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-480px -72px;
+}
+#mark199{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-540px -72px;
+}
+
+/*************/
+
+#mark204{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)0 -108px;
+}
+#mark206{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-60px -108px;
+}
+#mark212{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-120px -108px;
+}
+#mark231{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-180px -108px;
+}
+#mark244{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-240px -108px;
+}
+#mark245{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-300px -108px;
+}
+#mark248{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-360px -108px;
+}
+#mark255{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-420px -108px;
+}
+#mark259{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-480px -108px;
+}
+#mark273{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-540px -108px;
+}
+/************/
+#mark291{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)0 -144px;
+}
+#mark293{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-60px -144px;
+}
+#mark298{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-120px -144px;
+}
+#mark300{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-180px -144px;
+}
+#mark302{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-240px -144px;
+}
+#mark327{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-300px -144px;
+}
+#mark332{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-360px -144px;
+}
+#mark339{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-420px -144px;
+}
+#mark348{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-480px -144px;
+}
+#mark365{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-540px -144px;
+}
+
+/**********/
+
+#mark371{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)0 -180px;
+}
+#mark376{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-60px -180px;
+}
+#mark386{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-120px -180px;
+}
+#mark401{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-180px -180px;
+}
+#mark410{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-240px -180px;
+}
+
+#mark416{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-300px -180px;
+}
+#mark421{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-360px -180px;
+}
+#mark426{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-420px -180px;
+}
+#mark435{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-480px -180px;
+}
+#mark457{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)-540px -180px;
+}
+/**************/
+#mark458{
+    width: 60px;
+    height: 36px;
+    background: url(../images/marcas.png)0 -216px;
 }
 /*///////////////////////////////////////////*/
 /*********************************************/
