@@ -2548,6 +2548,113 @@ width: 760px;
 .mprow{
     padding: 20px;
 }
+.cod-alinear{
+    margin-top:10px;
+    text-align: left;
+}
+
+/*
+.text500{
+    padding: 15% 20px;
+    text-align: center;
+    background-color: #00f5b1;
+}
+.img500{
+    height: 800px;
+    background: url(../images/mechanic.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}*/
+.cont404{
+    height: 800px;
+    background: url(../images/dead_end.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 15% 20px;
+    text-align: center; 
+    color: #fff;
+    margin-bottom: 30px; 
+}
+.cont500{
+    height: 800px;
+    background: url(../images/mechanic.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 15% 20px;
+    text-align: center; 
+    color: #fff;
+    margin-bottom: 30px;
+}
+.cont403{
+    height: 800px;
+    background: url(../images/BOOMGATE-l.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 15% 20px;
+    text-align: center; 
+    color: #fff;
+    margin-bottom: 30px;
+}
+.mntcn{
+    height: 800px;
+    background: url(../images/031.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 15% 20px;
+    text-align: center; 
+    color: #fff;
+    margin-bottom: 30px;
+}
+.cont404 h2, .cont500 h2, .cont403 h2, .mntcn h2{
+    font-size: 170px;
+    font-family: 'ralewaybold';
+    letter-spacing: -0.08em;
+    
+    
+}
+.cont404 h4, .cont500 h4, .cont403 h4, .mntcn h4{
+    font-size: 24px;
+    margin-bottom: 30px;
+    
+    
+}
+.cont404 p, .cont500 p, .cont403 p, .mntcn p{
+    font-size: 24px;
+    margin-bottom: 30px;
+    
+    
+}
+.sombratext{
+  text-shadow: 2px 1px 15px rgba(0, 0, 0, .5);  
+}
+
+
+.boton-verde{
+    background-color: #a2b603;
+    border-bottom: 2px solid #8A9B06;
+    color: #fff;
+    padding: 6px 14px;
+}
+.boton-verde:hover{
+    background-color: #B9C609;
+    border-bottom: 2px solid #a2b603;
+    color:#fff;
+}
+.mntcn h2{
+    font-size: 72px;
+    letter-spacing: -0.03em;    
+}
+
 
 /*///////////////////////////////////////////*/
 /*********************************************/
